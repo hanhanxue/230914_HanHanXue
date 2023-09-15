@@ -1,0 +1,20 @@
+
+@use './functions' as *;
+
+
+// $screen-sm: rem(640); // From Tailwind
+$screen-sm: rem(660); // From Tailwind
+$screen-md: rem(768); // From Tailwind
+$screen-lg: rem(1024); // From Tailwind // Base
+$screen-xl: rem(1280); // From Tailwind
+$screen-2xl: rem(1536); // From Tailwind
+$screen-4xl: rem(2560);
+
+
+
+// Border Radius
+$radius-md: rem(8);
+$radius-lg: rem(16); // Base
+$radius-xl: rem(24);
+$radius-2xl: rem(32);
+$radius-3xl: rem(48);

@@ -1,95 +1,133 @@
+
+
+
+
+import Link from 'next/link'
 import Image from 'next/image'
-import styles from './page.module.css'
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+import {getImages} from '@/lib/serverUtils'
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
+import styles from './Home.module.scss'
+
+import ContactButton from '@/components/Home/ContactButton'
+
+
+const Home = ({  }) => {
+
+
+
+
+    const images = getImages()
+
+
+    return (
+      <>
+
+        <main>
+
+
+            {/* COVER SECTION */}
+            <section  className={`${styles.sectionCover}`}>
+    
+            <div className={`${styles.container}`}>
+
+            <div  className={`${styles.thirds}`}>
+                <div className={`${styles.buttonFrame}`}>
+        
+                    <ContactButton/>
+                </div>
+
+            </div>
+
+
+
+            <div  className={`${styles.thirds}`}>
+                <div  className={`${styles.titleFrame}`}>
+                    <h1 className={`  body-xl  ${styles.title} `}  >Design & Product at <Link className={`  `} href={`https://www.supermanifold.com/`}>
+                    <u>Super Manifold</u>®
+                    </Link> in Montreal, Canada.</h1>   
+
+                    {/* <span className={`  body-xl `}  >Previously at</span>
+                    Woven by Toyota in San Francisco, California. */}
+  
+                </div>
+
+            </div>
+
+
+
+            <div  className={`${styles.thirds}`}>
+                <div className={`${styles.scrollArrowFrame}`}>
+                        {/* <h2  className={`  body-xl   `}  style={textPad} >{moment().format('YYYY')}</h2> */}
+                        <svg className={`${styles.scrollArrowIcon}`} width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4V44" stroke="black" strokeWidth="2"/>
+                        <path d="M14 34L24 44L34 34" stroke="black" strokeWidth="2"/>
+                        </svg>
+
+                </div>
+
+            </div>
+
+            </div>
+
+
+
+            </section>
+
+            {/* IMAGES SECTION */}
+            <section className={`${styles.sectionWorks}`}>
+
+                <div className={`${styles.container}`}>
+
+
+                    {images.map((img, index) => (
+                        <div className={`${styles.imageFrame}`}>
+                            <button className={`${styles.downloadButton}`}>
+                            <span className={`${styles.downloadButtonIconMask}`}></span>
+                            
+                            {/* <span className={`body-base   ${styles.downloadButtonLabel}`}>Project Files</span> */}
+                            {/* <svg className={`${styles.downloadButtonIcon}`}
+                            width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                            <path xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" d="M22 6H10V16H4L16 28L28 16H22V6Z"/>
+                            </svg> */}
+
+                            
+                            </button>
+                                                <Image
+                    className={`${styles.nextImage}`}
+                        src={`/images/${img.imgName}`} 
+
+                        width={img.imgSize.width}
+                        height={img.imgSize.height}
+                        key={index}
+                        alt={`hanhanxue designer`}
+                    />
+                            </div>
+
+
+
+
+
+                    ))}
+
+
+
+                </div>
+
+            </section>
+        </main>
+
+
+        </>
+    )
+  }
+  
+  export default Home
+  
+  
+

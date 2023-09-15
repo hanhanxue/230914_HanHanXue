@@ -1,0 +1,100 @@
+@use '@/styles/abstracts/' as *;
+@use '@/styles/base/' as *; // for Animations
+
+
+.button {
+    display: flex;
+    // align-items: baseline;
+    align-items: center;
+
+
+    justify-content: flex-end;
+    gap: rem(8);
+    padding: rem(8) rem(16);
+    border-radius: rem(8);
+
+    overflow: hidden;
+
+
+
+    background: none;
+
+    cursor: pointer;
+    user-select: text;
+
+    .buttonPingFrame {
+
+        width: rem(30);
+        height: rem(30);
+        position: relative;
+
+        // background-color: red;
+
+        .buttonPingDot {
+            display: block;
+
+
+            position: absolute;
+            transform: translate3d(-50%, -50%, 0);
+            top: 50%;
+            left: 50%;
+
+    
+
+            width: rem(8);
+            height: rem(8);
+    
+            background: rgb(85, 234, 15);
+            border-radius: 999px;
+            z-index: 10;
+  
+        }
+
+        .buttonPingRing {
+            display: block;
+
+            position: absolute;
+            transform: translate3d(-50%, -50%, 0)  scale3d(1, 1, 1) ;
+
+
+            width: rem(8);
+            height: rem(8);
+    
+            background: rgb(25, 214, 97);
+            border-radius: 999px;
+ 
+    
+            animation: ping 2.4s $easeOutQuart infinite;
+
+            // transform-origin: 2%, 2%;
+            // transform: ;
+            top: 50%;
+            left: 50%;
+        }
+    }
+
+
+
+
+    .buttonLabelIcon {
+        display: flex;
+        align-items: baseline;
+        gap: rem(6);
+
+        .buttonIcon {
+            fill: black;
+        }
+    
+    }
+
+
+    // transition: all .4s;
+
+    // &:hover {
+    //     .buttonLabelDot {
+
+    //         transform: scale3d(54 , 54, 1);
+
+    //     }
+    // }
+}
