@@ -85,7 +85,8 @@ const Home = ({  }) => {
 
 
                     {images.map((img, index) => (
-                        <div className={`${styles.imageFrame}`}>
+                        <div className={`${styles.imageFrame}`}
+                        key={index}>
                             <button className={`${styles.downloadButton}`}>
                             <span className={`${styles.downloadButtonIconMask}`}></span>
                             
@@ -104,7 +105,7 @@ const Home = ({  }) => {
 
                         width={img.imgSize.width}
                         height={img.imgSize.height}
-                        key={index}
+
                         alt={`hanhanxue designer`}
                     />
                             </div>
