@@ -47,9 +47,15 @@ const Home = ({  }) => {
 
             <div  className={`${styles.thirds}`}>
                 <div  className={`${styles.titleFrame}`}>
-                    <h1 className={`  body-xl  ${styles.title} `}  >Design & Product at <Link className={`  `} href={`https://www.supermanifold.com/`}>
-                    <u>Super Manifold</u>®
-                    </Link> in Montreal, Canada.</h1>   
+                    <h1 className={`  body-xl  ${styles.title} `}  >
+                        <span>Design & Product at&nbsp;</span>
+
+                        <Link className={`  `} href={`https://www.supermanifold.com/`}>
+                            <span><u>Super Manifold</u>®&nbsp;</span>
+                        </Link>
+
+                        <span>in Montreal, Canada.</span>
+                        </h1>   
 
                     {/* <span className={`  body-xl `}  >Previously at</span>
                     Woven by Toyota in San Francisco, California. */}
