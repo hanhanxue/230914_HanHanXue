@@ -10,14 +10,25 @@ import {cache} from 'react'
 
 
 const getImages = () => {
+  
+
     const root = process.cwd()
 
     const dirPath = path.join(root, 'public', 'images')
     // console.log(dirPath)
     const dirFileObjs = fs.readdirSync(dirPath, {withFileTypes: true})
 
-    const images = dirFileObjs.map((fileObj) => {
+    const images = dirFileObjs
+    .filter((fileObj) => {
+      // SKIP underscore
+      const reg_exp = /^_/gm
+      if(reg_exp.test(fileObj.name)) return false
+      return true
+    })
+    .map((fileObj) => {
+   
       // console.log(fileObj)
+
 
       const imgName = fileObj.name
       const imgPathAbs = path.join(fileObj.path, imgName)
@@ -43,10 +54,13 @@ const getImages = () => {
     imgSize.height = Math.round(imgSize.height)
 
       return {imgName, imgPathAbs, imgPathRel, imgSize}
+
     })
   
-    // console.log(images)
+         
+    console.log(images)
     return images.reverse()
+
   }
 
 
