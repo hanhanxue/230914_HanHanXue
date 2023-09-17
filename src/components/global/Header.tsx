@@ -5,8 +5,6 @@
 
 import {useState, useEffect} from 'react'
 
-import Image from 'next/image'
-
 import {fit, fit01} from '@/lib/clientUtils'
 
 
@@ -24,17 +22,22 @@ const Header = () => {
         setMenuIsOpen((current) => !current)
     }
     
-    const handleScroll = () => {
-        // if (window.scrollY < window.innerHeight) setHeaderOpacity(0)
-        const animYDist = 240
-        let opacity = fit(window.scrollY, window.innerHeight, window.innerHeight + animYDist, 0, 1)
-        setHeaderOpacity(opacity)
 
-    }
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
+
+        const calculateOpacity = () => {
+            // if (window.scrollY < window.innerHeight) setHeaderOpacity(0)
+            const animYDist = 240
+            let opacity = fit(window.scrollY, window.innerHeight, window.innerHeight + animYDist, 0, 1)
+            setHeaderOpacity(opacity)
+    
+        }
+
+        calculateOpacity()
+
+        window.addEventListener('scroll', calculateOpacity)
         return () => {
-            window.removeEventListener('scroll', handleScroll)
+            window.removeEventListener('scroll', calculateOpacity)
         }
     })
 
@@ -49,7 +52,8 @@ const Header = () => {
 
                 <div className={`${styles.tile} ${styles.tileLogo}`}>
                     
-                <LogoButton />
+                <LogoButton
+                 />
 
 
                 </div>

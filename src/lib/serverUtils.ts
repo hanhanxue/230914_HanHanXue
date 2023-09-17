@@ -9,7 +9,7 @@ import {cache} from 'react'
 
 
 
-const getImages = () => {
+const getImages = cache(  () => {
   
 
     const root = process.cwd()
@@ -61,7 +61,7 @@ const getImages = () => {
     // console.log(images)
     return images.reverse()
 
-  }
+  })
 
 
 
