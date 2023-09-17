@@ -40,7 +40,7 @@ const Home = ({  }) => {
             <div  className={`${styles.thirds}`}>
                 <div className={`${styles.buttonFrame}`}>
         
-                    <ContactButton/>
+                    <ContactButton></ContactButton>
                 </div>
 
             </div>
@@ -97,7 +97,7 @@ const Home = ({  }) => {
                     {images.map((img, index) => (
                         <div className={`${styles.imageFrame}`}
                         key={index}>
-                            <DownloadButton />
+                            <DownloadButton></DownloadButton>
                     <Image
                     className={`${styles.nextImage}`}
                         src={`/images/${img.imgName}`} 
