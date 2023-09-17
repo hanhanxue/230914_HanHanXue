@@ -10,6 +10,7 @@
 
 
     display: flex;
+    align-items: center;
     gap: rem(4);
 
     padding: 0 0 0 rem(8);
@@ -40,13 +41,20 @@
         }
     }
     
-    @media (max-width: $screen-sm) {
 
-        padding: 0 rem(8) 0 rem(8);
-        
-        .tagline {
-            display: none;
-        }
 
-    }
+
 }
+
+
+// button {
+//     @media (max-width: $screen-sm) {
+//         display: none;
+//         // padding: 0 rem(8) 0 rem(8);
+        
+//         // .tagline {
+//         //     display: none;
+//         // }
+
+//     }
+// }

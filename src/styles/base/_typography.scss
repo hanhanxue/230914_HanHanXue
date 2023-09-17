@@ -31,7 +31,13 @@ font-style: normal;
   font-family: Torsos;
   font-size: rem(20);
   line-height: 1.5;
+
+  // @media (max-width: $screen-sm) {
+  //   font-size: rem(16);
+  //   }
 }
+
+
 
 .body-base {
   font-family: Inter;

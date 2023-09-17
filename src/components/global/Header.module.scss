@@ -46,6 +46,13 @@
                 grid-column: 1 / 9;
                 
             }
+
+            .logoButton {
+                    @media (max-width: $screen-md) {
+        display: none;
+
+        }
+            }
         }
 
         .tileBurger {

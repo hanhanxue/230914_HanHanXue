@@ -52,8 +52,9 @@ const Header = () => {
 
                 <div className={`${styles.tile} ${styles.tileLogo}`}>
                     
-                <LogoButton
-                 />
+                    <span className={`${styles.logoButton}`}>
+                        <LogoButton />
+                    </span>
 
 
                 </div>
