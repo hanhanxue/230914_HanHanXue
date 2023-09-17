@@ -11,9 +11,13 @@ import Image from 'next/image'
 import {getImages} from '@/lib/serverUtils'
 
 
+
+import ContactButton from '@/components/home/ContactButton'
+import DownloadButton from '@/components/home/DownloadButton'
+
+
 import styles from './Home.module.scss'
 
-import ContactButton from '@/components/Home/ContactButton'
 
 
 const Home = ({  }) => {
@@ -93,18 +97,7 @@ const Home = ({  }) => {
                     {images.map((img, index) => (
                         <div className={`${styles.imageFrame}`}
                         key={index}>
-                            <button className={`${styles.downloadButton}`}>
-                            <span className={`${styles.downloadButtonIconMask}`}></span>
-                            
-                            {/* <span className={`body-base   ${styles.downloadButtonLabel}`}>Project Files</span> */}
-                            {/* <svg className={`${styles.downloadButtonIcon}`}
-                            width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-                            <path xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" d="M22 6H10V16H4L16 28L28 16H22V6Z"/>
-                            </svg> */}
-
-                            
-                            </button>
+                            <DownloadButton />
                                                 <Image
                     className={`${styles.nextImage}`}
                         src={`/images/${img.imgName}`} 
@@ -112,7 +105,7 @@ const Home = ({  }) => {
                         width={img.imgSize.width}
                         height={img.imgSize.height}
 
-                        alt={`hanhanxue designer`}
+                        alt={`han han xue design & product`}
                     />
                             </div>
 

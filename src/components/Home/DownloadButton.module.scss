@@ -1,0 +1,63 @@
+@use '@/styles/abstracts/' as *;
+@use '@/styles/base/' as *; // for Animations
+
+
+.downloadButton {
+    min-width: rem(40);
+    height: rem(40);
+    background-color: black;
+
+    inset: 0 0 auto auto;
+
+    position: absolute;
+
+    border-radius: 999px;
+
+    margin: rem(8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // padding: 0 rem(24);
+
+
+
+    .downloadButtonIcon {
+   
+        fill: red;
+  
+        mix-blend-mode: multiply;
+
+    }
+
+    
+
+
+    .downloadButtonIconMask {
+        width: rem(8);
+        height: rem(8);
+  
+        background: red;
+        position: absolute;
+        border-radius: 999px;
+
+        animation: pulse 2s infinite;
+
+
+        transition: transform .3s $easeOutQuart;
+
+    }
+
+    // transition: all 2s;
+    // .downloadButtonLabel {
+    //     display: none;
+    // }
+    &:hover {
+
+        // .downloadButtonLabel {
+        //     display: inline-block;
+        //     color: white;
+        //     }
+    }
+}

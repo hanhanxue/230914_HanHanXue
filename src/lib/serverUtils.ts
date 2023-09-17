@@ -58,7 +58,7 @@ const getImages = () => {
     })
   
          
-    console.log(images)
+    // console.log(images)
     return images.reverse()
 
   }

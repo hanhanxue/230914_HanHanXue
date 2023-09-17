@@ -1,0 +1,29 @@
+
+@use '@/styles/abstracts/' as *;
+// @use '@/styles/base/' as *; // for Animations
+
+
+.button {
+    display: flex;
+    // gap: rem(3);
+    align-items: center;
+    background-color: #f6f6f6c4;
+    // background-color: red;
+
+    backdrop-filter: blur(16px);
+    // background-color: white;
+
+    border-radius: rem(12);
+
+    &.icon {
+        padding: rem(8);
+    }
+
+    &.default {
+        padding: rem(8);
+        // gap: rem(3)
+    }
+
+
+
+}
