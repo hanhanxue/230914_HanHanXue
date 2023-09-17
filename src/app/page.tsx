@@ -1,7 +1,5 @@
 
 
-
-
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -20,9 +18,9 @@ import styles from './Home.module.scss'
 
 
 
+
+
 const Home = ({  }) => {
-
-
 
 
     const images = getImages()
@@ -86,6 +84,8 @@ const Home = ({  }) => {
 
 
 
+
+
             </section>
 
             {/* IMAGES SECTION */}
@@ -98,7 +98,7 @@ const Home = ({  }) => {
                         <div className={`${styles.imageFrame}`}
                         key={index}>
                             <DownloadButton />
-                                                <Image
+                    <Image
                     className={`${styles.nextImage}`}
                         src={`/images/${img.imgName}`} 
 
@@ -109,10 +109,6 @@ const Home = ({  }) => {
                     />
                             </div>
 
-
-
-
-
                     ))}
 
 
@@ -120,6 +116,9 @@ const Home = ({  }) => {
                 </div>
 
             </section>
+
+
+
         </main>
 
 

@@ -28,7 +28,7 @@ const Header = () => {
         // if (window.scrollY < window.innerHeight) setHeaderOpacity(0)
         const animYDist = 240
         let opacity = fit(window.scrollY, window.innerHeight, window.innerHeight + animYDist, 0, 1)
-        setHeaderOpacity(opacity * opacity)
+        setHeaderOpacity(opacity)
 
     }
     useEffect(() => {
@@ -43,7 +43,7 @@ const Header = () => {
         ${headerOpacity <= 0 ? styles.disabled : ''}`}
         style={{
             opacity: headerOpacity,
-            transform: `translate3d(0, ${fit01(headerOpacity, -16, 0)}px, 0)`
+            // transform: `translate3d(0, ${fit01(headerOpacity, -16, 0)}px, 0)`
             }}>
             <header className={`${styles.header}`}>
 
