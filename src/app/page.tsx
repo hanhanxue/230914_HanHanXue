@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 
 
-import {getImages} from '@/lib/serverUtils'
+import {parseImagesIndex} from '@/lib/serverUtils'
 
 
 
@@ -23,7 +23,8 @@ import styles from './Home.module.scss'
 const Home = ({  }) => {
 
 
-    const images = getImages()
+    // const images = getImages()
+    const images = parseImagesIndex()
 
 
     return (

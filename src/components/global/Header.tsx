@@ -52,9 +52,9 @@ const Header = () => {
 
                 <div className={`${styles.tile} ${styles.tileLogo}`}>
                     
-                    <span className={`${styles.logoButton}`}>
+                    {/* <span className={`${styles.logoButton}`}>
                         <LogoButton />
-                    </span>
+                    </span> */}
 
 
                 </div>
