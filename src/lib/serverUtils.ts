@@ -7,7 +7,7 @@ import {cache} from 'react'
 
 
 const parseImagesIndex = () => {
-  const indexPath = path.join(process.cwd(), 'public', 'images', 'index.json');
+  const indexPath = path.join(process.cwd(), 'public', 'images', '_index.json');
   try {
     const jsonContent = fs.readFileSync(indexPath, 'utf-8');
     

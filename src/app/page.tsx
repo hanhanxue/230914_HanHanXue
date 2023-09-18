@@ -16,6 +16,7 @@ import DownloadButton from '@/components/home/DownloadButton'
 
 import styles from './Home.module.scss'
 
+import {image} from '@/types/global'
 
 
 
@@ -95,7 +96,7 @@ const Home = ({  }) => {
                 <div className={`${styles.container}`}>
 
 
-                    {images.map((img, index) => (
+                    {images.map((img: image, index: number) => (
                         <div className={`${styles.imageFrame}`}
                         key={index}>
                             <DownloadButton></DownloadButton>
