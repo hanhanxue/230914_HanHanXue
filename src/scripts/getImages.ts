@@ -12,7 +12,7 @@ const getImages = () => {
     const root = process.cwd()
     
     const dirPath = path.join(root, 'public', 'images')
-    const fullFilePath = path.join(root, 'public', 'images', 'index.json')
+    const fullFilePath = path.join(root, 'public', 'images', '_index.json')
 
     // console.log(dirPath)
     const dirFileObjs = fs.readdirSync(dirPath, {withFileTypes: true})
