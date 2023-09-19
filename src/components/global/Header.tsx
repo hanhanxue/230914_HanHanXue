@@ -26,11 +26,10 @@ const Header = () => {
     useEffect(() => {
 
         const calculateOpacity = () => {
-            // if (window.scrollY < window.innerHeight) setHeaderOpacity(0)
-            const animYDist = 240
-            let opacity = fit(window.scrollY, window.innerHeight, window.innerHeight + animYDist, 0, 1)
+            const animYRange = 240
+            // let opacity = fit(window.scrollY, window.innerHeight, window.innerHeight + animYRange, 0, 1)
+            let opacity = fit(window.scrollY, 0, animYRange, 0, 1)
             setHeaderOpacity(opacity)
-    
         }
 
         calculateOpacity()
@@ -39,7 +38,11 @@ const Header = () => {
         return () => {
             window.removeEventListener('scroll', calculateOpacity)
         }
-    })
+    }, [])
+
+
+
+    
 
     return (
         <div className={`${styles.container}

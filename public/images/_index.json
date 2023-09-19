@@ -1,5 +1,15 @@
 [
   {
+    "imgName": "230918_grainsTest.gif",
+    "imgPathAbs": "D:\\hanhanxue\\public\\images\\230918_grainsTest.gif",
+    "imgPathRel": "images\\230918_grainsTest.gif",
+    "imgSize": {
+      "height": 338,
+      "width": 600,
+      "type": "gif"
+    }
+  },
+  {
     "imgName": "230612_4SuperManifoldNoiseMid.png",
     "imgPathAbs": "D:\\hanhanxue\\public\\images\\230612_4SuperManifoldNoiseMid.png",
     "imgPathRel": "images\\230612_4SuperManifoldNoiseMid.png",
