@@ -38,49 +38,17 @@ interface BurgerButtonProps {
 
 
     const [currentIndex, setCurrentIndex] = useState(0)
-    const [loopSpeed, setLoopSpeed] = useState(1)
-
-
-
-    const intervalRef = useRef(null)
-
 
     useEffect(() => {
-        // let intervalId;
+        const duration = 200
 
-        // if(loopSpeed > 0) {
-        // intervalId = setInterval(() => {
-        //         setCurrentIndex((prevIndex) => (prevIndex + 1) % emojis.length)
-        // }, 100 / loopSpeed)
-        // } else {
-        // clearInterval(intervalId)
-        // }
+        setInterval(() => {
+                setCurrentIndex((prevIndex) => (prevIndex + 1) % emojis.length)
+        }, duration)
 
-        // Initialize the interval for changing emojis
-        intervalRef.current = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % emojis.length);
-      }, 100 / loopSpeed);
-
-        return() => {
-        if (intervalRef.current !== null) {
-        clearInterval(intervalRef.current);
-        }
-        }
-    }, [loopSpeed])
-
-
-
-    useEffect(() => {
-        const handleLoopSpeedChange = () => {
-            const newLoopSpeed = fit(window.scrollY, 0, window.innerHeight, 0, 1)
-            setLoopSpeed(newLoopSpeed)
-        }
-
-        window.addEventListener('scroll', handleLoopSpeedChange)
-        return () => {
-            window.removeEventListener('scroll', handleLoopSpeedChange)
-        }
     }, [])
+
+
   
 
     return (
@@ -163,3 +131,61 @@ onClick={onClick}>
 //         setIntervalId(null)
 //       }
 //     }
+
+
+
+// const [intervalDuration, setIntervalDuration] = useState(500)
+
+// useEffect(() => {
+
+//     const handleIntervalDurationChange = () => {
+//     const YRange = window.innerHeight
+
+//     const minIntervalDuration = 50
+//     const maxIntervalDuration = 200
+
+//     let newIntervalDuration = 9999
+
+//     if(window.scrollY > YRange) {
+//             newIntervalDuration = minIntervalDuration
+//             return
+//     }
+
+//     newIntervalDuration = fit(window.scrollY, 0, window.innerHeight, maxIntervalDuration, minIntervalDuration)
+
+//     setIntervalDuration(newIntervalDuration)
+//     // console.log(`var: ${newIntervalDuration}, state: ${intervalDuration}`)
+
+//     //     let intervalId = setInterval(request, intervalDuration); // start setInterval as "intervalId"
+    
+//     //     function request() {
+        
+//     //         console.log(intervalDuration); // firebug or chrome log
+//     //         setCurrentIndex((prevIndex) => (prevIndex + 1) % emojis.length)
+//     //         clearInterval(intervalId); // stop the setInterval()
+
+        
+//     //         intervalId = setInterval(request, intervalDuration); // start the setInterval()
+//     //     }
+
+
+//     }
+
+//     window.addEventListener('scroll', handleIntervalDurationChange)
+//     return () => {
+//         window.removeEventListener('scroll', handleIntervalDurationChange)
+//     }
+// }, [])
+
+// useEffect(() => {
+//     const request = () => {
+//             console.log(intervalDuration)
+//             clearInterval(intervalId)
+
+//     }
+
+//     let intervalId = setInterval(request, intervalDuration)
+
+
+
+// },[intervalDuration])

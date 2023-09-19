@@ -26,10 +26,15 @@ const Header = () => {
     useEffect(() => {
 
         const calculateOpacity = () => {
-            const animYRange = 240
-            // let opacity = fit(window.scrollY, window.innerHeight, window.innerHeight + animYRange, 0, 1)
-            let opacity = fit(window.scrollY, 0, animYRange, 0, 1)
-            setHeaderOpacity(opacity)
+            // const animYRange = 240
+            // // let opacity = fit(window.scrollY, window.innerHeight, window.innerHeight + animYRange, 0, 1)
+            // let opacity = fit(window.scrollY, 0, animYRange, 0, 1)
+            // setHeaderOpacity(opacity)
+
+            if(window.scrollY>1) {setHeaderOpacity(1)
+                 return}
+                setHeaderOpacity(0)
+
         }
 
         calculateOpacity()

@@ -4,8 +4,12 @@
 
 
 .container {
+
+    transition: opacity .2s ;
+
     &.disabled {
-        display: none;
+        // display: none;
+        pointer-events: none;
     }
 
     position: fixed;
