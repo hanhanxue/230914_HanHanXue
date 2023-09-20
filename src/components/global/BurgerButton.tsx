@@ -36,19 +36,23 @@ interface BurgerButtonProps {
                 "/assets/emojis/009.png",
         ]
 
+        const numEmojis = emojis.length
+
 
     const [currentIndex, setCurrentIndex] = useState(0)
 
-    useEffect(() => {
-        const duration = 200
 
-        setInterval(() => {
-                setCurrentIndex((prevIndex) => (prevIndex + 1) % emojis.length)
-        }, duration)
-
-    }, [])
+        useEffect(() => {
+            const incrementEmojiIndex = () => {
 
 
+                const newIndex = Math.floor(window.scrollY / 100)
+                setCurrentIndex((prevIndex) => (newIndex) % numEmojis)
+            }
+
+            window.addEventListener('scroll', incrementEmojiIndex)
+            return(() => window.removeEventListener('scroll', incrementEmojiIndex))
+        }, [])
   
 
     return (
@@ -92,6 +96,12 @@ interface BurgerButtonProps {
 }
 
 export default BurgerButton
+
+
+
+
+
+
 
 
 {/* <button 

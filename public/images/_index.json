@@ -1,16 +1,5 @@
 [
   {
-    "imgName": "230919_still copy.jpg",
-    "imgPathAbs": "D:\\hanhanxue\\public\\images\\230919_still copy.jpg",
-    "imgPathRel": "images\\230919_still copy.jpg",
-    "imgSize": {
-      "height": 720,
-      "orientation": 1,
-      "width": 720,
-      "type": "jpg"
-    }
-  },
-  {
     "imgName": "230918_grainsTest.gif",
     "imgPathAbs": "D:\\hanhanxue\\public\\images\\230918_grainsTest.gif",
     "imgPathRel": "images\\230918_grainsTest.gif",
