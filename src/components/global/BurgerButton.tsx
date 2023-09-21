@@ -25,34 +25,33 @@ interface BurgerButtonProps {
   const BurgerButton: React.FC<BurgerButtonProps> = ({ isOpen = false, onClick }) => {
 
 
-        const emojis = [
-                "/assets/emojis/001.png",
-                "/assets/emojis/002.png",
-                "/assets/emojis/004.png",
-                "/assets/emojis/005.png",
-                "/assets/emojis/006.png",
-                "/assets/emojis/007.png",
-                "/assets/emojis/008.png",
-                "/assets/emojis/009.png",
-        ]
+    const emojis = [
+            "/assets/emojis/001.png",
+            "/assets/emojis/002.png",
+            "/assets/emojis/004.png",
+            "/assets/emojis/005.png",
+            "/assets/emojis/006.png",
+            "/assets/emojis/007.png",
+            "/assets/emojis/008.png",
+            "/assets/emojis/009.png",
+    ]
 
-        const numEmojis = emojis.length
+    const numEmojis = emojis.length
 
 
     const [currentIndex, setCurrentIndex] = useState(0)
 
 
-        useEffect(() => {
-            const incrementEmojiIndex = () => {
+    useEffect(() => {
+        const incrementEmojiIndex = () => {
 
+            const newIndex = Math.floor(window.scrollY / 100)
+            setCurrentIndex((prevIndex) => (newIndex) % numEmojis)
+        }
 
-                const newIndex = Math.floor(window.scrollY / 100)
-                setCurrentIndex((prevIndex) => (newIndex) % numEmojis)
-            }
-
-            window.addEventListener('scroll', incrementEmojiIndex)
-            return(() => window.removeEventListener('scroll', incrementEmojiIndex))
-        }, [])
+        window.addEventListener('scroll', incrementEmojiIndex)
+        return(() => window.removeEventListener('scroll', incrementEmojiIndex))
+    }, [])
   
 
     return (

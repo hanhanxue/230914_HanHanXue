@@ -25,6 +25,27 @@ font-weight: 400;
 font-style: normal;
 }
 
+.body-3xl {
+  font-family: Torsos;
+  font-size: rem(48);
+  line-height: 1.5;
+
+  // @media (max-width: $screen-sm) {
+  //   font-size: rem(16);
+  //   }
+}
+
+
+
+.body-2xl {
+  font-family: Torsos;
+  font-size: rem(32);
+  line-height: 1.5;
+
+  // @media (max-width: $screen-sm) {
+  //   font-size: rem(16);
+  //   }
+}
 
 
 .body-xl {
@@ -42,7 +63,7 @@ font-style: normal;
 .body-base {
   font-family: Inter;
   font-size: rem(16);
-  line-height: 1.33;
+  line-height: 1.5;
 }
 
 

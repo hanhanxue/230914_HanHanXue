@@ -99,7 +99,7 @@ const Home = ({  }) => {
                     {images.map((img: image, index: number) => (
                         <div className={`${styles.imageFrame}`}
                         key={index}>
-                            <DownloadButton></DownloadButton>
+                            {/* <DownloadButton></DownloadButton> */}
                     <Image
                     className={`${styles.nextImage}`}
                         src={`/images/${img.imgName}`} 
