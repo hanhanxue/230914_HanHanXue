@@ -22,7 +22,7 @@ const Header = () => {
 
 
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-    const [isScrollTop, setIsScrollTop] = useState(0)
+    const [isScrollTop, setIsScrollTop] = useState(1)
 
     const [delayDurations, setDelayDurations] = useState(new Array(10).fill(0))
 
