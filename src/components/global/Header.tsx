@@ -118,7 +118,7 @@ const Header = () => {
 
             {/* TILE */}
             <div className={`${styles.tile} ${styles.tileLogo}  `}
-        style={{
+            style={{
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[0]}ms`
             }}>
@@ -133,19 +133,16 @@ const Header = () => {
             transitionDelay: `${delayDurations[1]}ms`
             }}>
 
-                <BurgerButton isOpen={isMenuOpen} onClick={handleMenuClick}/>
+                <BurgerButton isOpen={isMenuOpen} onClick={handleMenuClick} theme='dark' />
             </div>
 
         </header>
 
 
 
-
-
-
         <nav className={`${styles.nav}`}>
             {/* TILE */}
-            <div className={`body-2xl ${styles.tile} ${styles.about} ${styles.tileHover}`}
+            <div className={`body-2xl ${styles.tile} ${styles.work} ${styles.tileHover}`}
             style={{
                 opacity: `${isMenuOpen ? '1' : '0'}`,
                 transitionDelay: `${delayDurations[2]}ms`
@@ -164,7 +161,7 @@ const Header = () => {
             </div>
 
             {/* TILE */}
-            <div className={`${styles.tile} ${styles.resume} ${styles.tileHover}`}
+            <div className={`${styles.tile} ${styles.info} ${styles.tileHover}`}
                 style={{
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[4]}ms`
@@ -173,12 +170,12 @@ const Header = () => {
             </div>
 
             {/* TILE */}
-            <div className={`${styles.tile} ${styles.chat} ${styles.tileHover}`}
+            <div className={`${styles.tile} ${styles.office} ${styles.tileHover}`}
             style={{
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[5]}ms`
             }}>
-                <h2 className={`body-3xl `}>Resume</h2>
+                <h2 className={`body-3xl `}>Office</h2>
             </div>
 
             {/* TILE */}
@@ -193,11 +190,10 @@ const Header = () => {
 
         </nav>
 
-
         <div className={`${styles.footer}`}>
 
             {/* TILE */}
-            <div className={`${styles.tile} ${styles.tileFooter}  `}
+            <div className={`${styles.tile} ${styles.tileFooter}   ${styles.tileHover}`}
             style={{
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[7]}ms`
@@ -211,6 +207,13 @@ const Header = () => {
                 </ul>
             </div>
         </div>
+        <div className={`${styles.scrollableContainer}  `}>
+
+
+
+        </div>
+
+
 
 
 

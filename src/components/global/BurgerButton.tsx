@@ -18,12 +18,22 @@ import {fit, fit01} from '@/lib/clientUtils'
 import styles from './BurgerButton.module.scss'
 
 interface BurgerButtonProps {
+    theme?: string
     isOpen?: boolean
     onClick?: React.MouseEventHandler<HTMLButtonElement>
   }
 
-  const BurgerButton: React.FC<BurgerButtonProps> = ({ isOpen = false, onClick }) => {
+  const BurgerButton: React.FC<BurgerButtonProps> = ({ isOpen = false, onClick, theme = 'default' }) => {
 
+    const styleTheme = () => {
+        switch (theme) {
+            case 'dark':
+                return `${styles.dark}`
+            
+            default:
+                return `${styles.default}`
+        }
+    }
 
     const emojis = [
             "/assets/emojis/001.png",
@@ -44,8 +54,8 @@ interface BurgerButtonProps {
 
     useEffect(() => {
         const incrementEmojiIndex = () => {
-
-            const newIndex = Math.floor(window.scrollY / 100)
+            // + 999 to prevent negative numbers from mobile elastic pulling down
+            const newIndex = Math.floor((window.scrollY + 999) / 100)
             setCurrentIndex((prevIndex) => (newIndex) % numEmojis)
         }
 
@@ -57,7 +67,7 @@ interface BurgerButtonProps {
     return (
 
         <>
-        <Button kind = 'icon'   onClick={onClick}>
+        <Button kind = 'icon'   onClick={onClick}  theme={theme}>
         <span className={`${styles.buttonFrame}`}> 
 
         <div className={`${styles.emoji}`}
@@ -80,7 +90,7 @@ interface BurgerButtonProps {
 
 
 
-            <div className={`${styles.icon}`}>
+            <div className={`${styles.icon} ${styleTheme()}`}>
                 <span className={`${styles.iconStroke}`}></span>
                 <span className={`${styles.iconStroke}`}></span>
                 <span className={`${styles.iconStroke}`}></span>

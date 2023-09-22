@@ -14,6 +14,7 @@
     backdrop-filter: blur(16px);
     // -webkit-backdrop-filter: blur(16px);
     // background-color: white;
+    // background-color: #272727c4;
 
     border-radius: rem(12);
 
@@ -26,6 +27,9 @@
         // gap: rem(3)
     }
 
+    &.dark {
+        background-color: #252525;
+    }
 
 
 }

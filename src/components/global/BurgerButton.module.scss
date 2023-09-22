@@ -77,6 +77,12 @@
                 $duration-200
                 $bouncy;
             }
+
+            &.dark {
+                .iconStroke {
+                    background-color: #f6f6f6;
+                }
+            }
     
     
         
