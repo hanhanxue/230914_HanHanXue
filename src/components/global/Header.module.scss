@@ -84,11 +84,18 @@
             // @media (max-width: $screen-md) {
             //     padding: rem(32) rem(16);
             // }
+            // &:hover {
+            //     color:#000000;
+            //     background-color: #fdd02f;
+            // }
+    
+        }
+
+        .tileHover {
             &:hover {
                 color:#000000;
                 background-color: #fdd02f;
             }
-    
         }
 
         .header {
@@ -131,9 +138,7 @@
                 justify-content: flex-end;
 
                 
-                &:hover {
-                    background-color: #252525;
-                }
+
             }
     
         }

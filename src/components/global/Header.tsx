@@ -105,7 +105,7 @@ const Header = () => {
             <header className={`${styles.header}`}>
 
             {/* TILE */}
-            <div className={`${styles.tile} ${styles.tileLogo}`}
+            <div className={`${styles.tile} ${styles.tileLogo}  `}
         style={{
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[0]}ms`
@@ -115,7 +115,7 @@ const Header = () => {
             </div>
 
             {/* TILE */}    
-            <div className={`${styles.tile} ${styles.tileBurger}`}
+            <div className={`${styles.tile} ${styles.tileBurger}  `}
         style={{
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[1]}ms`
@@ -133,7 +133,7 @@ const Header = () => {
 
         <nav className={`${styles.nav}`}>
             {/* TILE */}
-            <div className={`body-2xl ${styles.tile} ${styles.about}`}
+            <div className={`body-2xl ${styles.tile} ${styles.about} ${styles.tileHover}`}
             style={{
                 opacity: `${isMenuOpen ? '1' : '0'}`,
                 transitionDelay: `${delayDurations[2]}ms`
@@ -143,7 +143,7 @@ const Header = () => {
                     
 
             {/* TILE */}
-            <div className={`${styles.tile} ${styles.experimental}`}
+            <div className={`${styles.tile} ${styles.experimental} ${styles.tileHover}`}
                 style={{
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[3]}ms`
@@ -152,7 +152,7 @@ const Header = () => {
             </div>
 
             {/* TILE */}
-            <div className={`${styles.tile} ${styles.resume}`}
+            <div className={`${styles.tile} ${styles.resume} ${styles.tileHover}`}
                 style={{
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[4]}ms`
@@ -161,7 +161,7 @@ const Header = () => {
             </div>
 
             {/* TILE */}
-            <div className={`${styles.tile} ${styles.chat}`}
+            <div className={`${styles.tile} ${styles.chat} ${styles.tileHover}`}
             style={{
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[5]}ms`
@@ -170,7 +170,7 @@ const Header = () => {
             </div>
 
             {/* TILE */}
-            <div className={`${styles.tile} ${styles.contact}`}
+            <div className={`${styles.tile} ${styles.contact} ${styles.tileHover}`}
             style={{
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[6]}ms`
@@ -185,7 +185,7 @@ const Header = () => {
         <div className={`${styles.footer}`}>
 
             {/* TILE */}
-            <div className={`${styles.tile} ${styles.tileFooter}`}
+            <div className={`${styles.tile} ${styles.tileFooter}  `}
             style={{
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[7]}ms`
