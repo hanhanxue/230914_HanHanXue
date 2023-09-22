@@ -123,8 +123,8 @@
         }
 
         .header {
-            position: sticky;
-            inset: 0 0 auto 0;
+            // position: sticky;
+            // inset: 0 0 auto 0;
             // z-index: -5;
  
 
@@ -179,15 +179,25 @@
 
 
         .nav{
+            position: relative;
+
             // margin-top: 11px;
 
             // overflow: scroll;
             // background-color: blue;
             // background-color: #f6f6f6;
+
+
             flex: 1 0 auto;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-    
+
+
+            @media (max-width: $screen-sm) {
+                max-height: calc(100vh - rem(372));
+                overflow: auto;
+            }
+
     
             .work {
                 grid-row: 1;
@@ -267,6 +277,7 @@
             // background-color: #f6f6f6;
 
             .tile {
+            
                 padding: rem(40) rem(40);
                 @media (max-width: $screen-sm) {
                     padding: rem(32) rem(16);

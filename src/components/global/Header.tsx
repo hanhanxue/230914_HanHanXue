@@ -187,7 +187,6 @@ const Header = () => {
                 <h2 className={`body-3xl `}>Contact</h2>
             </div>
 
-
         </nav>
 
         <div className={`${styles.footer}`}>
