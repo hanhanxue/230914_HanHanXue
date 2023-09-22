@@ -30,9 +30,10 @@ font-style: normal;
   font-size: rem(40);
   line-height: 1.5;
 
-  // @media (max-width: $screen-sm) {
-  //   font-size: rem(16);
-  //   }
+@media (max-width: $screen-sm) {
+  font-size: rem(32);
+  }
+
 }
 
 
@@ -53,6 +54,10 @@ font-style: normal;
   font-size: rem(20);
   line-height: 1.5;
 
+  // @media (max-width: $screen-sm) {
+  //   font-size: rem(16);
+  //   line-height: 1.5;
+  //   }
   // @media (max-width: $screen-sm) {
   //   font-size: rem(16);
   //   }
