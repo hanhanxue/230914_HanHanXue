@@ -24,7 +24,7 @@ const Header = () => {
 
 
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-    const [isScrollTop, setIsScrollTop] = useState(1)
+    const [isScrollInit, setIsScrollInit] = useState(0)
 
     const [delayDurations, setDelayDurations] = useState(new Array(10).fill(0))
 
@@ -54,12 +54,9 @@ const Header = () => {
 
         const handleScroll = () => {
 
-            if(window.scrollY>1) {setIsScrollTop(0)
-                 return}
-                setIsScrollTop(1)
-
+            if(isScrollInit) return;
+            if(window.scrollY > 1) setIsScrollInit(1)
         }
-
         handleScroll()
 
         window.addEventListener('scroll', handleScroll)
@@ -80,18 +77,23 @@ const Header = () => {
     return (
         <div className={`${styles.container}`}
         style={{
-            opacity: `${isScrollTop && !isMenuOpen ? '0' : '1'}`,
-            pointerEvents: `${isScrollTop && !isMenuOpen ? 'none' : 'all'}`,
+            opacity: `${isScrollInit ? '1' : '0'}`,
+
+            
             }}>
 
 
-        <header className={`${styles.headerDefault}`}>
-            <div className={`${styles.tile} ${styles.tileLogo}`}>
+
+        <header className={`${styles.headerDefault}`} >
+            <div className={`${styles.tile} ${styles.tileLogo}`}  >
                 {/* <LogoButton /> */}
             </div>
 
-            <div className={`${styles.tile} ${styles.tileBurger}`}>
+            <div className={`${styles.tile} ${styles.tileBurger}`}  >
+                <div style={{pointerEvents: `${isScrollInit ? 'all' : 'none'}`}}>
+
                 <BurgerButton isOpen={isMenuOpen} onClick={handleMenuClick}/>
+                </div>
             </div>
         </header>
 
@@ -102,8 +104,16 @@ const Header = () => {
 
 
 
+
+
+
+
+
+
             {/* OVERLAY */}
-            <div className={`${styles.overlay}`}> 
+            <div className={`${styles.overlay}`}
+            style={{pointerEvents: `${isMenuOpen ? 'all': 'none'}`}}
+            > 
             <header className={`${styles.header}`}>
 
             {/* TILE */}

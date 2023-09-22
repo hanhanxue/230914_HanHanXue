@@ -54,7 +54,7 @@ const Home = ({  }) => {
                     <h1 className={`  body-xl  ${styles.title} `}  >
                         <span>Design & Product at&nbsp;</span>
 
-                        <Link className={`  `} href={`https://www.supermanifold.com/`}>
+                        <Link className={`  `} href={`https://www.supermanifold.com/`} rel="noopener noreferrer" target="_blank">
                             <span><u>Super Manifold</u>®&nbsp;</span>
                         </Link>
 

@@ -4,7 +4,7 @@
 
 
 .container {
-
+    pointer-events: none;
     transition: opacity .2s ;
 
 
@@ -18,11 +18,15 @@
 
     
     .headerDefault {
+        pointer-events: none;
+
         .tile {
+
             padding: rem(24) rem(32);
             @media (max-width: $screen-md) {
                 padding: rem(24) rem(16);
         }
+        
         }
 
         display: grid;
@@ -30,8 +34,8 @@
 
 
         .tileLogo {
+            // background-color: rgba(255, 0, 0, 0.333);
             grid-column: 1 / 5;
-            // background-color: red;
             @media (max-width: $screen-lg) {
                 grid-row: 1;
                 grid-column: 1 / 9; 
@@ -43,20 +47,25 @@
 
         }
             }
+            // display: none;
         }
 
         .tileBurger {
+
+            // background-color: rgba(0, 0, 255, 0.224);
             grid-column: 5 / 9;
-            // background-color: blue;
             display: flex;
             justify-content: flex-end;
             @media (max-width: $screen-lg) {
                 grid-row: 1;
                 grid-column: 1 / 9; 
             }
-
+            // display: none;
         }
 
+        // background-color: red;
+        // display: none;
+        // pointer-events: none;
     }
 
 
