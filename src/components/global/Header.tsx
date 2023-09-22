@@ -8,6 +8,8 @@ import {useState, useEffect} from 'react'
 import {fit, fit01} from '@/lib/clientUtils'
 import useFirstRender from '@/lib/useFirstRender'
 
+import Link from 'next/link'
+
 
 import BurgerButton from '@/components/global/BurgerButton'
 import LogoButton from '@/components/global/LogoButton'
@@ -192,10 +194,10 @@ const Header = () => {
             }}>
                 <span className={`body-xl`}>©2023</span>
                 <ul className={`body-xl ${styles.socialLinks}`}>
-                    <li>GitHub</li>
-                    <li>Instagram</li>
-                    <li>X</li>
-                    <li>LinkedIn</li>
+                    <li><Link href="https://github.com/hanhanxue" rel="noopener noreferrer" target="_blank">GitHub</Link></li>
+                    <li><Link href="https://www.instagram.com/_hanhanxue_/" rel="noopener noreferrer" target="_blank">Instagram</Link></li>
+                    <li><Link href="https://twitter.com/_hanhanxue_" rel="noopener noreferrer" target="_blank">X</Link></li>
+                    <li><Link href="https://www.linkedin.com/in/hanhanxue/" rel="noopener noreferrer" target="_blank">LinkedIn</Link></li>
                 </ul>
             </div>
         </div>

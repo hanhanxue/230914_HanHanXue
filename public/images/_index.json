@@ -1,8 +1,8 @@
 [
   {
-    "imgName": "230918_grainsTest.gif",
-    "imgPathAbs": "D:\\hanhanxue\\public\\images\\230918_grainsTest.gif",
-    "imgPathRel": "images\\230918_grainsTest.gif",
+    "imgName": "230921_raisingGrainsFlip.gif",
+    "imgPathAbs": "D:\\hanhanxue\\public\\images\\230921_raisingGrainsFlip.gif",
+    "imgPathRel": "images\\230921_raisingGrainsFlip.gif",
     "imgSize": {
       "height": 338,
       "width": 600,
@@ -10,13 +10,24 @@
     }
   },
   {
-    "imgName": "230612_4SuperManifoldNoiseMid.png",
-    "imgPathAbs": "D:\\hanhanxue\\public\\images\\230612_4SuperManifoldNoiseMid.png",
-    "imgPathRel": "images\\230612_4SuperManifoldNoiseMid.png",
+    "imgName": "230918_grainsRenderLighter.gif",
+    "imgPathAbs": "D:\\hanhanxue\\public\\images\\230918_grainsRenderLighter.gif",
+    "imgPathRel": "images\\230918_grainsRenderLighter.gif",
+    "imgSize": {
+      "height": 338,
+      "width": 600,
+      "type": "gif"
+    }
+  },
+  {
+    "imgName": "230612_4SuperManifoldNoiseMidSmall.jpg",
+    "imgPathAbs": "D:\\hanhanxue\\public\\images\\230612_4SuperManifoldNoiseMidSmall.jpg",
+    "imgPathRel": "images\\230612_4SuperManifoldNoiseMidSmall.jpg",
     "imgSize": {
       "height": 540,
+      "orientation": 1,
       "width": 960,
-      "type": "png"
+      "type": "jpg"
     }
   },
   {
