@@ -94,6 +94,17 @@
     }
   },
   {
+    "imgName": "210101.jpg",
+    "imgPathAbs": "D:\\hanhanxue\\public\\images\\210101.jpg",
+    "imgPathRel": "images\\210101.jpg",
+    "imgSize": {
+      "height": 540,
+      "orientation": 1,
+      "width": 960,
+      "type": "jpg"
+    }
+  },
+  {
     "imgName": "201018_ballFix.gif",
     "imgPathAbs": "D:\\hanhanxue\\public\\images\\201018_ballFix.gif",
     "imgPathRel": "images\\201018_ballFix.gif",
@@ -459,6 +470,28 @@
     "imgPathRel": "images\\1701.jpg",
     "imgSize": {
       "height": 540,
+      "orientation": 1,
+      "width": 960,
+      "type": "jpg"
+    }
+  },
+  {
+    "imgName": "1610_10001_float4-ident_hanhanxue.jpg",
+    "imgPathAbs": "D:\\hanhanxue\\public\\images\\1610_10001_float4-ident_hanhanxue.jpg",
+    "imgPathRel": "images\\1610_10001_float4-ident_hanhanxue.jpg",
+    "imgSize": {
+      "height": 405,
+      "orientation": 1,
+      "width": 960,
+      "type": "jpg"
+    }
+  },
+  {
+    "imgName": "1610_09005_float4-ident_hanhanxue.jpg",
+    "imgPathAbs": "D:\\hanhanxue\\public\\images\\1610_09005_float4-ident_hanhanxue.jpg",
+    "imgPathRel": "images\\1610_09005_float4-ident_hanhanxue.jpg",
+    "imgSize": {
+      "height": 405,
       "orientation": 1,
       "width": 960,
       "type": "jpg"

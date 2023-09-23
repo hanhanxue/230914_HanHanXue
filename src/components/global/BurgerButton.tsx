@@ -18,12 +18,16 @@ import {fit, fit01} from '@/lib/clientUtils'
 import styles from './BurgerButton.module.scss'
 
 interface BurgerButtonProps {
+    emojiIndexOffset?: number
     theme?: string
     isOpen?: boolean
     onClick?: React.MouseEventHandler<HTMLButtonElement>
   }
 
-  const BurgerButton: React.FC<BurgerButtonProps> = ({ isOpen = false, onClick, theme = 'default' }) => {
+  const BurgerButton: React.FC<BurgerButtonProps> = ({ 
+    isOpen = false, 
+    onClick, theme = 'default', 
+    emojiIndexOffset = 999 }) => {
 
     const styleTheme = () => {
         switch (theme) {
@@ -46,21 +50,20 @@ interface BurgerButtonProps {
             "/assets/emojis/009.png",
     ]
 
-    const numEmojis = emojis.length
 
 
     const [currentIndex, setCurrentIndex] = useState(0)
 
 
     useEffect(() => {
-        const offset = fit01(Math.random(), 999, 1999)
+        // const offset = fit01(Math.random(), 999, 1999)
 
         const incrementEmojiIndex = () => {    
             // + 999 to prevent negative numbers from mobile elastic pulling down
             
             
-            const newIndex = Math.floor((window.scrollY + offset) / 100)
-            setCurrentIndex((prevIndex) => (newIndex) % numEmojis)
+            const newIndex = Math.floor((window.scrollY + emojiIndexOffset) / 100)
+            setCurrentIndex((prevIndex) => (newIndex) % emojis.length)
         }
 
         window.addEventListener('scroll', incrementEmojiIndex)

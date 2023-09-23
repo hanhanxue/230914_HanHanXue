@@ -24,6 +24,8 @@ const Header = () => {
 
 
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [emojiIndexOffset, setEmojiIndexOffset] = useState(fit01(Math.random(), 999, 1999))
+
     const [isScrollInit, setIsScrollInit] = useState(0)
 
     const [delayDurations, setDelayDurations] = useState(new Array(10).fill(0))
@@ -49,7 +51,6 @@ const Header = () => {
     
 
 
-
     useEffect(() => {
 
         const handleScroll = () => {
@@ -57,6 +58,7 @@ const Header = () => {
             if(isScrollInit) return;
             if(window.scrollY > 1) setIsScrollInit(1)
         }
+    
         handleScroll()
 
         window.addEventListener('scroll', handleScroll)
@@ -64,6 +66,7 @@ const Header = () => {
             window.removeEventListener('scroll', handleScroll)
         }
     }, [])
+
 
     useEffect(() => {
         const timeout = setTimeout(() => {
@@ -92,7 +95,7 @@ const Header = () => {
             <div className={`${styles.tile} ${styles.tileBurger}`}  >
                 <div style={{pointerEvents: `${isScrollInit ? 'all' : 'none'}`}}>
 
-                <BurgerButton isOpen={isMenuOpen} onClick={handleMenuClick}/>
+                <BurgerButton isOpen={isMenuOpen} onClick={handleMenuClick} emojiIndexOffset={emojiIndexOffset}/>
                 </div>
             </div>
         </header>
@@ -133,7 +136,7 @@ const Header = () => {
             transitionDelay: `${delayDurations[1]}ms`
             }}>
 
-                <BurgerButton isOpen={isMenuOpen} onClick={handleMenuClick} theme='dark' />
+                <BurgerButton isOpen={isMenuOpen} onClick={handleMenuClick} theme='dark' emojiIndexOffset={emojiIndexOffset}/>
             </div>
 
         </header>
