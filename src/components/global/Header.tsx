@@ -147,7 +147,7 @@ const Header = () => {
                 opacity: `${isMenuOpen ? '1' : '0'}`,
                 transitionDelay: `${delayDurations[2]}ms`
                 }}>
-            <h2 className={`body-3xl `}>Product</h2>
+            <h2 className={`body-3xl `}>Product Design</h2>
             </div>
                     
 
@@ -157,7 +157,7 @@ const Header = () => {
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[3]}ms`
             }}>
-                <h2 className={`body-3xl `}>Experimental</h2>
+                <h2 className={`body-3xl `}>Motion & 3D</h2>
             </div>
 
             {/* TILE */}
@@ -166,7 +166,7 @@ const Header = () => {
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[4]}ms`
             }}>
-                <h2 className={`body-3xl `}>Motion & 3D</h2>
+                <h2 className={`body-3xl `}>Dev</h2>
             </div>
 
             {/* TILE */}

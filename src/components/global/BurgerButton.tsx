@@ -53,10 +53,11 @@ interface BurgerButtonProps {
 
 
     useEffect(() => {
-        const incrementEmojiIndex = () => {
-            
+        const offset = fit01(Math.random(), 999, 1999)
+
+        const incrementEmojiIndex = () => {    
             // + 999 to prevent negative numbers from mobile elastic pulling down
-            const offset = fit01(Math.random(), 999, 1999)
+            
             
             const newIndex = Math.floor((window.scrollY + offset) / 100)
             setCurrentIndex((prevIndex) => (newIndex) % numEmojis)
