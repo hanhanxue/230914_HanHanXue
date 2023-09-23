@@ -136,6 +136,16 @@
     }
   },
   {
+    "imgName": "191130_007_cam.gif",
+    "imgPathAbs": "D:\\hanhanxue\\public\\images\\191130_007_cam.gif",
+    "imgPathRel": "images\\191130_007_cam.gif",
+    "imgSize": {
+      "height": 519,
+      "width": 960,
+      "type": "gif"
+    }
+  },
+  {
     "imgName": "191122.jpg",
     "imgPathAbs": "D:\\hanhanxue\\public\\images\\191122.jpg",
     "imgPathRel": "images\\191122.jpg",
@@ -537,6 +547,17 @@
     "imgPathRel": "images\\1601.jpg",
     "imgSize": {
       "height": 540,
+      "orientation": 1,
+      "width": 960,
+      "type": "jpg"
+    }
+  },
+  {
+    "imgName": "1508_007_bombardier_hanhanxue.jpg",
+    "imgPathAbs": "D:\\hanhanxue\\public\\images\\1508_007_bombardier_hanhanxue.jpg",
+    "imgPathRel": "images\\1508_007_bombardier_hanhanxue.jpg",
+    "imgSize": {
+      "height": 401,
       "orientation": 1,
       "width": 960,
       "type": "jpg"
