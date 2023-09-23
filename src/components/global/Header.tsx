@@ -147,7 +147,7 @@ const Header = () => {
                 opacity: `${isMenuOpen ? '1' : '0'}`,
                 transitionDelay: `${delayDurations[2]}ms`
                 }}>
-            <h2 className={`body-3xl `}>Product Design</h2>
+            <h2 className={`body-3xl `}>Product</h2>
             </div>
                     
 
