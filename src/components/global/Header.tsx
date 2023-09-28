@@ -145,14 +145,18 @@ const Header = () => {
 
         <nav className={`${styles.nav}`}>
             {/* TILE */}
+
             <div className={`body-2xl ${styles.tile} ${styles.work} ${styles.tileHover}`}
             style={{
                 opacity: `${isMenuOpen ? '1' : '0'}`,
                 transitionDelay: `${delayDurations[2]}ms`
-                }}>
-            <h2 className={`body-3xl `}>Product</h2>
+                }}>            
+                <Link className={`${styles.linkTile}`} href="https://www.figma.com/proto/omXrLnbApOvYELYf0a2210/Han-Han-Xue-%E2%80%94-Portfolio-2023?type=design&node-id=2-3&t=mv09shL2HRveeCZx-1&scaling=contain&page-id=0%3A1&starting-point-node-id=2%3A3&mode=design"
+                rel="noopener noreferrer" target="_blank">   
+            <h2 className={`body-3xl `}>Product</h2>         
+            </Link> 
             </div>
-                    
+
 
             {/* TILE */}
             <div className={`${styles.tile} ${styles.experimental} ${styles.tileHover}`}
@@ -160,7 +164,9 @@ const Header = () => {
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[3]}ms`
             }}>
+                <Link className={`${styles.linkTile}`} href="/">
                 <h2 className={`body-3xl `}>Motion & 3D</h2>
+                </Link>
             </div>
 
             {/* TILE */}
@@ -169,7 +175,9 @@ const Header = () => {
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[4]}ms`
             }}>
+                <Link className={`${styles.linkTile}`} href="/">
                 <h2 className={`body-3xl `}>Dev</h2>
+                </Link>
             </div>
 
             {/* TILE */}
@@ -178,17 +186,23 @@ const Header = () => {
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[5]}ms`
             }}>
+                <Link className={`${styles.linkTile}`} href="/">
                 <h2 className={`body-3xl `}>Info</h2>
+                </Link>
             </div>
 
             {/* TILE */}
+  
             <div className={`${styles.tile} ${styles.contact} ${styles.tileHover}`}
             style={{
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[6]}ms`
             }}>
+               <Link className={`${styles.linkTile}`} href="mailto:hello@hanhanxue.com">
                 <h2 className={`body-3xl `}>Contact</h2>
+                </Link>
             </div>
+    
 
         </nav>
 

@@ -94,13 +94,23 @@
         display: flex;
         flex-direction: column;
 
+        .linkTile {
+            height: 100%;
+            width: 100%;
+            display: block;
+
+            padding: rem(32) rem(40);
+            @media (max-width: $screen-sm) {
+                padding: rem(16) rem(16);
+        }
+        }
+
         .tile {
             background-color: #252525;
     
             transition-property: background-color, opacity;
             transition-duration: .3s;
     
-            padding: rem(32) rem(40);
             grid-row: 1;
     
             // border-width: 0px 1px 1px 0px;
@@ -109,9 +119,9 @@
     
             box-shadow: inset -1px -1px 0px 0px rgb(52, 52, 52);
     
-            @media (max-width: $screen-sm) {
-                padding: rem(16) rem(16);
-        }
+
+
+
     
         }
 

@@ -94,17 +94,6 @@
     }
   },
   {
-    "imgName": "210101.jpg",
-    "imgPathAbs": "D:\\hanhanxue\\public\\images\\210101.jpg",
-    "imgPathRel": "images\\210101.jpg",
-    "imgSize": {
-      "height": 540,
-      "orientation": 1,
-      "width": 960,
-      "type": "jpg"
-    }
-  },
-  {
     "imgName": "201018_ballFix.gif",
     "imgPathAbs": "D:\\hanhanxue\\public\\images\\201018_ballFix.gif",
     "imgPathRel": "images\\201018_ballFix.gif",
