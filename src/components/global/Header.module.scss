@@ -102,6 +102,10 @@
             padding: rem(32) rem(40);
             @media (max-width: $screen-sm) {
                 padding: rem(16) rem(16);
+                // background-color: red;
+                display: flex;
+                align-items: center;
+
         }
         }
 
@@ -118,10 +122,6 @@
             // border-color: rgb(51, 51, 51);
     
             box-shadow: inset -1px -1px 0px 0px rgb(52, 52, 52);
-    
-
-
-
     
         }
 

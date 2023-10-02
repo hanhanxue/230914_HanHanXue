@@ -41,10 +41,10 @@ const ContactButton = () => {
 
                 <span className={`  ${styles.buttonFrame}   `}>
 
-                <div className={`  ${styles.buttonPingIcon}   `}>
+                {/* <div className={`  ${styles.buttonPingIcon}   `}>
                      <span  className={`  ${styles.buttonPingDot}   `}></span>
                     <span  className={`  ${styles.buttonPingRing}   `}></span>
-                </div>
+                </div> */}
 
 
            <div className={`  ${styles.buttonLabelIcon}   `}>

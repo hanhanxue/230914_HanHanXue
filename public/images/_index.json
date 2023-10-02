@@ -1,5 +1,16 @@
 [
   {
+    "imgName": "231002Bs_F_lightSwitch.jpg",
+    "imgPathAbs": "D:\\hanhanxue\\public\\images\\231002Bs_F_lightSwitch.jpg",
+    "imgPathRel": "images\\231002Bs_F_lightSwitch.jpg",
+    "imgSize": {
+      "height": 540,
+      "orientation": 1,
+      "width": 960,
+      "type": "jpg"
+    }
+  },
+  {
     "imgName": "230921_raisingGrainsFlip2.gif",
     "imgPathAbs": "D:\\hanhanxue\\public\\images\\230921_raisingGrainsFlip2.gif",
     "imgPathRel": "images\\230921_raisingGrainsFlip2.gif",
@@ -20,9 +31,9 @@
     }
   },
   {
-    "imgName": "230612_4SuperManifoldNoiseMidSmall.jpg",
-    "imgPathAbs": "D:\\hanhanxue\\public\\images\\230612_4SuperManifoldNoiseMidSmall.jpg",
-    "imgPathRel": "images\\230612_4SuperManifoldNoiseMidSmall.jpg",
+    "imgName": "230612_F_breadboard.jpg",
+    "imgPathAbs": "D:\\hanhanxue\\public\\images\\230612_F_breadboard.jpg",
+    "imgPathRel": "images\\230612_F_breadboard.jpg",
     "imgSize": {
       "height": 540,
       "orientation": 1,
