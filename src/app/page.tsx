@@ -9,9 +9,7 @@ import Image from 'next/image'
 import {parseImagesIndex} from '@/lib/serverUtils'
 
 
-
 import ContactButton from '@/components/home/ContactButton'
-import DownloadButton from '@/components/home/DownloadButton'
 
 
 import styles from './Home.module.scss'
@@ -41,7 +39,6 @@ const Home = ({  }) => {
 
             <div  className={`${styles.thirds}`}>
                 <div className={`${styles.buttonFrame}`}>
-        
                     <ContactButton></ContactButton>
                 </div>
 

@@ -25,7 +25,7 @@ const ContactButton = () => {
     }
 
     const handleOnClick = () => {
-        router.push(`mailto:hello@hanhanxue.com`)
+        // router.push(`mailto:hello@hanhanxue.com`)
     }
 
     

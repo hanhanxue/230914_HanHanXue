@@ -1,0 +1,14 @@
+@use './functions' as *;
+@use './variables' as *;
+
+@mixin XFrame {
+
+    padding-left: rem(32);
+    padding-right: rem(32);
+
+    @media (max-width: $screen-sm) {
+        padding-left: rem(16);
+        padding-right: rem(16);
+    }
+
+}

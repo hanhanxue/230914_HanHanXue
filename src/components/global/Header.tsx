@@ -198,8 +198,7 @@ const Header = () => {
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[6]}ms`
             }}>
-               <Link className={`${styles.linkTile}`} href="mailto:hello@hanhanxue.com"
-               rel="noopener noreferrer" target="_blank">
+               <Link className={`${styles.linkTile}`} href="/">
                 <h2 className={`body-3xl `}>Contact</h2>
                 </Link>
             </div>
