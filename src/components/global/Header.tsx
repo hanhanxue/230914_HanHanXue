@@ -176,7 +176,7 @@ const Header = () => {
             transitionDelay: `${delayDurations[4]}ms`
             }}>
                 <Link className={`${styles.linkTile}`} href="/">
-                <h2 className={`body-3xl `}>Studio</h2>
+                <h2 className={`body-3xl `}>Archive</h2>
                 </Link>
             </div>
 
