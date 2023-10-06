@@ -1,0 +1,28 @@
+[
+  {
+    "filename": "231002Bs_X_lightSwitch.jpg",
+    "imgTitle": "lightSwitch.jpg",
+    "imgPathAbs": "D:\\hanhanxue\\public\\images\\home\\231002Bs_X_lightSwitch.jpg",
+    "imgPathRel": "images\\home\\231002Bs_X_lightSwitch.jpg",
+    "imgSize": {
+      "height": 540,
+      "orientation": 1,
+      "width": 960,
+      "type": "jpg"
+    },
+    "aspectRatio": 1.7777777777777777
+  },
+  {
+    "filename": "230612_X_breadboard.jpg",
+    "imgTitle": "breadboard.jpg",
+    "imgPathAbs": "D:\\hanhanxue\\public\\images\\home\\230612_X_breadboard.jpg",
+    "imgPathRel": "images\\home\\230612_X_breadboard.jpg",
+    "imgSize": {
+      "height": 540,
+      "orientation": 1,
+      "width": 960,
+      "type": "jpg"
+    },
+    "aspectRatio": 1.7777777777777777
+  }
+]

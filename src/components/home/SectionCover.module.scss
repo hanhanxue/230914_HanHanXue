@@ -75,35 +75,3 @@
 }
 
 
-
-
-.sectionWorks {
-    .container {
-        // padding: rem(48)  rem(32);
-        padding-top: rem(48);
-        padding-bottom: rem(48);
-
-
-        display: flex;
-        gap: rem(16);
-        flex-wrap: wrap;
-        justify-content: center;
-
-        @include XFrame;
-
-
-
-        .imageFrame {
-            position: relative;
-            height: 100%;
-        }
-        .nextImage {
-            border-radius: rem(28);
-            height: auto;
-        }
-    }
-
-   
-
-    
-}

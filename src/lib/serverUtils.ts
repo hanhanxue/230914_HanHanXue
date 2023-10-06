@@ -6,8 +6,10 @@ import path from 'path'
 import {cache} from 'react'
 
 
-const parseImagesIndex = () => {
-  const indexPath = path.join(process.cwd(), 'public', 'images', '_index.json');
+
+
+const parseImagesIndex = (intermediatePath: string) => {
+  const indexPath = path.join(process.cwd(), intermediatePath, '_index.json');
   try {
     const jsonContent = fs.readFileSync(indexPath, 'utf-8');
     

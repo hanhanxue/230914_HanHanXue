@@ -5,14 +5,12 @@ import path from 'path'
 
 
 
-const getImages = () => {
-  
-
+const getImageData = (intermediatePath: string) => {
 
     const root = process.cwd()
     
-    const dirPath = path.join(root, 'public', 'images')
-    const fullFilePath = path.join(root, 'public', 'images', '_index.json')
+    const dirPath = path.join(root, 'public', intermediatePath)
+    const fullFilePath = path.join(root, 'public', intermediatePath, '_index.json')
 
     // console.log(dirPath)
     const dirFileObjs = fs.readdirSync(dirPath, {withFileTypes: true})
@@ -28,10 +26,14 @@ const getImages = () => {
    
       // console.log(fileObj)
 
+      const filename = fileObj.name
+      const filenameSplit = fileObj.name.split('_')
 
-      const imgName = fileObj.name
-      const imgPathAbs = path.join(fileObj.path, imgName)
-      const imgPathRel = path.join('images', imgName)
+      const imgTitle = filenameSplit[2]
+
+      const imgPathAbs = path.join(fileObj.path, filename)
+      const imgPathRel = path.join(intermediatePath, filename)
+
       const imgSize = sizeOf(imgPathAbs)
 
       const MAX_WIDTH = 960
@@ -52,21 +54,11 @@ const getImages = () => {
     imgSize.width = Math.round(imgSize.width)
     imgSize.height = Math.round(imgSize.height)
 
-      return {imgName, imgPathAbs, imgPathRel, imgSize}
+      return {filename, imgTitle, imgPathAbs, imgPathRel, imgSize, aspectRatio}
 
     })
-  
-         
-    // console.log(images)
-    // fs.writeFileSync(fullFilePath, JSON.stringify(images.reverse()))
+
     fs.writeFileSync(fullFilePath, JSON.stringify(images.reverse(), null, 2))
-
-
-    
-    // console.log('fullFilePath:', fullFilePath);
-    // console.log('images:', images);
-
-
 
     return images.reverse()
 
@@ -74,4 +66,6 @@ const getImages = () => {
 
 
 
-getImages()
+getImageData('images/archive')
+getImageData('images/home')
+getImageData('assets/emojis')

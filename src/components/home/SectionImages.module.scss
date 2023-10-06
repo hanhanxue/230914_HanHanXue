@@ -1,0 +1,37 @@
+@use '@/styles/abstracts/' as *;
+@use '@/styles/base/' as *;  // for animation
+
+
+
+// .sectionWorks {}
+
+
+.container {
+
+    @include XFrame;
+    @include YFrame_L;
+
+
+    display: flex;
+    gap: rem(128);
+
+    // flex-wrap: wrap;
+    flex-direction: column;
+    // justify-content: center;
+
+
+
+    .imageFrame {
+        position: relative;
+        width: 100%;
+
+
+        // background-color: blue;
+    }
+
+
+    .nextImage {
+        border-radius: rem(28);
+        object-fit: 'cover';
+    }
+}

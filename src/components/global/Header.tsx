@@ -44,7 +44,7 @@ const Header = () => {
         return newDelayDurations
     }
 
-    const handleMenuClick = () => {
+    const handleMenuClose = () => {
         setIsMenuOpen((current) => !current)
         setDelayDurations(generateDelayDurations(10))
     }
@@ -95,7 +95,7 @@ const Header = () => {
             <div className={`${styles.tile} ${styles.tileBurger}`}  >
                 <div style={{pointerEvents: `${isScrollInit ? 'all' : 'none'}`}}>
 
-                <BurgerButton isOpen={isMenuOpen} onClick={handleMenuClick} emojiIndexOffset={emojiIndexOffset}/>
+                <BurgerButton isOpen={isMenuOpen} onClick={handleMenuClose} emojiIndexOffset={emojiIndexOffset}/>
                 </div>
             </div>
         </header>
@@ -136,7 +136,7 @@ const Header = () => {
             transitionDelay: `${delayDurations[1]}ms`
             }}>
 
-                <BurgerButton isOpen={isMenuOpen} onClick={handleMenuClick} theme='dark' emojiIndexOffset={emojiIndexOffset}/>
+                <BurgerButton isOpen={isMenuOpen} onClick={handleMenuClose} theme='dark' emojiIndexOffset={emojiIndexOffset}/>
             </div>
 
         </header>
@@ -164,7 +164,7 @@ const Header = () => {
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[3]}ms`
             }}>
-                <Link className={`${styles.linkTile}`} href="/">
+                <Link className={`${styles.linkTile}`} href="/"  onClick={handleMenuClose}>
                 <h2 className={`body-3xl `}>Dev</h2>
                 </Link>
             </div>
@@ -175,7 +175,7 @@ const Header = () => {
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[4]}ms`
             }}>
-                <Link className={`${styles.linkTile}`} href="/">
+                <Link className={`${styles.linkTile}`} href="/archive" onClick={handleMenuClose}>
                 <h2 className={`body-3xl `}>Archive</h2>
                 </Link>
             </div>
@@ -186,7 +186,7 @@ const Header = () => {
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[5]}ms`
             }}>
-                <Link className={`${styles.linkTile}`} href="/">
+                <Link className={`${styles.linkTile}`} href="/"  onClick={handleMenuClose}>
                 <h2 className={`body-3xl `}>Info</h2>
                 </Link>
             </div>
@@ -198,7 +198,7 @@ const Header = () => {
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[6]}ms`
             }}>
-               <Link className={`${styles.linkTile}`} href="/">
+               <Link className={`${styles.linkTile}`} href="/"  onClick={handleMenuClose}>
                 <h2 className={`body-3xl `}>Contact</h2>
                 </Link>
             </div>

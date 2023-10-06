@@ -1,0 +1,90 @@
+[
+  {
+    "filename": "009.png",
+    "imgPathAbs": "D:\\hanhanxue\\public\\assets\\emojis\\009.png",
+    "imgPathRel": "assets\\emojis\\009.png",
+    "imgSize": {
+      "height": 160,
+      "width": 160,
+      "type": "png"
+    },
+    "aspectRatio": 1
+  },
+  {
+    "filename": "008.png",
+    "imgPathAbs": "D:\\hanhanxue\\public\\assets\\emojis\\008.png",
+    "imgPathRel": "assets\\emojis\\008.png",
+    "imgSize": {
+      "height": 160,
+      "width": 160,
+      "type": "png"
+    },
+    "aspectRatio": 1
+  },
+  {
+    "filename": "007.png",
+    "imgPathAbs": "D:\\hanhanxue\\public\\assets\\emojis\\007.png",
+    "imgPathRel": "assets\\emojis\\007.png",
+    "imgSize": {
+      "height": 160,
+      "width": 160,
+      "type": "png"
+    },
+    "aspectRatio": 1
+  },
+  {
+    "filename": "006.png",
+    "imgPathAbs": "D:\\hanhanxue\\public\\assets\\emojis\\006.png",
+    "imgPathRel": "assets\\emojis\\006.png",
+    "imgSize": {
+      "height": 160,
+      "width": 160,
+      "type": "png"
+    },
+    "aspectRatio": 1
+  },
+  {
+    "filename": "005.png",
+    "imgPathAbs": "D:\\hanhanxue\\public\\assets\\emojis\\005.png",
+    "imgPathRel": "assets\\emojis\\005.png",
+    "imgSize": {
+      "height": 160,
+      "width": 160,
+      "type": "png"
+    },
+    "aspectRatio": 1
+  },
+  {
+    "filename": "004.png",
+    "imgPathAbs": "D:\\hanhanxue\\public\\assets\\emojis\\004.png",
+    "imgPathRel": "assets\\emojis\\004.png",
+    "imgSize": {
+      "height": 160,
+      "width": 160,
+      "type": "png"
+    },
+    "aspectRatio": 1
+  },
+  {
+    "filename": "002.png",
+    "imgPathAbs": "D:\\hanhanxue\\public\\assets\\emojis\\002.png",
+    "imgPathRel": "assets\\emojis\\002.png",
+    "imgSize": {
+      "height": 160,
+      "width": 160,
+      "type": "png"
+    },
+    "aspectRatio": 1
+  },
+  {
+    "filename": "001.png",
+    "imgPathAbs": "D:\\hanhanxue\\public\\assets\\emojis\\001.png",
+    "imgPathRel": "assets\\emojis\\001.png",
+    "imgSize": {
+      "height": 160,
+      "width": 160,
+      "type": "png"
+    },
+    "aspectRatio": 1
+  }
+]

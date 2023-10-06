@@ -1,0 +1,38 @@
+
+
+
+@use '@/styles/abstracts/' as *;
+@use '@/styles/base/' as *;  // for animation
+
+
+.sectionWorks {
+    .container {
+        @include YFrame_L;
+        @include XFrame;
+
+
+        display: flex;
+        gap: rem(16);
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+
+
+        .imageFrame {
+            position: relative;
+            // width: 100%;
+            height: 100%;
+        }
+
+
+        .nextImage {
+            border-radius: rem(28);
+            height: auto;
+        }
+    }
+
+   
+
+    
+}
