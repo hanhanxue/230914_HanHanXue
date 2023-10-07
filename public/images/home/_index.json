@@ -1,10 +1,10 @@
 [
   {
     "filename": "231002Bs_X_lightSwitch.jpg",
-    "imgTitle": "lightSwitch.jpg",
-    "imgPathAbs": "D:\\hanhanxue\\public\\images\\home\\231002Bs_X_lightSwitch.jpg",
-    "imgPathRel": "images\\home\\231002Bs_X_lightSwitch.jpg",
-    "imgSize": {
+    "title": "lightSwitch.jpg",
+    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\231002Bs_X_lightSwitch.jpg",
+    "pathRel": "images\\home\\231002Bs_X_lightSwitch.jpg",
+    "dimensions": {
       "height": 540,
       "orientation": 1,
       "width": 960,
@@ -14,10 +14,10 @@
   },
   {
     "filename": "230612_X_breadboard.jpg",
-    "imgTitle": "breadboard.jpg",
-    "imgPathAbs": "D:\\hanhanxue\\public\\images\\home\\230612_X_breadboard.jpg",
-    "imgPathRel": "images\\home\\230612_X_breadboard.jpg",
-    "imgSize": {
+    "title": "breadboard.jpg",
+    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\230612_X_breadboard.jpg",
+    "pathRel": "images\\home\\230612_X_breadboard.jpg",
+    "dimensions": {
       "height": 540,
       "orientation": 1,
       "width": 960,

@@ -16,9 +16,6 @@
         flex-wrap: wrap;
         justify-content: center;
 
-
-
-
         .imageFrame {
             position: relative;
             // width: 100%;
@@ -27,7 +24,7 @@
 
 
         .nextImage {
-            border-radius: rem(28);
+            border-radius: $radius-xl;
             height: auto;
         }
     }

@@ -37,8 +37,8 @@ return                     (
 
     <Image
         className={`${styles.nextImage}`}
-        alt={img.imgTitle}
-            src={`/${img.imgPathRel}`} 
+        alt={img.title}
+            src={`/${img.pathRel}`} 
 
             // width={img.imgSize.width}
             // height={img.imgSize.height}

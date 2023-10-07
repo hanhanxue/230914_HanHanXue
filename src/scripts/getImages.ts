@@ -29,32 +29,32 @@ const getImageData = (intermediatePath: string) => {
       const filename = fileObj.name
       const filenameSplit = fileObj.name.split('_')
 
-      const imgTitle = filenameSplit[2]
+      const title = filenameSplit[2]
 
-      const imgPathAbs = path.join(fileObj.path, filename)
-      const imgPathRel = path.join(intermediatePath, filename)
+      const pathAbs = path.join(fileObj.path, filename)
+      const pathRel = path.join(intermediatePath, filename)
 
-      const imgSize = sizeOf(imgPathAbs)
+      const dimensions = sizeOf(pathAbs)
 
       const MAX_WIDTH = 960
       const MAX_HEIGHT = 720
 
-      const aspectRatio = imgSize.width / imgSize.height
+      const aspectRatio = dimensions.width / dimensions.height
 
-      if(imgSize.width > MAX_WIDTH) {
-        imgSize.width = MAX_WIDTH
-        imgSize.height = imgSize.width / aspectRatio
+      if(dimensions.width > MAX_WIDTH) {
+        dimensions.width = MAX_WIDTH
+        dimensions.height = dimensions.width / aspectRatio
       }
 
-      if(imgSize.height > MAX_HEIGHT) {
-          imgSize.height = MAX_HEIGHT
-          imgSize.width = imgSize.height * aspectRatio
+      if(dimensions.height > MAX_HEIGHT) {
+          dimensions.height = MAX_HEIGHT
+          dimensions.width = dimensions.height * aspectRatio
       }
 
-    imgSize.width = Math.round(imgSize.width)
-    imgSize.height = Math.round(imgSize.height)
+    dimensions.width = Math.round(dimensions.width)
+    dimensions.height = Math.round(dimensions.height)
 
-      return {filename, imgTitle, imgPathAbs, imgPathRel, imgSize, aspectRatio}
+      return {filename, title, pathAbs, pathRel, dimensions, aspectRatio}
 
     })
 

@@ -11,13 +11,13 @@
     @include XFrame;
     @include YFrame_L;
 
-
     display: flex;
-    gap: rem(128);
+    // gap: 20%;
 
-    // flex-wrap: wrap;
     flex-direction: column;
-    // justify-content: center;
+
+
+    // background-color: blue;
 
 
 
@@ -25,13 +25,14 @@
         position: relative;
         width: 100%;
 
-
-        // background-color: blue;
+        &:not(:first-child) {
+            margin-top: 16%;            
+        }
     }
 
 
     .nextImage {
-        border-radius: rem(28);
+        // border-radius: rem(28);
         object-fit: 'cover';
     }
 }

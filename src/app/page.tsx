@@ -1,12 +1,5 @@
 
 
-
-
-
-
-
-
-
 import SectionCover from '@/components/home/SectionCover'
 import SectionImages from '@/components/home/SectionImages'
 
@@ -24,9 +17,6 @@ const Home = ({  }) => {
 
         <SectionCover />
         <SectionImages />
-
-
-
 
         </main>
 

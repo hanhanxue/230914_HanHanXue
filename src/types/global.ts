@@ -2,11 +2,11 @@
 
 interface image {
     filename: string
-    imgTitle: string
-    imgPathAbs: string
-    imgPathRel: string
+    title: string
+    pathAbs: string
+    pathRel: string
     aspectRatio: number
-    imgSize: {
+    dimensions: {
       width: number
       height: number
     }
