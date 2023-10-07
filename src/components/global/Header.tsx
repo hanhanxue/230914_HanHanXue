@@ -104,15 +104,6 @@ const Header = () => {
 
 
 
-
-
-
-
-
-
-
-
-
             {/* OVERLAY */}
             <div className={`${styles.overlay}`}
             style={{pointerEvents: `${isMenuOpen ? 'all': 'none'}`}}

@@ -9,7 +9,6 @@ const archive = () => {
              <SectionImage />
             
     )
-
-                        }
+}
 
 export default archive

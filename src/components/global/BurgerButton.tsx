@@ -1,11 +1,10 @@
 
-'use client'
 
 // 02 EXTERNAL
 
 // 03 REACT / NODE / NEXTJS
-import Image from 'next/image'
-import React, { useState , useEffect, useRef} from 'react'
+
+
 
 // 05 SUPERMANIFOLD COMPONENTS
 import Button from '@/components/global/Button'
@@ -13,9 +12,12 @@ import Button from '@/components/global/Button'
 // 07 SUPERMANIFOLD FUNCTIONS
 import {fit, fit01} from '@/lib/clientUtils'
 
+import { parseImagesIndex } from '@/lib/serverUtils'
+
 
 // 11 SUPERMANIFOLD STYLES
 import styles from './BurgerButton.module.scss'
+
 
 interface BurgerButtonProps {
     emojiIndexOffset?: number
@@ -23,6 +25,9 @@ interface BurgerButtonProps {
     isOpen?: boolean
     onClick?: React.MouseEventHandler<HTMLButtonElement>
   }
+
+
+
 
   const BurgerButton: React.FC<BurgerButtonProps> = ({ 
     isOpen = false, 
@@ -39,57 +44,12 @@ interface BurgerButtonProps {
         }
     }
 
-    const emojis = [
-            "/assets/emojis/001.png",
-            "/assets/emojis/002.png",
-            "/assets/emojis/004.png",
-            "/assets/emojis/005.png",
-            "/assets/emojis/006.png",
-            "/assets/emojis/007.png",
-            "/assets/emojis/008.png",
-            "/assets/emojis/009.png",
-    ]
-
-
-
-    const [currentIndex, setCurrentIndex] = useState(0)
-
-
-    useEffect(() => {
-        // const offset = fit01(Math.random(), 999, 1999)
-
-        const incrementEmojiIndex = () => {    
-            // + 999 to prevent negative numbers from mobile elastic pulling down
-            
-            
-            const newIndex = Math.floor((window.scrollY + emojiIndexOffset) / 100)
-            setCurrentIndex((prevIndex) => (newIndex) % emojis.length)
-        }
-
-        window.addEventListener('scroll', incrementEmojiIndex)
-        return(() => window.removeEventListener('scroll', incrementEmojiIndex))
-    }, [])
-  
 
     return (
 
         <>
         <Button kind = 'icon'   onClick={onClick}  theme={theme}>
         <span className={`${styles.buttonFrame}`}> 
-
-        <div className={`${styles.emoji}`}
-
-        >
-                <Image className={`${styles.nextImage}`}
-                src={emojis[currentIndex]}
-                width={24}
-                height={24}
-                alt={`han han xue design & product`} />
-
-
-
-        </div>
-    
         <div className={`${styles.iconFrame}
          ${isOpen ? styles.menuOpen : ''}
         `}

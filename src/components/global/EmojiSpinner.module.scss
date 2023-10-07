@@ -1,0 +1,25 @@
+
+
+@use '@/styles/abstracts/' as *;
+@use '@/styles/base/' as *;  // for animation
+
+
+
+.emoji {
+    width: rem(30);
+    height: rem(30);
+
+    position: relative;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // background-color: red;
+
+    .nextImage {
+        position: absolute;
+        height: auto;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+}

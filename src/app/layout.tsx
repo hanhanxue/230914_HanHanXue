@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: 'Han Han Xue',
     images: [
       {
-        url: 'https://www.dropbox.com/scl/fi/meqxhq8hqly4zxx7fm71d/hanhanxue_og.png?rlkey=979v97gzn1jk64xrlpysus6qv&raw=1',
+        url: 'https://www.dropbox.com/scl/fi/nu72y40kxcgpza909k8yw/hanhanxue_og_shadow.png?rlkey=5qd1u1g1ehnf0zii6xzhu03u4&raw=1',
         width: 800,
         height: 600,
       },
