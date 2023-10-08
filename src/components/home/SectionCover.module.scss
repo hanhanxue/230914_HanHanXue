@@ -2,8 +2,19 @@
 @use '@/styles/abstracts/' as *;
 @use '@/styles/base/' as *;  // for animation
 
+
+// --home-hero-height: calc(min(var(--vh, 1vh) * 100, 80vw))
+// height: var(--home-hero-height)
+
+
+
 .sectionCover {
-    height: 100vh;
+    // background-color: red;
+    height: min(100vh, 80vw);
+
+    @media (max-width: $screen-md) {
+        height: 100vh;
+    }
 
     .container {
 
