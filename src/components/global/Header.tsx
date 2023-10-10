@@ -19,12 +19,10 @@ import styles from './Header.module.scss'
 const Header = () => {
 
     const maxDelayDuration = 350
-    const firstRender = useFirstRender()
-
-
+    // const firstRender = useFirstRender()
 
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-    const [emojiIndexOffset, setEmojiIndexOffset] = useState(fit01(Math.random(), 999, 1999))
+    // const [emojiIndexOffset, setEmojiIndexOffset] = useState(fit01(Math.random(), 999, 1999))
 
     const [isScrollInit, setIsScrollInit] = useState(0)
 
@@ -95,7 +93,7 @@ const Header = () => {
             <div className={`${styles.tile} ${styles.tileBurger}`}  >
                 <div style={{pointerEvents: `${isScrollInit ? 'all' : 'none'}`}}>
 
-                <BurgerButton isOpen={isMenuOpen} onClick={handleMenuClose} emojiIndexOffset={emojiIndexOffset}/>
+                <BurgerButton isOpen={isMenuOpen} onClick={handleMenuClose}/>
                 </div>
             </div>
         </header>
@@ -127,7 +125,7 @@ const Header = () => {
             transitionDelay: `${delayDurations[1]}ms`
             }}>
 
-                <BurgerButton isOpen={isMenuOpen} onClick={handleMenuClose} theme='dark' emojiIndexOffset={emojiIndexOffset}/>
+                <BurgerButton isOpen={isMenuOpen} onClick={handleMenuClose} theme='dark'/>
             </div>
 
         </header>
@@ -189,7 +187,7 @@ const Header = () => {
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[6]}ms`
             }}>
-               <Link className={`${styles.linkTile}`} href="/"  onClick={handleMenuClose}>
+               <Link className={`${styles.linkTile}`} href="/contact"  onClick={handleMenuClose}>
                 <h2 className={`body-3xl `}>Contact</h2>
                 </Link>
             </div>
@@ -220,15 +218,7 @@ const Header = () => {
 
         </div>
 
-
-
-
-
-
-                </div>
-
-
-
+        </div>
 
         </div>
 

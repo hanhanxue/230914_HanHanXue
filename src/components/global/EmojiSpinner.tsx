@@ -40,7 +40,7 @@ useEffect(() => {
 
     window.addEventListener('scroll', incrementEmojiIndex)
     return(() => window.removeEventListener('scroll', incrementEmojiIndex))
-}, [])
+}, [emojis.length])
 
 
 

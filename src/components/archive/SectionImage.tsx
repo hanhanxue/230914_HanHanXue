@@ -30,7 +30,7 @@ const SectionImage = () => {
 
                     <Image
                     className={`${styles.nextImage}`}
-                    alt={img.title}
+                    alt={img.title? img.title : 'hanhanxue'}
                         src={`/${img.pathRel}`} 
 
                         width={img.dimensions.width}

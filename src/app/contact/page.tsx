@@ -1,10 +1,14 @@
-
+import SectionBouncyText from "@/components/contact/SectionBouncyText"
 
 
 const Contact = () => {
-
-    return (<div>Hi</div>)
+   
+    return (
+        <SectionBouncyText/>
+    )
 }
 
 
 export default Contact
+
+
