@@ -24,7 +24,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     // const [emojiIndexOffset, setEmojiIndexOffset] = useState(fit01(Math.random(), 999, 1999))
 
-    const [isScrollInit, setIsScrollInit] = useState(0)
+    const [isScrollInit, setIsScrollInit] = useState(1)  // Always on
 
     const [delayDurations, setDelayDurations] = useState(new Array(10).fill(0))
 
@@ -49,21 +49,22 @@ const Header = () => {
     
 
 
-    useEffect(() => {
+    // useEffect(() => {
+    //     const handleScroll = () => {
 
-        const handleScroll = () => {
-
-            if(isScrollInit) return;
-            if(window.scrollY > 1) setIsScrollInit(1)
-        }
+    //         if(isScrollInit) return;
+    //         if(window.scrollY > 1) setIsScrollInit(1)
+    //     }
     
-        handleScroll()
+    //     handleScroll()
 
-        window.addEventListener('scroll', handleScroll)
-        return () => {
-            window.removeEventListener('scroll', handleScroll)
-        }
-    }, [])
+    //     window.addEventListener('scroll', handleScroll)
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll)
+    //     }
+    // }, [])
+
+
 
 
     useEffect(() => {

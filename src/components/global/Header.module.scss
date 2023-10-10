@@ -110,7 +110,7 @@
         }
 
         .tile {
-            background-color: #252525;
+            background-color: $color-gray-900;
     
             transition-property: background-color, opacity;
             transition-duration: .3s;
@@ -127,8 +127,8 @@
 
         .tileHover {
             &:hover {
-                color:#000000;
-                background-color: #fdd02f;
+                color:white;
+                background-color: $color-primary;
             }
         }
 
