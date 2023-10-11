@@ -1,10 +1,16 @@
 
-
+'use client'
 
 const Drawing = () => {
 
         return (
-            'sdofij'
+            <canvas 
+            id="canvas" 
+            style={{backgroundColor: 'blue'}} 
+            width={window.innerWidth} 
+            height={window.innerHeight}>
+                Canvas
+                </canvas>
         )
 
 
