@@ -24,13 +24,24 @@ const Drawing = () => {
         ];
 
         // Function to draw shapes
-        const drawShape = (shape) => {
+        const drawShape = (shape:
+                {
+                        type: string;
+                        x?: number;
+                        y?: number;
+                        width?: number;
+                        height?: number;
+                        x1?: number;
+                        y1?: number;
+                        x2?: number;
+                        y2?: number;
+                      }) => {
           if (shape.type === 'rectangle') {
-            ctx.fillRect(shape.x, shape.y, shape.width, shape.height);
+            ctx.fillRect(shape.x!, shape.y!, shape.width!, shape.height!);
           } else if (shape.type === 'line') {
             ctx.beginPath();
-            ctx.moveTo(shape.x1, shape.y1);
-            ctx.lineTo(shape.x2, shape.y2);
+            ctx.moveTo(shape.x1!, shape.y1!);
+            ctx.lineTo(shape.x2!, shape.y2!);
             ctx.stroke();
           }
         }
