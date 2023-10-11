@@ -53,14 +53,10 @@ const SectionBouncyText = () => {
 
     useLayoutEffect(() => {
 
-        // requestAnimationFrame(updatePosition)
-
-
         const timer = setTimeout(updatePosition, 10)
         return () => {
             clearInterval(timer)
         }
-
 
     }, [position])
 

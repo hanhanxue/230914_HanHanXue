@@ -24,7 +24,7 @@ const Drawing = () => {
         ];
 
         // Function to draw shapes
-        function drawShape(shape) {
+        const drawShape = (shape) => {
           if (shape.type === 'rectangle') {
             ctx.fillRect(shape.x, shape.y, shape.width, shape.height);
           } else if (shape.type === 'line') {
