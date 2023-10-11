@@ -1,3 +1,5 @@
+@use '@/styles/abstracts/' as *;
+
 *,
 *::before,
 *::after {
@@ -12,7 +14,7 @@ a {
 }
 
 body {
-    background-color: #f6f6f6;
+    background-color: $color-gray-100;
     // background-color: red;
 
     // cursor:
