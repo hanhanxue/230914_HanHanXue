@@ -155,7 +155,7 @@ const Header = () => {
             transitionDelay: `${delayDurations[3]}ms`
             }}>
                 <Link className={`${styles.linkTile}`} href="/"  onClick={handleMenuClose}>
-                <h2 className={`body-3xl `}>Code</h2>
+                <h2 className={`body-3xl `}>Dev</h2>
                 </Link>
             </div>
 
