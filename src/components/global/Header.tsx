@@ -141,9 +141,9 @@ const Header = () => {
                 opacity: `${isMenuOpen ? '1' : '0'}`,
                 transitionDelay: `${delayDurations[2]}ms`
                 }}>            
-                <Link className={`${styles.linkTile}`} href="https://www.figma.com/proto/omXrLnbApOvYELYf0a2210/Han-Han-Xue-%E2%80%94-Portfolio-2023?type=design&node-id=2-3&t=mv09shL2HRveeCZx-1&scaling=contain&page-id=0%3A1&starting-point-node-id=2%3A3&mode=design"
-                rel="noopener noreferrer" target="_blank">   
-            <h2 className={`body-3xl `}>Product</h2>         
+                <Link className={`${styles.linkTile}`} href="/"  onClick={handleMenuClose}>
+                {/* rel="noopener noreferrer" target="_blank">    */}
+            <h2 className={`body-3xl `}>Home</h2>         
             </Link> 
             </div>
 
@@ -155,7 +155,7 @@ const Header = () => {
             transitionDelay: `${delayDurations[3]}ms`
             }}>
                 <Link className={`${styles.linkTile}`} href="/"  onClick={handleMenuClose}>
-                <h2 className={`body-3xl `}>Dev</h2>
+                <h2 className={`body-3xl `}>Code</h2>
                 </Link>
             </div>
 
@@ -166,7 +166,7 @@ const Header = () => {
             transitionDelay: `${delayDurations[4]}ms`
             }}>
                 <Link className={`${styles.linkTile}`} href="/archive" onClick={handleMenuClose}>
-                <h2 className={`body-3xl `}>Archive</h2>
+                <h2 className={`body-3xl `}>Study</h2>
                 </Link>
             </div>
 

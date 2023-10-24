@@ -1,9 +1,9 @@
 [
   {
-    "filename": "231002Bs_X_lightSwitch.jpg",
-    "title": "lightSwitch.jpg",
-    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\231002Bs_X_lightSwitch.jpg",
-    "pathRel": "images\\home\\231002Bs_X_lightSwitch.jpg",
+    "filename": "231024_X_FireAlarm.jpg",
+    "title": "FireAlarm.jpg",
+    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\231024_X_FireAlarm.jpg",
+    "pathRel": "images\\home\\231024_X_FireAlarm.jpg",
     "dimensions": {
       "height": 540,
       "orientation": 1,
@@ -13,10 +13,23 @@
     "aspectRatio": 1.7777777777777777
   },
   {
-    "filename": "230612_X_breadboard.jpg",
-    "title": "breadboard.jpg",
-    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\230612_X_breadboard.jpg",
-    "pathRel": "images\\home\\230612_X_breadboard.jpg",
+    "filename": "231002Bs_X_LightSwitch.jpg",
+    "title": "LightSwitch.jpg",
+    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\231002Bs_X_LightSwitch.jpg",
+    "pathRel": "images\\home\\231002Bs_X_LightSwitch.jpg",
+    "dimensions": {
+      "height": 540,
+      "orientation": 1,
+      "width": 960,
+      "type": "jpg"
+    },
+    "aspectRatio": 1.7777777777777777
+  },
+  {
+    "filename": "230612_X_Breadboard.jpg",
+    "title": "Breadboard.jpg",
+    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\230612_X_Breadboard.jpg",
+    "pathRel": "images\\home\\230612_X_Breadboard.jpg",
     "dimensions": {
       "height": 540,
       "orientation": 1,
