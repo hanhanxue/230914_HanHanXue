@@ -1,14 +1,13 @@
 [
   {
-    "filename": "231024_X_FireAlarm.jpg",
-    "title": "FireAlarm.jpg",
-    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\231024_X_FireAlarm.jpg",
-    "pathRel": "images\\home\\231024_X_FireAlarm.jpg",
+    "filename": "231024_X_FireAlarm_v2.png",
+    "title": "FireAlarm",
+    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\231024_X_FireAlarm_v2.png",
+    "pathRel": "images\\home\\231024_X_FireAlarm_v2.png",
     "dimensions": {
       "height": 540,
-      "orientation": 1,
       "width": 960,
-      "type": "jpg"
+      "type": "png"
     },
     "aspectRatio": 1.7777777777777777
   },

@@ -143,7 +143,7 @@ const Header = () => {
                 }}>            
                 <Link className={`${styles.linkTile}`} href="/"  onClick={handleMenuClose}>
                 {/* rel="noopener noreferrer" target="_blank">    */}
-            <h2 className={`body-3xl `}>Home</h2>         
+            <h2 className={`body-3xl `}>Objects</h2>         
             </Link> 
             </div>
 
@@ -154,8 +154,8 @@ const Header = () => {
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[3]}ms`
             }}>
-                <Link className={`${styles.linkTile}`} href="/"  onClick={handleMenuClose}>
-                <h2 className={`body-3xl `}>Dev</h2>
+                <Link className={`${styles.linkTile}`} href="/archive"  onClick={handleMenuClose}>
+                <h2 className={`body-3xl `}>Stories</h2>
                 </Link>
             </div>
 
@@ -165,8 +165,8 @@ const Header = () => {
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[4]}ms`
             }}>
-                <Link className={`${styles.linkTile}`} href="/archive" onClick={handleMenuClose}>
-                <h2 className={`body-3xl `}>Study</h2>
+                <Link className={`${styles.linkTile}`} href="/" onClick={handleMenuClose}>
+                <h2 className={`body-3xl `}>Dev</h2>
                 </Link>
             </div>
 
