@@ -9,6 +9,7 @@ import {fit, fit01} from '@/lib/clientUtils'
 import useFirstRender from '@/lib/useFirstRender'
 
 import Link from 'next/link'
+import {useRouter} from 'next/navigation'
 
 
 import BurgerButton from '@/components/global/BurgerButton'
@@ -17,6 +18,8 @@ import LogoButton from '@/components/global/LogoButton'
 import styles from './Header.module.scss'
 
 const Header = () => {
+
+    const router = useRouter()
 
     const maxDelayDuration = 350
     // const firstRender = useFirstRender()
@@ -140,11 +143,16 @@ const Header = () => {
             style={{
                 opacity: `${isMenuOpen ? '1' : '0'}`,
                 transitionDelay: `${delayDurations[2]}ms`
-                }}>            
-                <Link className={`${styles.linkTile}`} href="/"  onClick={handleMenuClose}>
+                }}> 
+
+                <div className={`${styles.linkTile}`} 
+                onClick={() => {
+                    router.push('/')
+                    handleMenuClose()}}>
                 {/* rel="noopener noreferrer" target="_blank">    */}
-            <h2 className={`body-3xl `}>Objects</h2>         
-            </Link> 
+                <h2 className={`body-3xl `}>Objects</h2>         
+                </div> 
+
             </div>
 
 
@@ -154,9 +162,14 @@ const Header = () => {
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[3]}ms`
             }}>
-                <Link className={`${styles.linkTile}`} href="/archive"  onClick={handleMenuClose}>
+
+                <div className={`${styles.linkTile}`} 
+                onClick={() => {
+                    router.push('/archive')
+                    handleMenuClose()}}>
                 <h2 className={`body-3xl `}>Stories</h2>
-                </Link>
+                </div>
+
             </div>
 
 
@@ -167,9 +180,14 @@ const Header = () => {
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[4]}ms`
             }}>
-                <Link className={`${styles.linkTile}`} href="/" onClick={handleMenuClose}>
-                <h2 className={`body-3xl `}>Dev</h2>
-                </Link>
+
+                <div className={`${styles.linkTile}`} 
+                onClick={() => {
+                    router.push('/')
+                    handleMenuClose()}}>
+                <h2 className={`body-3xl `}>Code</h2>
+                </div>
+
             </div>
 
             {/* TILE */}
@@ -178,9 +196,14 @@ const Header = () => {
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[5]}ms`
             }}>
-                <Link className={`${styles.linkTile}`} href="/"  onClick={handleMenuClose}>
+
+                <div className={`${styles.linkTile}`} 
+                onClick={() => {
+                    router.push('/')
+                    handleMenuClose()}}>
                 <h2 className={`body-3xl `}>Info</h2>
-                </Link>
+                </div>
+
             </div>
 
             {/* TILE */}
@@ -190,9 +213,14 @@ const Header = () => {
             opacity: `${isMenuOpen ? '1' : '0'}`,
             transitionDelay: `${delayDurations[6]}ms`
             }}>
-               <Link className={`${styles.linkTile}`} href="/contact"  onClick={handleMenuClose}>
+
+                <div className={`${styles.linkTile}`} 
+                onClick={() => {
+                    router.push('/contact')
+                    handleMenuClose()}}>
                 <h2 className={`body-3xl `}>Contact</h2>
-                </Link>
+                </div>
+
             </div>
     
 
@@ -229,6 +257,16 @@ const Header = () => {
 }
 
 export default Header
+
+
+
+
+
+
+
+
+
+
 
 
 {/* <p>Han Han Xue is an interdiciplinary designer.</p>

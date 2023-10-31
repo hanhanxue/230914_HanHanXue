@@ -99,6 +99,10 @@
             width: 100%;
             display: block;
 
+            // user-select: text;
+            cursor: pointer;
+
+
             padding: rem(32) rem(40);
             @media (max-width: $screen-sm) {
                 padding: rem(16) rem(16);
@@ -116,6 +120,7 @@
             transition-duration: .3s;
     
             grid-row: 1;
+
     
             // border-width: 0px 1px 1px 0px;
             // border-style: solid;
