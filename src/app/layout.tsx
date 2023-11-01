@@ -6,13 +6,13 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Han Han Xue',
-  description: 'Product Designer & Creative Technologist',
+  description: 'Product Designer',
   creator: 'Han Han Xue',
 
 
   openGraph: {
     title: 'Han Han Xue',
-    description: 'Product Designer & Creative Technologist',
+    description: 'Product Designer',
     url: 'https://www.hanhanxue.com/',
     siteName: 'Han Han Xue',
     images: [
