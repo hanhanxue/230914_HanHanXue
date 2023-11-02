@@ -165,7 +165,7 @@ const Header = () => {
 
                 <div className={`${styles.linkTile}`} 
                 onClick={() => {
-                    router.push('/archive')
+                    router.push('/')
                     handleMenuClose()}}>
                 <h2 className={`body-3xl `}>Stories</h2>
                 </div>
@@ -183,7 +183,7 @@ const Header = () => {
 
                 <div className={`${styles.linkTile}`} 
                 onClick={() => {
-                    router.push('/')
+                    router.push('/archive')
                     handleMenuClose()}}>
                 <h2 className={`body-3xl `}>Experiments</h2>
                 </div>
