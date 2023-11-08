@@ -1,13 +1,27 @@
 [
   {
-    "filename": "231028_X_FireAlarm_v4.png",
-    "title": "FireAlarm",
-    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\231028_X_FireAlarm_v4.png",
-    "pathRel": "images\\home\\231028_X_FireAlarm_v4.png",
+    "filename": "231108_X_HoneyGate.jpg",
+    "title": "HoneyGate.jpg",
+    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\231108_X_HoneyGate.jpg",
+    "pathRel": "images\\home\\231108_X_HoneyGate.jpg",
     "dimensions": {
       "height": 540,
+      "orientation": 1,
       "width": 960,
-      "type": "png"
+      "type": "jpg"
+    },
+    "aspectRatio": 1.7777777777777777
+  },
+  {
+    "filename": "231028_X_FireAlarm_v4.jpg",
+    "title": "FireAlarm",
+    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\231028_X_FireAlarm_v4.jpg",
+    "pathRel": "images\\home\\231028_X_FireAlarm_v4.jpg",
+    "dimensions": {
+      "height": 540,
+      "orientation": 1,
+      "width": 960,
+      "type": "jpg"
     },
     "aspectRatio": 1.7777777777777777
   },
