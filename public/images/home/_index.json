@@ -1,13 +1,14 @@
 [
   {
-    "filename": "231109_X_HoneyGate_v4.png",
+    "filename": "231109_X_HoneyGate_v4.jpg",
     "title": "HoneyGate",
-    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\231109_X_HoneyGate_v4.png",
-    "pathRel": "images\\home\\231109_X_HoneyGate_v4.png",
+    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\231109_X_HoneyGate_v4.jpg",
+    "pathRel": "images\\home\\231109_X_HoneyGate_v4.jpg",
     "dimensions": {
       "height": 540,
+      "orientation": 1,
       "width": 960,
-      "type": "png"
+      "type": "jpg"
     },
     "aspectRatio": 1.7777777777777777
   },

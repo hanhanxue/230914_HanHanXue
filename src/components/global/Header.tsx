@@ -167,7 +167,7 @@ const Header = () => {
                 onClick={() => {
                     router.push('/')
                     handleMenuClose()}}>
-                <h2 className={`body-3xl `}>Stories</h2>
+                <h2 className={`body-3xl `}>Interfaces</h2>
                 </div>
 
             </div>
@@ -185,7 +185,7 @@ const Header = () => {
                 onClick={() => {
                     router.push('/archive')
                     handleMenuClose()}}>
-                <h2 className={`body-3xl `}>Experiments</h2>
+                <h2 className={`body-3xl `}>Stories</h2>
                 </div>
 
             </div>
