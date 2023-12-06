@@ -238,7 +238,7 @@ const Header = () => {
                 <ul className={`body-xl ${styles.socialLinks}`}>
                     <li><Link href="https://github.com/hanhanxue" rel="noopener noreferrer" target="_blank">GitHub</Link></li>
                     <li><Link href="https://www.instagram.com/_hanhanxue_/" rel="noopener noreferrer" target="_blank">Instagram</Link></li>
-                    <li><Link href="https://twitter.com/_hanhanxue_" rel="noopener noreferrer" target="_blank">X</Link></li>
+                    {/* <li><Link href="https://twitter.com/_hanhanxue_" rel="noopener noreferrer" target="_blank">X</Link></li> */}
                     <li><Link href="https://www.linkedin.com/in/hanhanxue/" rel="noopener noreferrer" target="_blank">LinkedIn</Link></li>
                 </ul>
             </div>
