@@ -1,5 +1,18 @@
 [
   {
+    "filename": "231215_X_Chip_v2.jpg",
+    "title": "Chip",
+    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\231215_X_Chip_v2.jpg",
+    "pathRel": "images\\home\\231215_X_Chip_v2.jpg",
+    "dimensions": {
+      "height": 540,
+      "orientation": 1,
+      "width": 960,
+      "type": "jpg"
+    },
+    "aspectRatio": 1.7777777777777777
+  },
+  {
     "filename": "231109_X_HoneyGate_v4.jpg",
     "title": "HoneyGate",
     "pathAbs": "D:\\hanhanxue\\public\\images\\home\\231109_X_HoneyGate_v4.jpg",
@@ -13,10 +26,10 @@
     "aspectRatio": 1.7777777777777777
   },
   {
-    "filename": "231028_X_FireAlarm_v4.jpg",
-    "title": "FireAlarm",
-    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\231028_X_FireAlarm_v4.jpg",
-    "pathRel": "images\\home\\231028_X_FireAlarm_v4.jpg",
+    "filename": "231028_X_Alarm_v4.jpg",
+    "title": "Alarm",
+    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\231028_X_Alarm_v4.jpg",
+    "pathRel": "images\\home\\231028_X_Alarm_v4.jpg",
     "dimensions": {
       "height": 540,
       "orientation": 1,
@@ -26,10 +39,10 @@
     "aspectRatio": 1.7777777777777777
   },
   {
-    "filename": "231002Bs_X_LightSwitch.jpg",
+    "filename": "231002_X_LightSwitch.jpg",
     "title": "LightSwitch.jpg",
-    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\231002Bs_X_LightSwitch.jpg",
-    "pathRel": "images\\home\\231002Bs_X_LightSwitch.jpg",
+    "pathAbs": "D:\\hanhanxue\\public\\images\\home\\231002_X_LightSwitch.jpg",
+    "pathRel": "images\\home\\231002_X_LightSwitch.jpg",
     "dimensions": {
       "height": 540,
       "orientation": 1,
