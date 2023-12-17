@@ -18,44 +18,38 @@ const SectionImages = () => {
     return (
         
 
-            <section className={`${styles.sectionWorks}`}>
+            <section className={``}>
 
                 <div className={`${styles.container}`}>
     
 
                     {images.map((img: image, index: number) => {
-                        // console.log(img)
+                    // console.log(img)
 
-return                     (
+                    return                     (
 
-                        
-    <div className={`${styles.imageFrame}`}
-    key={index}
-    style={{paddingTop: `${1 / img.aspectRatio * 100}%`}}>
-        {/* <DownloadButton></DownloadButton> */}
+                                            
+                        <div className={`${styles.imageFrame}`}
+                        key={index}
+                        style={{paddingTop: `${1 / img.aspectRatio * 100}%`}}>
+                        {/* <DownloadButton></DownloadButton> */}
 
+                        <Image
+                            className={`${styles.nextImage}`}
+                            alt={`han han xue product designer ${img.title} design`}
 
-    <Image
-        className={`${styles.nextImage}`}
-        alt={img.title}
-            src={`/${img.pathRel}`} 
+                            src={`/${img.pathRel}`} 
+                            fill={true}
+                            draggable={false}   
+                            // width={img.imgSize.width}
+                            // height={img.imgSize.height}
+                            />
 
-            // width={img.imgSize.width}
-            // height={img.imgSize.height}
+                        </div>
+                            
 
-            fill={true}
-            draggable={false}
-            
-
-        />
-
-
-
-        </div>
-        
-
-)
-                    }
+                    )
+                                        }
                     
 
                     

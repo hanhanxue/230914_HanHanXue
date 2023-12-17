@@ -4,6 +4,15 @@ import fs from 'fs'
 import path from 'path'
 
 
+function convertPascalToSpaceSeparated(pascalString:string) {
+  if (!pascalString) {
+    return 'ERROR convertPascalToSpaceSeparated undefined'; // Return an empty string for undefined or empty input
+  }
+
+  return pascalString
+    .replace(/([a-z])([A-Z])/g, '$1 $2') // Add space before capital letters
+    .toLowerCase(); // Convert to lowercase
+}
 
 const getImageData = (intermediatePath: string) => {
 
@@ -27,9 +36,10 @@ const getImageData = (intermediatePath: string) => {
       // console.log(fileObj)
 
       const filename = fileObj.name
-      const filenameSplit = fileObj.name.split('_')
+      // const filenameSplit = fileObj.name.split('_')
 
-      const title = filenameSplit[2]
+      const titleRaw = path.parse(filename).name.split('_')[2]
+      const title = convertPascalToSpaceSeparated(titleRaw)
 
       const pathAbs = path.join(fileObj.path, filename)
       const pathRel = path.join(intermediatePath, filename)
@@ -69,3 +79,12 @@ const getImageData = (intermediatePath: string) => {
 getImageData('images/archive')
 getImageData('images/home')
 getImageData('assets/emojis')
+
+
+
+
+// function convertPascalToSpaceSeparated(pascalString: string) {
+//   return pascalString
+//     .replace(/([a-z])([A-Z])/g, '$1 $2') // Add space before capital letters
+//     .toLowerCase(); // Convert to lowercase
+// }
