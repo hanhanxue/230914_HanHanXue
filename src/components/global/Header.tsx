@@ -17,6 +17,40 @@ import LogoButton from '@/components/global/LogoButton'
 
 import styles from './Header.module.scss'
 
+
+
+interface BottomFragmentProps {
+    isMenuOpen: boolean;
+    delayDuration: number;
+  }
+
+export const BottomFragment: React.FC<BottomFragmentProps> = ({isMenuOpen, delayDuration}) => {
+
+    return (
+        <div className={`${styles.footer}`}>
+
+        {/* TILE */}
+        <div className={`${styles.tile} ${styles.tileFooter}   ${styles.tileHover}`}
+        style={{
+        opacity: `${isMenuOpen ? '1' : '0'}`,
+        transitionDelay: `${delayDuration}ms`
+        }}>
+            <span className={`body-xl`}>©2023</span>
+            <ul className={`body-xl ${styles.socialLinks}`}>
+                <li><Link href="https://github.com/hanhanxue" rel="noopener noreferrer" target="_blank">GitHub</Link></li>
+                <li><Link href="https://www.instagram.com/_hanhanxue_/" rel="noopener noreferrer" target="_blank">Instagram</Link></li>
+                <li><Link href="https://www.linkedin.com/in/hanhanxue/" rel="noopener noreferrer" target="_blank">LinkedIn</Link></li>
+            </ul>
+        </div>
+    </div>
+    )
+
+}
+
+
+
+
+
 const Header = () => {
 
     const router = useRouter()
@@ -101,9 +135,6 @@ const Header = () => {
                 </div>
             </div>
         </header>
-
-
-
 
 
             {/* OVERLAY */}
@@ -226,28 +257,11 @@ const Header = () => {
 
         </nav>
 
-        <div className={`${styles.footer}`}>
 
-            {/* TILE */}
-            <div className={`${styles.tile} ${styles.tileFooter}   ${styles.tileHover}`}
-            style={{
-            opacity: `${isMenuOpen ? '1' : '0'}`,
-            transitionDelay: `${delayDurations[7]}ms`
-            }}>
-                <span className={`body-xl`}>©2023</span>
-                <ul className={`body-xl ${styles.socialLinks}`}>
-                    <li><Link href="https://github.com/hanhanxue" rel="noopener noreferrer" target="_blank">GitHub</Link></li>
-                    <li><Link href="https://www.instagram.com/_hanhanxue_/" rel="noopener noreferrer" target="_blank">Instagram</Link></li>
-                    {/* <li><Link href="https://twitter.com/_hanhanxue_" rel="noopener noreferrer" target="_blank">X</Link></li> */}
-                    <li><Link href="https://www.linkedin.com/in/hanhanxue/" rel="noopener noreferrer" target="_blank">LinkedIn</Link></li>
-                </ul>
-            </div>
-        </div>
-        <div className={`${styles.scrollableContainer}  `}>
+        <BottomFragment 
+        isMenuOpen={isMenuOpen} 
+        delayDuration={delayDurations[7]} />
 
-
-
-        </div>
 
         </div>
 
@@ -257,9 +271,6 @@ const Header = () => {
 }
 
 export default Header
-
-
-
 
 
 

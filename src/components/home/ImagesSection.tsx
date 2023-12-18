@@ -6,9 +6,9 @@ import {parseImagesIndex} from '@/lib/serverUtils'
 import Image from 'next/image'
 import {image} from '@/types/global'
 
-import styles from './SectionImages.module.scss'
+import styles from './ImagesSection.module.scss'
 
-const SectionImages = () => {
+const ImagesSection = () => {
 
     
     // const images = getImages()
@@ -36,7 +36,7 @@ const SectionImages = () => {
 
                         <Image
                             className={`${styles.nextImage}`}
-                            alt={`han han xue product designer ${img.title} design`}
+                            alt={`product designer han han xue ${img.title} design`}
 
                             src={`/${img.pathRel}`} 
                             fill={true}
@@ -64,4 +64,4 @@ const SectionImages = () => {
     )
 }
 
-export default SectionImages
+export default ImagesSection

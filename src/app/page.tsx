@@ -1,7 +1,7 @@
 
 
-import SectionCover from '@/components/home/SectionCover'
-import SectionImages from '@/components/home/SectionImages'
+import CoverSection from '@/components/home/CoverSection'
+import ImagesSection from '@/components/home/ImagesSection'
 
 
 
@@ -15,8 +15,8 @@ const Home = ({  }) => {
 
         <main>
 
-        <SectionCover />
-        <SectionImages />
+        <CoverSection />
+        <ImagesSection />
 
         </main>
 

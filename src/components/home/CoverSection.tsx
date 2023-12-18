@@ -1,12 +1,12 @@
 
-import styles from './SectionCover.module.scss'
+import styles from './CoverSection.module.scss'
 
 import Link from 'next/link'
 import ContactButton from '@/components/home/ContactButton'
 
 
 
-const SectionCover = () => {
+const CoverSection = () => {
     return (
         
             <section  className={`${styles.sectionCover}`}>
@@ -25,13 +25,13 @@ const SectionCover = () => {
             <div  className={`${styles.thirds}`}>
                 <div  className={`${styles.titleFrame}`}>
                     <h1 className={`  body-xl  ${styles.title} `}  >
-                        <span>Design & Product at&nbsp;</span>
+                        <span>Principal Product Designer at&nbsp;</span>
 
-                        <Link className={`  `} href={`https://www.supermanifold.com/`} rel="noopener noreferrer" target="_blank">
-                            <span><u>Super Manifold</u>®&nbsp;</span>
+                        <Link className={`  `} href={`https://www.physicsx.ai/`} rel="noopener noreferrer" target="_blank">
+                            <span><u>PhysicsX</u>®&nbsp;</span>
                         </Link>
 
-                        <span>in Montreal, Canada.</span>
+                        <span>in London, UK</span>
                         </h1>   
 
                     {/* <span className={`  body-xl `}  >Previously at</span>
@@ -66,4 +66,4 @@ const SectionCover = () => {
 }
 
 
-export default SectionCover
+export default CoverSection
