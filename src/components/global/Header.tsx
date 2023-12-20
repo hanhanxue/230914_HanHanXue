@@ -27,10 +27,11 @@ interface BottomFragmentProps {
 export const BottomFragment: React.FC<BottomFragmentProps> = ({isMenuOpen, delayDuration}) => {
 
     return (
-        <div className={`${styles.footer}`}>
+    <div className={`${styles.navBottom}`}>
+
 
         {/* TILE */}
-        <div className={`${styles.tile} ${styles.tileFooter}   ${styles.tileHover}`}
+        <div className={`${styles.tile} ${styles.tileHover} ${styles.tileNavBottom}   `}
         style={{
         opacity: `${isMenuOpen ? '1' : '0'}`,
         transitionDelay: `${delayDuration}ms`
@@ -42,6 +43,8 @@ export const BottomFragment: React.FC<BottomFragmentProps> = ({isMenuOpen, delay
                 <li><Link href="https://www.linkedin.com/in/hanhanxue/" rel="noopener noreferrer" target="_blank">LinkedIn</Link></li>
             </ul>
         </div>
+
+
     </div>
     )
 
@@ -114,7 +117,7 @@ const Header = () => {
     
 
     return (
-        <div className={`${styles.container}`}
+        <header className={`${styles.container}`}
         style={{
             opacity: `${isScrollInit ? '1' : '0'}`,
 
@@ -196,7 +199,7 @@ const Header = () => {
 
                 <div className={`${styles.linkTile}`} 
                 onClick={() => {
-                    router.push('/')
+                    router.push('/interfaces')
                     handleMenuClose()}}>
                 <h2 className={`body-3xl `}>Interfaces</h2>
                 </div>
@@ -214,7 +217,7 @@ const Header = () => {
 
                 <div className={`${styles.linkTile}`} 
                 onClick={() => {
-                    router.push('/archive')
+                    router.push('/prototypes')
                     handleMenuClose()}}>
                 <h2 className={`body-3xl `}>Prototypes</h2>
                 </div>
@@ -230,7 +233,7 @@ const Header = () => {
 
                 <div className={`${styles.linkTile}`} 
                 onClick={() => {
-                    router.push('/')
+                    router.push('/info')
                     handleMenuClose()}}>
                 <h2 className={`body-3xl `}>Info</h2>
                 </div>
@@ -265,7 +268,7 @@ const Header = () => {
 
         </div>
 
-        </div>
+        </header>
 
     )
 }

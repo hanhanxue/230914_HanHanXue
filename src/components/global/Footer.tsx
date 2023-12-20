@@ -6,8 +6,9 @@ const Footer = () => {
 
 
     return (
-
-        <BottomFragment isMenuOpen={true} delayDuration={0}/>
+        <footer>
+            <BottomFragment isMenuOpen={true} delayDuration={0}/>
+        </footer>
 
     )
 

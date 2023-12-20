@@ -25,13 +25,13 @@ const CoverSection = () => {
             <div  className={`${styles.thirds}`}>
                 <div  className={`${styles.titleFrame}`}>
                     <h1 className={`  body-xl  ${styles.title} `}  >
-                        <span>Principal Product Designer at&nbsp;</span>
+                        <span>Design & Product at&nbsp;</span>
 
                         <Link className={`  `} href={`https://www.physicsx.ai/`} rel="noopener noreferrer" target="_blank">
-                            <span><u>PhysicsX</u>®&nbsp;</span>
+                            <span><u>Super Manifold</u>®&nbsp;</span>
                         </Link>
 
-                        <span>in London, UK</span>
+                        <span>in New York, USA</span>
                         </h1>   
 
                     {/* <span className={`  body-xl `}  >Previously at</span>

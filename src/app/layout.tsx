@@ -7,6 +7,7 @@ import Footer from '@/components/global/Footer'
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL('http://localhost:3000'),
   title: 'Han Han Xue',
   description: 'Product Designer',
   creator: 'Han Han Xue',
@@ -40,6 +41,7 @@ export default function RootLayout({
         <Header />
 
         {children}
+
         <Footer />
       </body>
     </html>

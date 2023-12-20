@@ -2,7 +2,7 @@
 import {parseImagesIndex} from '@/lib/serverUtils'
 
 
-import styles from './SectionImage.module.scss'
+import styles from './ImageSection.module.scss'
 
 import {image} from '@/types/global'
 import Image from 'next/image'
@@ -11,7 +11,7 @@ import Image from 'next/image'
 
 
 
-const SectionImage = () => {
+const ImageSection = () => {
 
     const images = parseImagesIndex('public/images/archive')
 
@@ -53,4 +53,4 @@ const SectionImage = () => {
     )
 }
 
-export default SectionImage
+export default ImageSection

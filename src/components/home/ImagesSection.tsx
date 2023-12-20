@@ -3,8 +3,9 @@ import {parseImagesIndex} from '@/lib/serverUtils'
 
 
 
-import Image from 'next/image'
 import {image} from '@/types/global'
+import Image from 'next/image'
+
 
 import styles from './ImagesSection.module.scss'
 
@@ -20,44 +21,37 @@ const ImagesSection = () => {
 
             <section className={``}>
 
-                <div className={`${styles.container}`}>
-    
+<div className={`${styles.container}`}>
 
-                    {images.map((img: image, index: number) => {
-                    // console.log(img)
+{images.map((img: image, index: number) => {
+// console.log(img)
 
-                    return                     (
+return                     (
 
-                                            
-                        <div className={`${styles.imageFrame}`}
-                        key={index}
-                        style={{paddingTop: `${1 / img.aspectRatio * 100}%`}}>
-                        {/* <DownloadButton></DownloadButton> */}
+                        
+    <div className={`${styles.imageFrame}`}
+    key={index}
+    style={{paddingTop: `${1 / img.aspectRatio * 100}%`}}>
+    {/* <DownloadButton></DownloadButton> */}
 
-                        <Image
-                            className={`${styles.nextImage}`}
-                            alt={`product designer han han xue ${img.title} design`}
+    <Image
+        className={`${styles.nextImage}`}
+        alt={`product designer han han xue ${img.title} design`}
 
-                            src={`/${img.pathRel}`} 
-                            fill={true}
-                            draggable={false}   
-                            // width={img.imgSize.width}
-                            // height={img.imgSize.height}
-                            />
+        src={`/${img.pathRel}`} 
+        fill={true}
+        draggable={false}   
+        // width={img.imgSize.width}
+        // height={img.imgSize.height}
+        />
 
-                        </div>
-                            
+    </div>
+        
 
-                    )
-                                        }
-                    
+)}
+)}
+</div>
 
-                    
-                    )}
-
-
-
-                </div>
 
             </section>
 
@@ -65,3 +59,9 @@ const ImagesSection = () => {
 }
 
 export default ImagesSection
+
+
+
+
+
+

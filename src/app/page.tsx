@@ -6,7 +6,7 @@ import ImagesSection from '@/components/home/ImagesSection'
 
 
 
-const Home = ({  }) => {
+const home = ({  }) => {
 
 
 
@@ -25,7 +25,7 @@ const Home = ({  }) => {
     )
   }
   
-  export default Home
+  export default home
   
   
 

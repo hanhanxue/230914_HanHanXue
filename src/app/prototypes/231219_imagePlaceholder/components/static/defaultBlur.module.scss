@@ -1,0 +1,19 @@
+
+
+.container {
+    p {
+        font-size: 14px;
+        color: grey;
+        margin-bottom: 5px;
+        font-family: 'Regular';
+    }
+
+    .imageContainer {
+        width: 250px;
+        height: 300px;
+        position:relative;
+        img{
+            object-fit: cover; // keep ratio
+        }
+    }
+}

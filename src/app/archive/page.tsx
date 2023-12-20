@@ -1,14 +1,16 @@
-import SectionImage from "@/components/archive/SectionImage"
+import ImageSection from "@/components/archive/ImageSection"
 
 
 
 
-const archive = () => {
+const Archive = () => {
 
     return (
-             <SectionImage />
-            
+    <>
+        {/* <h1>Archive</h1> */}
+        <ImageSection />
+    </> 
     )
 }
 
-export default archive
+export default Archive
