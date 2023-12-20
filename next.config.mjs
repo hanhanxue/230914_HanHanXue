@@ -1,13 +1,15 @@
 /** @type {import('next').NextConfig} */
 
-import withPlaiceholder from '@plaiceholder/next'
 
 const nextConfig = {
-    images: {
-        domains: ['images.unsplash.com']
-    }
+    // images: {
+    //     domains: ['images.unsplash.com']
+    // }
 }
 
-// module.exports = nextConfig
-export default withPlaiceholder(nextConfig)
+module.exports = nextConfig
+
+
+// import withPlaiceholder from '@plaiceholder/next'
+// export default withPlaiceholder(nextConfig)
 

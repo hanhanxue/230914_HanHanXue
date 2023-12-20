@@ -1,7 +1,4 @@
 
-import styles from './Prototypes.module.scss'
-import ImagePlaceholder from '@/app/prototypes/231219_imagePlaceholder/ImagePlaceholder'
-
 
 const Prototypes = () => {
 
