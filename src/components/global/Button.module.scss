@@ -36,12 +36,12 @@
         // border: 1px solid transparent;
         box-shadow: 0 0 1px 0 transparent;
 
-        transition: box-shadow 0.85s ease;
+        transition: box-shadow 0.35s ease;
 
         &:hover {
             // border: 1px solid gray;
             // box-shadow: 0 0 1px 0 gray inset, 0 0 48px 0 rgba(0, 0, 0, 0.12);
-            box-shadow: 0px 0px 32px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 0px 32px 0 rgba(0, 0, 0, 0.1);
 
             // background-color: rgb(220, 220, 220);
         }
