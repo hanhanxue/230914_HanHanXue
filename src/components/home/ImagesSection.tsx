@@ -1,15 +1,17 @@
 
+
 import {parseImagesIndex} from '@/lib/serverUtils'
 
-
-
 import {image} from '@/types/global'
-import Image from 'next/image'
+
+
+import CustomImage from '@/components/global/CustomImage'
 
 
 import styles from './ImagesSection.module.scss'
 
 const ImagesSection = () => {
+
 
     
     // const images = getImages()
@@ -19,41 +21,29 @@ const ImagesSection = () => {
     return (
         
 
-            <section className={``}>
+    <section className={``}>
 
-<div className={`${styles.container}`}>
+    <div className={`${styles.container}`}>
 
-{images.map((img: image, index: number) => {
-// console.log(img)
 
-return                     (
+    {images.map((img: image, index: number) => {
 
-                        
-    <div className={`${styles.imageFrame}`}
-    key={index}
-    style={{paddingTop: `${1 / img.aspectRatio * 100}%`}}>
-    {/* <DownloadButton></DownloadButton> */}
+    return (
 
-    <Image
-        className={`${styles.nextImage}`}
-        alt={`product designer han han xue ${img.title} design`}
-
+        <CustomImage 
         src={`/${img.pathRel}`} 
-        fill={true}
-        draggable={false}   
-        // width={img.imgSize.width}
-        // height={img.imgSize.height}
-        />
+        title={`${img.title}`} 
+        aspect={img.aspectRatio} key={index}/>
+
+    )}
+    )}
+
+
 
     </div>
-        
-
-)}
-)}
-</div>
 
 
-            </section>
+    </section>
 
     )
 }

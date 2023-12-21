@@ -21,18 +21,6 @@
 
 
 
-    .imageFrame {
-        position: relative;
-        width: 100%;
-
-        &:not(:first-child) {
-            margin-top: 16%;            
-        }
-    }
 
 
-    .nextImage {
-        // border-radius: rem(28);
-        object-fit: 'cover';
-    }
 }
