@@ -13,6 +13,18 @@ interface ButtonProps {
   }
 
 
+  // Button variants
+    //  Primary button
+    //  Secondary button
+    //  Tertiary button
+    //  Danger button
+    //  Ghost button
+
+    // Contained button
+    // Outlined button
+    // Ghost button
+    // Icon button
+
 const Button: React.FC<ButtonProps> = ( {children, 
     kind = 'default',
     size = 'default',
@@ -23,6 +35,8 @@ const Button: React.FC<ButtonProps> = ( {children,
             switch (kind) {
                 case 'icon':
                     return `${styles.icon}`
+                case 'ghost':
+                    return `${styles.ghost}`
                 
                 default:
                     return `${styles.default}`
