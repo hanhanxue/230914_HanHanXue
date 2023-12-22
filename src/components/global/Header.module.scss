@@ -1,7 +1,19 @@
 @use '@/styles/abstracts/' as *;
 // @use '@/styles/base/' as *; // for Animations
 
+.backToTop {
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    height: 90%;
+    width: 100%;
 
+    padding: rem(32) rem(32);
+    @media (max-width: $screen-sm) {
+        padding: rem(24) rem(16);
+    }
+}
 
 .container {
     pointer-events: none;

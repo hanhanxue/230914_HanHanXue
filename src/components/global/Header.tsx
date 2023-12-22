@@ -14,8 +14,10 @@ import {useRouter} from 'next/navigation'
 
 import BurgerButton from '@/components/global/BurgerButton'
 import LogoButton from '@/components/global/LogoButton'
+import BackToTopButton from '@/components/global/BackToTopButton'
 
 import styles from './Header.module.scss'
+import BackToTop from './BackToTopButton'
 
 
 
@@ -120,13 +122,11 @@ const Header = () => {
         <header className={`${styles.container}`}
         style={{
             opacity: `${isScrollInit ? '1' : '0'}`,
-
-            
             }}>
 
 
 
-        <header className={`${styles.headerDefault}`} >
+        <div className={`${styles.headerDefault}`} >
             <div className={`${styles.tile} ${styles.tileLogo}`}  >
                 {/* <LogoButton /> */}
             </div>
@@ -137,14 +137,20 @@ const Header = () => {
                 <BurgerButton isOpen={isMenuOpen} onClick={handleMenuClose}/>
                 </div>
             </div>
-        </header>
+        </div>
 
 
             {/* OVERLAY */}
             <div className={`${styles.overlay}`}
             style={{pointerEvents: `${isMenuOpen ? 'all': 'none'}`}}
             > 
-            <header className={`${styles.header}`}>
+            
+            <div className={`${styles.backToTop} `}>
+                <BackToTopButton />
+            </div>
+
+
+            <div className={`${styles.header}`}>
 
             {/* TILE */}
             <div className={`${styles.tile} ${styles.tileLogo}  `}
@@ -166,7 +172,7 @@ const Header = () => {
                 <BurgerButton isOpen={isMenuOpen} onClick={handleMenuClose} theme='dark'/>
             </div>
 
-        </header>
+        </div>
 
 
 
