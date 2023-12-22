@@ -145,10 +145,6 @@ const Header = () => {
             style={{pointerEvents: `${isMenuOpen ? 'all': 'none'}`}}
             > 
             
-            <div className={`${styles.backToTop} `}>
-                <BackToTopButton />
-            </div>
-
 
             <div className={`${styles.header}`}>
 
@@ -189,8 +185,11 @@ const Header = () => {
                 onClick={() => {
                     router.push('/')
                     handleMenuClose()}}>
-                {/* rel="noopener noreferrer" target="_blank">    */}
-                <h2 className={`body-3xl `}>Objects</h2>         
+                    {/* rel="noopener noreferrer" target="_blank">    */}
+                    <span className={`${styles.linkTileLabel}`}>
+                        <h2 className={`body-3xl `}>Objects</h2>
+                        <sup className={`body-xl `}>5</sup>        
+                    </span>
                 </div> 
 
             </div>
@@ -207,7 +206,10 @@ const Header = () => {
                 onClick={() => {
                     router.push('/interfaces')
                     handleMenuClose()}}>
-                <h2 className={`body-3xl `}>Interfaces</h2>
+                    <span className={`${styles.linkTileLabel}`}>
+                        <h2 className={`body-3xl `}>Interfaces</h2>
+                        <sup className={`body-xl `}>0</sup>        
+                    </span>
                 </div>
 
             </div>
@@ -225,7 +227,10 @@ const Header = () => {
                 onClick={() => {
                     router.push('/prototypes')
                     handleMenuClose()}}>
-                <h2 className={`body-3xl `}>Prototypes</h2>
+                                    <span className={`${styles.linkTileLabel}`}>
+                        <h2 className={`body-3xl `}>Prototypes</h2>
+                        <sup className={`body-xl `}>0</sup>        
+                    </span>
                 </div>
 
             </div>

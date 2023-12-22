@@ -35,35 +35,10 @@
 }
 
 
-
-.body-3xl {
-  font-family: Torsos;
-  font-size: rem(40);
-  line-height: 1.5;
-
-@media (max-width: $screen-sm) {
-  font-size: rem(32);
-  }
-
-}
-
-
-
-.body-2xl {
-  font-family: Torsos;
-  font-size: rem(32);
-  line-height: 1.5;
-
-  // @media (max-width: $screen-sm) {
-  //   font-size: rem(16);
-  //   }
-}
-
-
 .body-xl {
-  font-family: Torsos;
+  font-family: 'Torsos';
   font-size: rem(20);
-  line-height: 1.5;
+  line-height: 1.4;
 
   // @media (max-width: $screen-sm) {
   //   font-size: rem(16);
@@ -73,6 +48,42 @@
   //   font-size: rem(16);
   //   }
 }
+
+
+
+.body-3xl {
+  font-family: 'Torsos';
+  font-size: rem(40);
+  line-height: 1.4;
+
+@media (max-width: $screen-sm) {
+  font-size: rem(32);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.body-2xl {
+  font-family: 'Torsos';
+  font-size: rem(32);
+  line-height: 1.5;
+
+  // @media (max-width: $screen-sm) {
+  //   font-size: rem(16);
+  //   }
+}
+
+
+
 
 
 

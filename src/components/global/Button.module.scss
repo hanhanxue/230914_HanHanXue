@@ -21,18 +21,17 @@
     border-radius: rem(12);
 
     &.default {
-        padding: rem(8);
-        padding-left: rem(12);
+
         // gap: rem(3)
     }
 
     &.icon {
-        padding: rem(8);
+        padding: rem(10);
         // background-color: black;
     }
 
     &.ghost {
-
+        padding: rem(10) rem(8) rem(10) rem(16) ;
         // border: 1px solid transparent;
         box-shadow: 0 0 1px 0 transparent;
 

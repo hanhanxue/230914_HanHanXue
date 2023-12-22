@@ -50,13 +50,12 @@ interface BurgerButtonProps {
         <>
         <Button kind = 'icon'   onClick={onClick}  theme={theme}>
         <span className={`${styles.buttonFrame}`}> 
+
+
         <div className={`${styles.iconFrame}
          ${isOpen ? styles.menuOpen : ''}
         `}
       >
-
-
-
             <div className={`${styles.icon} ${styleTheme()}`}>
                 <span className={`${styles.iconStroke}`}></span>
                 <span className={`${styles.iconStroke}`}></span>

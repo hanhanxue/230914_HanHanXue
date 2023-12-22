@@ -1,19 +1,7 @@
 @use '@/styles/abstracts/' as *;
 // @use '@/styles/base/' as *; // for Animations
 
-.backToTop {
-    position: absolute;
-    display: flex;
-    justify-content: right;
-    align-items: end;
-    height: 90%;
-    width: 100%;
 
-    padding: rem(32) rem(32);
-    @media (max-width: $screen-sm) {
-        padding: rem(24) rem(16);
-    }
-}
 
 .container {
     pointer-events: none;
@@ -103,16 +91,22 @@
             cursor: pointer;
 
 
-            padding: rem(32) rem(40);
+            padding: rem(32) rem(42);
             @media (max-width: $screen-sm) {
                 padding: rem(16) rem(16);
                 // background-color: red;
                 display: flex;
                 align-items: center;
 
+
         }
         }
 
+        .linkTileLabel {
+            display: flex; 
+            gap: 6px;
+        }
+        
         .tile {
             background-color: $color-gray-900;
     
@@ -126,7 +120,7 @@
             // border-style: solid;
             // border-color: rgb(51, 51, 51);
     
-            box-shadow: inset -32px -32px 0px 0px rgb(52, 52, 52);
+            // box-shadow: inset -32px -32px 0px 0px rgb(52, 52, 52);
             box-shadow: inset -1px -1px 0px 0px rgb(52, 52, 52);
     
         }
@@ -305,7 +299,7 @@
 
     .tile {
     
-        padding: rem(40) rem(40);
+        padding: rem(42) rem(42);
 
         @media (max-width: $screen-sm) {
             padding: rem(32) rem(16);

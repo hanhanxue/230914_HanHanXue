@@ -71,13 +71,13 @@
             // align-items: flex-end;
             align-items: center;
 
-
+            animation-name: scrollArrowAnim;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction:normal;
+            animation-timing-function: $easeOutQuart;
             .scrollArrowIcon {
-                animation-name: scrollArrowAnim;
-                animation-duration: 3s;
-                animation-iteration-count: infinite;
-                animation-direction:normal;
-                animation-timing-function: $easeOutQuart;
+
             }
         }
     }

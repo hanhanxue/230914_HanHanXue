@@ -13,6 +13,13 @@
 
 
     .iconFrame {
+        width: rem(28);
+        height: rem(28);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
 
         &.menuOpen {
             .iconStroke:nth-child(1) {
@@ -28,14 +35,7 @@
                 transform: translateX(3px) rotate(-45deg);
             }
         }
-    
-        width: rem(30);
-        height: rem(30);
-    
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
         
         .icon {
             width: rem(20);
@@ -48,9 +48,7 @@
     
     
             .iconStroke {
-    
                 background-color: black;
-    
     
                 width: 100%;
                 height: rem(2);
