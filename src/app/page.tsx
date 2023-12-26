@@ -1,5 +1,6 @@
 
 
+import BackToTopButton from '@/components/global/BackToTopButton'
 import CoverSection from '@/components/home/CoverSection'
 import ImagesSection from '@/components/home/ImagesSection'
 
@@ -15,6 +16,7 @@ const home = ({  }) => {
 
         <main>
 
+        <BackToTopButton />
         <CoverSection />
         <ImagesSection />
 

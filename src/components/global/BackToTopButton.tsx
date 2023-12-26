@@ -1,6 +1,5 @@
+'use client'
 
-
-// 02 EXTERNAL
 
 // 03 REACT / NODE / NEXTJS
 
@@ -10,16 +9,15 @@
 import Button from '@/components/global/Button'
 
 // 07 SUPERMANIFOLD FUNCTIONS
-import {fit, fit01} from '@/lib/clientUtils'
-
-import { parseImagesIndex } from '@/lib/serverUtils'
 
 
 // 11 SUPERMANIFOLD STYLES
 import styles from './BackToTopButton.module.scss'
+import useScrollProgress from '@/lib/useScrollProgress'
 
 
-interface BackToTopProps {
+
+interface BackToTopButtonProps {
     emojiIndexOffset?: number
     theme?: string
     isOpen?: boolean
@@ -27,53 +25,51 @@ interface BackToTopProps {
   }
 
 
+  const BackToTopButton: React.FC<BackToTopButtonProps> = ({ theme = 'default' }) => {
 
+    const scrollProgress = useScrollProgress()
 
-  const BackToTop: React.FC<BackToTopProps> = ({ 
-    isOpen = false, 
-    onClick, theme = 'default', 
-    emojiIndexOffset = 999 }) => {
-
-    const styleTheme = () => {
-        switch (theme) {
-            case 'dark':
-                return `${styles.dark}`
-            
-            default:
-                return `${styles.default}`
-        }
+    const onClick = () => {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
-
 
     return (
 
         <>
-        <Button kind = 'icon'   onClick={onClick}  theme={theme}>
-        <span className={`${styles.buttonFrame}`}> 
+        <div className={`${styles.viewport}`}>
+            
+            <div className={`${styles.container}`}>
+                <div className={`${styles.sideBar}`}>
 
-        <div className={`${styles.iconFrame}
-         ${isOpen ? styles.menuOpen : ''}
-        `}
-      >
+                    <div className={`${styles.controlFrame} ${scrollProgress > 20 ? styles.controlFrameShow : ''}`}>
+                    <Button kind = 'icon'   onClick={onClick}  theme={theme}>
+                        <span className={`${styles.buttonFrame}`}> 
+                            <div className={`${styles.iconFrame}`}>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 5V23" stroke="black" strokeWidth="2"/>
+                                <path d="M6 13L14 5L22 13" stroke="black" strokeWidth="2"/>
+                                </svg>
+                            </div>
+                        </span>
+                    </Button>
+                    </div>
 
 
+                </div>
 
-<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15 6V24" stroke="black" stroke-width="2"/>
-<path d="M7 14L15 6L23 14" stroke="black" stroke-width="2"/>
-</svg>
 
+            </div>
 
         </div>
-        </span>
-        </Button>
+
 
         </>
 
     )
 }
 
-export default BackToTop
+export default BackToTopButton
 
 
 

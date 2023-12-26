@@ -14,9 +14,10 @@ interface CustomImageProps {
     src: string;
     title: string;
     aspect: number;
+    altText: boolean;
   }
   
-  const CustomImage: React.FC<CustomImageProps> = ({ src, title, aspect }) => {
+  const CustomImage: React.FC<CustomImageProps> = ({ src, title, aspect, altText=true }) => {
     
     const {ref, inView} = useInView({
         triggerOnce: true,
@@ -24,10 +25,10 @@ interface CustomImageProps {
     })
 
 
-    useEffect(() => {
-        // WHY IS THIS RERENDERING?!?!?!?
-        console.log({inView})
-    }, [inView])
+    // useEffect(() => {
+    //     // WHY IS THIS RERENDERING?!?!?!?
+    //     // console.log({inView})
+    // }, [inView])
 
     return (
 
@@ -36,7 +37,7 @@ interface CustomImageProps {
     
     <Image
         className={`${styles.nextImage}`}
-        alt={`product designer han han xue ${title} design`}
+        alt={altText ? `product designer han han xue ${title} design` : ''}
 
         src={src} 
         fill={true}
@@ -62,3 +63,4 @@ export default CustomImage
 
 
 //translate vs transform translate
+

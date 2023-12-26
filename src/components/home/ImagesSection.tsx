@@ -33,7 +33,9 @@ const ImagesSection = () => {
         <CustomImage 
         src={`/${img.pathRel}`} 
         title={`${img.title}`} 
-        aspect={img.aspectRatio} key={index}/>
+        aspect={img.aspectRatio} key={index}
+        altText={false}
+        />
 
     )}
     )}

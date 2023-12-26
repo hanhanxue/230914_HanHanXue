@@ -10,7 +10,7 @@
 import Button from '@/components/global/Button'
 
 // 07 SUPERMANIFOLD FUNCTIONS
-import {fit, fit01} from '@/lib/clientUtils'
+import {fit, fit01} from '@/lib/fitRange'
 
 import { parseImagesIndex } from '@/lib/serverUtils'
 

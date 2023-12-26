@@ -1,23 +1,25 @@
 
+import LogoButton from '@/components/global/LogoButton'
+import BackToTopButton from '@/components/global/BackToTopButton'
+import {fit, fit01} from '@/lib/fitRange'
+import useFirstRender from '@/lib/useFirstRender'
+import BackToTop from './BackToTopButton'
 
 'use client'
 
 
 import {useState, useEffect} from 'react'
 
-import {fit, fit01} from '@/lib/clientUtils'
-import useFirstRender from '@/lib/useFirstRender'
+
 
 import Link from 'next/link'
 import {useRouter} from 'next/navigation'
 
 
 import BurgerButton from '@/components/global/BurgerButton'
-import LogoButton from '@/components/global/LogoButton'
-import BackToTopButton from '@/components/global/BackToTopButton'
+
 
 import styles from './Header.module.scss'
-import BackToTop from './BackToTopButton'
 
 
 
@@ -89,22 +91,6 @@ const Header = () => {
         setDelayDurations(generateDelayDurations(10))
     }
     
-
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-
-    //         if(isScrollInit) return;
-    //         if(window.scrollY > 1) setIsScrollInit(1)
-    //     }
-    
-    //     handleScroll()
-
-    //     window.addEventListener('scroll', handleScroll)
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll)
-    //     }
-    // }, [])
 
 
 
@@ -295,6 +281,49 @@ export default Header
 
 
 {/* <p>Han Han Xue is an interdiciplinary designer.</p>
-  <p>Previously working on autonomous vehicles in San Francisco at Woven by Toyota and Lyft before that.</p>
-  <p>He is currently working on Fragments, an immersive spatial experience in the digital realm.</p>             
-   */}
+<p>Previously working on autonomous vehicles in San Francisco at Woven by Toyota and Lyft before that.</p>
+<p>He is currently working on Fragments, an immersive spatial experience in the digital realm.</p>             
+*/}
+
+
+
+   
+// const threshold = 25 // Y threshold
+// const buffer = 24 // buffer to avoid style change flashing
+
+// const [isPastYThreshold, setIsPastYThreshold] = useState(false)
+
+// useEffect(() => {
+//     const handler = () => {
+
+//         setIsPastYThreshold((isPastYThreshold) => {
+//             if(isPastYThreshold && window.scrollY < threshold) return false
+//             if(!isPastYThreshold && window.scrollY > threshold + buffer) return true
+//             return isPastYThreshold
+//         })
+//     }
+
+//     window.addEventListener("scroll", handler)
+//     return () => window.removeEventListener("scroll", handler)
+// }, [])
+
+// colorConfig = {text: 'text-blue-700', bg: 'bg-red-700' }, 
+// isFixed = false,
+
+
+
+
+// useEffect(() => {
+//     const handleScroll = () => {
+
+//         if(isScrollInit) return;
+//         if(window.scrollY > 1) setIsScrollInit(1)
+//     }
+
+//     handleScroll()
+
+//     window.addEventListener('scroll', handleScroll)
+//     return () => {
+//         window.removeEventListener('scroll', handleScroll)
+//     }
+// }, [])
