@@ -1,4 +1,4 @@
-// 'use client'
+'use client'
 
 
 import { useState, useEffect } from "react";
@@ -25,6 +25,7 @@ const useScrollProgress = () => {
             // console.log(`scrolled: ${scrolled}`)
             return scrolled
     }
+
     const [scrollProgress, setScrollProgress] = useState(calcProgress())
 
 
