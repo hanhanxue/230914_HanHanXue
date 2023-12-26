@@ -1,4 +1,3 @@
-'use client'
 
 
 import { useState, useEffect } from "react";
@@ -8,7 +7,7 @@ const useScrollProgress = () => {
 
     const calcProgress = () => {
             // This will calculate how many pixels the page is vertically
-            const winScroll = document.documentElement.scrollTop; //document.body.scrollTop || 
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop; //
 
             const height =
             document.documentElement.scrollHeight -
@@ -26,7 +25,7 @@ const useScrollProgress = () => {
             return scrolled
     }
 
-    const [scrollProgress, setScrollProgress] = useState(calcProgress())
+    const [scrollProgress, setScrollProgress] = useState(0)
 
 
     useEffect(() => {
