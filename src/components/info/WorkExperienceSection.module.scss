@@ -15,7 +15,8 @@
 .row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: rem(16);
+    column-gap: rem(16);
+    
 
     padding: rem(8) 0;
 
@@ -52,6 +53,21 @@
             // grid-row: 1 / 2;
         }
         }
+
+        @media (max-width: $screen-sm) {
+            grid-template-columns: repeat(2, 1fr);
+
+            .company {
+                grid-column: 1 / 3;
+                grid-row: 2;
+                color: $color-gray-600;
+                // justify-self: end;
+            }
+            .position {
+                grid-column: 1 / 3;
+                // grid-row: 1 / 2;
+            }
+            }
 
     .tenure {
         // justify-self: end;
