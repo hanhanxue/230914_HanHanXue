@@ -25,9 +25,37 @@
     // 
 
     // justify-items: end;
+    @media (max-width: $screen-xl) {
+        grid-template-columns: repeat(3, 1fr);
+
+        .tenure {
+            display: none;
+        }
+        }
+
+    @media (max-width: $screen-lg) {
+        grid-template-columns: repeat(2, 1fr);
+
+        .tenure {
+            display: none;
+        }
+        .location {
+            display: none;
+        }
+        .company {
+            // grid-column: 1 / 3;
+            // grid-row: 1 / 2;
+            // justify-self: end;
+        }
+        .position {
+            // grid-column: 1 / 3;
+            // grid-row: 1 / 2;
+        }
+        }
 
     .tenure {
         // justify-self: end;
+        // color: $color-gray-600;
     }
 
     &:hover {
