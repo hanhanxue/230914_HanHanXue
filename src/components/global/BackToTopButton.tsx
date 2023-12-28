@@ -29,7 +29,7 @@ interface BackToTopButtonProps {
 
     const scrollProgress = useScrollProgress()
 
-    const onClick = () => {
+    const backToTop = () => {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
@@ -42,8 +42,19 @@ interface BackToTopButtonProps {
             <div className={`${styles.container}`}>
                 <div className={`${styles.sideBar}`}>
 
-                    <div className={`${styles.controlFrame} ${scrollProgress > 20 ? styles.controlFrameShow : ''}`}>
-                    <Button kind = 'icon'   onClick={onClick}  theme={theme}>
+                <div className={`${styles.controlFrameA} ${scrollProgress > 20 ? styles.controlFrameAShow : ''}`}>
+<div className={`${styles.scrollProgressIndicator}`}>
+    <div className={`${styles.scrollProgressContainer}`}>
+    <div className={`${styles.scrollProgressBar}`} style={{height: `max(8px, ${scrollProgress}%)`}}>
+
+    </div>
+    </div>
+</div>
+                    </div>
+
+
+                    {/* <div className={`${styles.controlFrame} ${scrollProgress > 20 ? styles.controlFrameShow : ''}`}>
+                    <Button kind = 'icon'   onClick={backToTop}  theme={theme}>
                         <span className={`${styles.buttonFrame}`}> 
                             <div className={`${styles.iconFrame}`}>
                                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,7 +64,7 @@ interface BackToTopButtonProps {
                             </div>
                         </span>
                     </Button>
-                    </div>
+                    </div> */}
 
 
                 </div>

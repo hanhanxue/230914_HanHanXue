@@ -1,10 +1,13 @@
+import BioSection from "@/components/info/BioSection"
+import WorkExperienceSection from "@/components/info/WorkExperienceSection"
 
 
 const Info = () => {
 
     return (
         <>
-            <h1>Info</h1>
+            <BioSection />
+            <WorkExperienceSection />
         </>
 
     )

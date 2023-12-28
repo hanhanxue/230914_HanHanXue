@@ -145,6 +145,10 @@ const Header = () => {
             }}>
         
                 {/* <LogoButton /> */}
+                {/* <div style={{display: 'flex', alignItems: 'center'}}>
+                <span className={`body-xl`}>HAN HAN XUE</span><sup>1</sup>
+                </div> */}
+
             </div>
 
             {/* TILE */}    

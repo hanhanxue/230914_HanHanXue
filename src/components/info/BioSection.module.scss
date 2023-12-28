@@ -1,0 +1,35 @@
+@use '@/styles/abstracts/' as *;
+
+
+.section {
+    @include headMargin;
+    @include YFrame_M;
+}
+
+
+.container {
+    @include XFrame;
+}
+
+
+.sectionGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: rem(16);
+
+    .bio {
+        grid-column: 3 / 5;
+    }
+
+    .subBio {
+        grid-column: 3 / 5;
+        color: rgb(191, 191, 191);
+
+        margin-top: rem(32);
+
+        & > li {
+            margin-top: rem(4);
+        }
+    }
+}
+

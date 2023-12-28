@@ -8,7 +8,7 @@ import {image} from '@/types/global'
 import CustomImage from '@/components/global/CustomImage'
 
 
-import styles from './ImagesSection.module.scss'
+import styles from './ImageSection.module.scss'
 
 const ImagesSection = () => {
 
@@ -21,8 +21,7 @@ const ImagesSection = () => {
     return (
         
 
-    <section className={``}>
-
+    <section className={`${styles.section}`}>
     <div className={`${styles.container}`}>
 
 
@@ -43,8 +42,6 @@ const ImagesSection = () => {
 
 
     </div>
-
-
     </section>
 
     )

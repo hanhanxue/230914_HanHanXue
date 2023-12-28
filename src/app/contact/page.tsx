@@ -1,10 +1,10 @@
-import SectionBouncyText from "@/components/contact/SectionBouncyText"
+import DVDTextSection from "@/components/contact/DVDTextSection"
 
 
 const Contact = () => {
    
     return (
-        <SectionBouncyText/>
+        <DVDTextSection/>
     )
 }
 

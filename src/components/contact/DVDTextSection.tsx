@@ -4,7 +4,7 @@
 
 import {useRef  ,useEffect, useLayoutEffect, useState} from 'react'
 
-const SectionBouncyText = () => {
+const DVDTextSection = () => {
 
  
     const elementRef = useRef<HTMLDivElement>(null)
@@ -105,4 +105,4 @@ const SectionBouncyText = () => {
 }
 
 
-export default SectionBouncyText
+export default DVDTextSection

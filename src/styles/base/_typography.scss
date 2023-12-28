@@ -17,42 +17,41 @@
 // 950 Extra Black (Ultra Black) 
 
 
-
-// @font-face {
-// font-family: Torsos;
-// src: url('/assets/fonts/Torsos/BBTorsosPro-Regular.otf') format('opentype');
-// font-weight: 400;
-// font-style: normal;
-// }
-
 @font-face {
-  font-family: 'Torsos';
-  src: url('/assets/fonts/Torsos/BBTorsosPro-Regular.woff2') format('woff2'),
-      url('/assets/fonts/Torsos/BBTorsosPro-Regular.woff') format('woff');
+  font-family: 'SuperManifoldPro';
+  src: url('/assets/fonts/SuperManifoldPro/SuperManifoldPro-Regular.woff2') format('woff2'),
+      url('/assets/fonts/SuperManifoldPro/SuperManifoldPro-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   // font-display: swap;
 }
 
+// @font-face {
+//   font-family: 'SuperManifoldPro';
+//   src: url('/assets/fonts/SuperManifoldPro-Regular.otf') format('opentype');
+//   font-weight: 400;
+//   font-style: normal;
+//   // font-display: swap;
+// }
+
+
 
 .body-xl {
-  font-family: 'Torsos';
+  font-family: 'SuperManifoldPro';
   font-size: rem(20);
   line-height: 1.4;
 
-  // @media (max-width: $screen-sm) {
-  //   font-size: rem(16);
-  //   line-height: 1.5;
-  //   }
-  // @media (max-width: $screen-sm) {
-  //   font-size: rem(16);
-  //   }
 }
 
 
+.body-2xl {
+  font-family: 'SuperManifoldPro';
+  font-size: rem(28);
+  line-height: rem(36);
+}
 
 .body-3xl {
-  font-family: 'Torsos';
+  font-family: 'SuperManifoldPro';
   font-size: rem(40);
   line-height: 1.4;
 
@@ -72,30 +71,39 @@
 
 
 
-.body-2xl {
-  font-family: 'Torsos';
-  font-size: rem(32);
-  line-height: 1.5;
+// .body-2xl {
+//   font-family: 'SuperManifoldPro';
+//   font-size: rem(32);
+//   line-height: 1.5;
+
+// }
+
+
+// .body-base {
+//   font-family: Inter;
+//   font-size: rem(16);
+//   line-height: 1.5;
+// }
+
+
 
   // @media (max-width: $screen-sm) {
   //   font-size: rem(16);
+  //   line-height: 1.5;
   //   }
-}
+  // @media (max-width: $screen-sm) {
+  //   font-size: rem(16);
+  //   }
+
+  
 
 
-
-
-
-
-.body-base {
-  font-family: Inter;
-  font-size: rem(16);
-  line-height: 1.5;
-}
-
-
-
-
+// @font-face {
+// font-family: SuperManifoldPro;
+// src: url('/assets/fonts/SuperManifoldPro/BBSuperManifoldProPro-Regular.otf') format('opentype');
+// font-weight: 400;
+// font-style: normal;
+// }
 
 
 

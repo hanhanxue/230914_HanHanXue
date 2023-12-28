@@ -1,0 +1,45 @@
+
+@use '@/styles/abstracts/' as *;
+
+
+.section {
+    @include YFrame_M;
+}
+
+
+.container {
+    @include XFrame;
+}
+
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: rem(16);
+
+    padding: rem(8) 0;
+
+    margin-top: -2px;
+    border-top: solid 2px transparent;
+    border-bottom: solid 2px transparent;
+    // 
+
+    // justify-items: end;
+
+    .tenure {
+        // justify-self: end;
+    }
+
+    &:hover {
+        border-bottom: solid 2px black;
+    }
+
+    .rowItem {
+        overflow: hidden;
+        white-space: nowrap;
+        // display: block;
+        text-overflow: ellipsis;
+        // background-color: black;
+    }
+
+}

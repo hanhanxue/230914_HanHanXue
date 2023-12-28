@@ -6,10 +6,15 @@
 // .sectionWorks {}
 
 
+.section {
+    @include YFrame_L;
+}
+
+
 .container {
 
     // @include XFrame;
-    @include YFrame_L;
+
 
     display: flex;
     // gap: 20%;
