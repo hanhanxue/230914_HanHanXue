@@ -8,7 +8,7 @@ const BioSection = () => {
         <div className={`${styles.container}`}>
 
         <div className={`${styles.sectionGrid}`}> 
-            <p className={`body-2xl ${styles.bio}`}>Han Han Xue designs and develops digital products for deep tech startups. Currently working on simulation software for heavy industries.</p>
+            <p className={`body-2xl ${styles.bio}`}>Han Han Xue designs and develops digital products for deep tech startups. He is currently working on simulation software for heavy industries.</p>
 
             <ul className={`body-xl ${styles.subBio}`}>
                 <li>Born in Shenzhen, China</li>
