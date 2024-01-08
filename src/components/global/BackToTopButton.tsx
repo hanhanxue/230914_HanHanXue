@@ -32,7 +32,7 @@ interface BackToTopButtonProps {
     const [progressBarVisible, setProgressBarVisible] = useState(false)
 
     const scrollProgress = useScrollProgress()
-    const isFirstRender = useFirstRender()
+
     // console.log(isFirstRender)
 
     const backToTop = () => {
@@ -48,6 +48,7 @@ interface BackToTopButtonProps {
 
 
     useEffect(() => {
+        const isFirstRender = useFirstRender()
         if(isFirstRender) return
 
         let timeoutID: NodeJS.Timeout | undefined
