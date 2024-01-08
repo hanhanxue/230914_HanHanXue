@@ -10,7 +10,7 @@ const useScrollProgress = () => {
         // if (isSSR || !document) {
         //     return 0
         // }
-        // if(typeof window === "undefined") return 0
+        if(typeof window === "undefined" || typeof document === "undefined") return 0
 
             // This will calculate how many pixels the page is vertically
             const winScroll = document.body.scrollTop || document.documentElement.scrollTop; //
