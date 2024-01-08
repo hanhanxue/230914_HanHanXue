@@ -1,11 +1,17 @@
+'use client'
 
-
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 
 const useScrollProgress = () => {
-    
+
+    const isSSR = typeof window === "undefined"
 
     const calcProgress = () => {
+        // if (isSSR || !document) {
+        //     return 0
+        // }
+        // if(typeof window === "undefined") return 0
+
             // This will calculate how many pixels the page is vertically
             const winScroll = document.body.scrollTop || document.documentElement.scrollTop; //
 
@@ -25,17 +31,22 @@ const useScrollProgress = () => {
             return scrolled
     }
 
-    const [scrollProgress, setScrollProgress] = useState(0)
+    const [scrollProgress, setScrollProgress] = useState(calcProgress())
+    // console.log(scrollProgress)
 
-
-    useEffect(() => {
+    useLayoutEffect(() => {
         const handleScroll = () => {
             const progress = calcProgress()
             setScrollProgress(progress)
-
         }
+
+
         window.addEventListener("scroll", handleScroll)
-        return () => window.removeEventListener("scroll", handleScroll)
+        // window.addEventListener("load", handleScroll)
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+            // window.removeEventListener("load", handleScroll)
+        }
     }, [])
 
 

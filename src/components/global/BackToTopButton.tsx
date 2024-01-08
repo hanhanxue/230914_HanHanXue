@@ -14,6 +14,8 @@ import Button from '@/components/global/Button'
 // 11 SUPERMANIFOLD STYLES
 import styles from './BackToTopButton.module.scss'
 import useScrollProgress from '@/lib/useScrollProgress'
+import { useEffect, useState } from 'react'
+import useFirstRender from '@/lib/useFirstRender'
 
 
 
@@ -27,12 +29,44 @@ interface BackToTopButtonProps {
 
   const BackToTopButton: React.FC<BackToTopButtonProps> = ({ theme = 'default' }) => {
 
+    const [progressBarVisible, setProgressBarVisible] = useState(false)
+
     const scrollProgress = useScrollProgress()
+    const isFirstRender = useFirstRender()
+    // console.log(isFirstRender)
 
     const backToTop = () => {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
+
+    // In vanilla javascript its htmlElement.style.setProperty
+    const progressBarStyles: React.CSSProperties = {
+        ['--scrollProgress' as any]: scrollProgress + 'px',
+    }
+
+
+
+    useEffect(() => {
+        if(isFirstRender) return
+
+        let timeoutID: NodeJS.Timeout | undefined
+
+        clearTimeout(timeoutID)
+
+        setProgressBarVisible(true)
+
+        timeoutID = setTimeout(() => {
+            setProgressBarVisible(false)
+        }, 1000)
+        // console.log(isFirstRender)
+
+        return () => {
+            clearTimeout(timeoutID)
+        }
+
+    }, [scrollProgress])
+
 
     return (
 
@@ -42,15 +76,16 @@ interface BackToTopButtonProps {
             <div className={`${styles.container}`}>
                 <div className={`${styles.sideBar}`}>
 
-                <div className={`${styles.controlFrameA} ${scrollProgress > 20 ? styles.controlFrameAShow : ''}`}>
-<div className={`${styles.scrollProgressIndicator}`}>
-    <div className={`${styles.scrollProgressContainer}`}>
-    <div className={`${styles.scrollProgressBar}`} style={{height: `max(8px, ${scrollProgress}%)`}}>
 
-    </div>
-    </div>
-</div>
+                <div className={`${styles.controlFrameA} ${progressBarVisible ? styles.controlFrameAVisible : ''}`}>
+                <div className={`${styles.scrollProgressIndicator}`}>
+                    <div className={`${styles.scrollProgressContainer}`}>
+
+                    {/* Set css variable and do transform in module */}
+                    <div className={`${styles.scrollProgressBar}`} style={progressBarStyles}></div>
                     </div>
+                </div>
+            </div>
 
 
                     {/* <div className={`${styles.controlFrame} ${scrollProgress > 20 ? styles.controlFrameShow : ''}`}>

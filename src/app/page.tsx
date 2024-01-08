@@ -12,18 +12,13 @@ const home = ({  }) => {
 
 
     return (
-      <>
 
         <main>
-
         <BackToTopButton />
         <CoverSection />
         <ImagesSection />
-
         </main>
 
-
-        </>
     )
   }
   

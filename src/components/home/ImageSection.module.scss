@@ -7,7 +7,9 @@
 
 
 .section {
-    @include YFrame_L;
+    // @include YFrame_L;
+        // @include YFrame_M;
+        margin-top: $mt-160;
 }
 
 

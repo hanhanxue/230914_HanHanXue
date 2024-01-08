@@ -14,7 +14,7 @@ interface CustomImageProps {
     src: string;
     title: string;
     aspect: number;
-    altText: boolean;
+    altText?: boolean;
   }
   
   const CustomImage: React.FC<CustomImageProps> = ({ src, title, aspect, altText=true }) => {

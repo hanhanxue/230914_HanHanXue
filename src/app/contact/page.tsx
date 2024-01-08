@@ -4,7 +4,10 @@ import DVDTextSection from "@/components/contact/DVDTextSection"
 const Contact = () => {
    
     return (
-        <DVDTextSection/>
+        <main>
+
+            <DVDTextSection/>
+        </main>
     )
 }
 

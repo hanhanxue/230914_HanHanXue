@@ -10,7 +10,7 @@ const WorkExperienceSection = () => {
                 <div className={`body-xl ${styles.row}`}>
                     <span className={`${styles.rowItem} ${styles.position}`}>Principal Product Designer</span>
                     <span className={`${styles.rowItem} ${styles.company}`}>PhysicsX</span>
-                    <span className={`${styles.rowItem} ${styles.location}`}>New York, USA</span>
+                    <span className={`${styles.rowItem} ${styles.location}`}>London, UK</span>
                     <span className={`${styles.rowItem} ${styles.tenure}`}>Jan 2024 — Present</span>
                 </div>
             </div>

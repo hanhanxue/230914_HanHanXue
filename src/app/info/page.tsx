@@ -5,10 +5,10 @@ import WorkExperienceSection from "@/components/info/WorkExperienceSection"
 const Info = () => {
 
     return (
-        <>
+        <main>
             <BioSection />
             <WorkExperienceSection />
-        </>
+        </main>
 
     )
 }
