@@ -33,6 +33,8 @@ interface BackToTopButtonProps {
 
     const scrollProgress = useScrollProgress()
 
+    const isFirstRender = useFirstRender()
+
     // console.log(isFirstRender)
 
     const backToTop = () => {
@@ -48,7 +50,7 @@ interface BackToTopButtonProps {
 
 
     useEffect(() => {
-        const isFirstRender = useFirstRender()
+
         if(isFirstRender) return
 
         let timeoutID: NodeJS.Timeout | undefined

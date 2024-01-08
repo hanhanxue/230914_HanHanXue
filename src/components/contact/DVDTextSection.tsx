@@ -19,40 +19,40 @@ const DVDTextSection = () => {
 
 
 
+    const updatePosition = () => {
+        const newVelocity = [...velocityRef.current]
+        const newPosition = [position[0] + newVelocity[0], position[1] + newVelocity[1]]
+
+        // X Axis
+        if(newPosition[0] < 0) {
+            newPosition[0] = 0
+            newVelocity[0] = Math.abs(newVelocity[0]) 
+        }
+        if((newPosition[0] + elementDimensions[0]) > windowDimensions[0]) {
+            newPosition[0] = windowDimensions[0] - elementDimensions[0]
+            newVelocity[0] = -Math.abs(newVelocity[0])
+        }
+
+        // Y Axis
+        if(newPosition[1] < 0) {
+            newPosition[1] = 0
+            newVelocity[1] = Math.abs(newVelocity[1]) 
+        }
+        if((newPosition[1] + elementDimensions[1]) > windowDimensions[1]) {
+            newPosition[1] = windowDimensions[1] - elementDimensions[1]
+            newVelocity[1] = -Math.abs(newVelocity[1])
+        }
+
+
+        setPosition([newPosition[0], newPosition[1]])
+
+        velocityRef.current = newVelocity
+
+        // requestAnimationFrame(updatePosition)
+    }
 
     useLayoutEffect(() => {
 
-        const updatePosition = () => {
-            const newVelocity = [...velocityRef.current]
-            const newPosition = [position[0] + newVelocity[0], position[1] + newVelocity[1]]
-    
-            // X Axis
-            if(newPosition[0] < 0) {
-                newPosition[0] = 0
-                newVelocity[0] = Math.abs(newVelocity[0]) 
-            }
-            if((newPosition[0] + elementDimensions[0]) > windowDimensions[0]) {
-                newPosition[0] = windowDimensions[0] - elementDimensions[0]
-                newVelocity[0] = -Math.abs(newVelocity[0])
-            }
-    
-            // Y Axis
-            if(newPosition[1] < 0) {
-                newPosition[1] = 0
-                newVelocity[1] = Math.abs(newVelocity[1]) 
-            }
-            if((newPosition[1] + elementDimensions[1]) > windowDimensions[1]) {
-                newPosition[1] = windowDimensions[1] - elementDimensions[1]
-                newVelocity[1] = -Math.abs(newVelocity[1])
-            }
-    
-    
-            setPosition([newPosition[0], newPosition[1]])
-    
-            velocityRef.current = newVelocity
-    
-            // requestAnimationFrame(updatePosition)
-        }
     
 
         const timer = setTimeout(updatePosition, 10)
