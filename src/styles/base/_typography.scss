@@ -53,7 +53,11 @@
 .body-2xl {
   font-family: 'SuperManifoldPro';
   font-size: rem(32);
-  line-height: rem(44);
+  line-height: 1.4;
+
+  @media (max-width: $screen-sm) {
+    font-size: rem(28);
+    }
 }
 
 

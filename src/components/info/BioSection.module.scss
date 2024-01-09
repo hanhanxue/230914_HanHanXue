@@ -19,6 +19,10 @@
 
     .bioFrame {
         grid-column: 7 / 13;
+        & p:not(:first-child) {
+            margin-top: rem(16);
+        }
+
     }
 
     .sub {
