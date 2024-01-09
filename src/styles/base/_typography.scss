@@ -27,14 +27,16 @@
 }
 
 
+@font-face {
+  font-family: 'BergenMono';
+  src: url('/assets/fonts/BergenMono/BergenMono-Regular.woff2') format('woff2'),
+      url('/assets/fonts/BergenMono/BergenMono-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  // font-display: swap;
+}
 
-// @font-face {
-//   font-family: 'SuperManifoldPro';
-//   src: url('/assets/fonts/SuperManifoldPro-Regular.otf') format('opentype');
-//   font-weight: 400;
-//   font-style: normal;
-//   // font-display: swap;
-// }
+
 
 
 
@@ -47,9 +49,6 @@
 
 
 
-
-
-
 .body-2xl {
   font-family: 'SuperManifoldPro';
   font-size: rem(32);
@@ -57,19 +56,26 @@
 
   @media (max-width: $screen-sm) {
     font-size: rem(28);
-    }
+  }
 }
-
-
 
 .body-3xl {
   font-family: 'SuperManifoldPro';
-  font-size: rem(40);
+  font-size: rem(48);
   line-height: 1.4;
 
-@media (max-width: $screen-sm) {
-  font-size: rem(32);
+  @media (max-width: $screen-sm) {
+    font-size: rem(32);
   }
+}
+
+
+
+
+.body-xl-mono {
+  font-family: 'SuperManifoldPro';
+  font-size: rem(16);
+  line-height: 1.4;
 
 }
 
@@ -79,6 +85,13 @@
 
 
 
+// @font-face {
+//   font-family: 'SuperManifoldPro';
+//   src: url('/assets/fonts/SuperManifoldPro-Regular.otf') format('opentype');
+//   font-weight: 400;
+//   font-style: normal;
+//   // font-display: swap;
+// }
 
 
 

@@ -48,9 +48,9 @@ const CoverSection = () => {
                         {/* <h2  className={`  body-xl   `}  style={textPad} >{moment().format('YYYY')}</h2> */}
 
                         <svg width="28" height="48" viewBox="0 0 28 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14 4V44" stroke="black" strokeWidth="2"/>
-<path d="M4 34L14 44L24 34" stroke="black" strokeWidth="2"/>
-</svg>
+                        <path d="M14 4V44" stroke="black" strokeWidth="2"/>
+                        <path d="M4 34L14 44L24 34" stroke="black" strokeWidth="2"/>
+                        </svg>
 
                 </div>
 

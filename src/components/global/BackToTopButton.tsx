@@ -80,14 +80,23 @@ interface BackToTopButtonProps {
                 <div className={`${styles.sideBar}`}>
 
 
-                <div className={`${styles.controlFrameA} ${progressBarVisible ? styles.controlFrameAVisible : ''}`}>
-                <div className={`${styles.scrollProgressIndicator}`}>
+                <div className={`${styles.controlFrameA} ${scrollProgress > 20 ? styles.controlFrameAThreshold : '' } ${progressBarVisible  ? styles.controlFrameAVisible : ''}`} 
+                style={{pointerEvents: scrollProgress > 20 ? 'all' : 'none'}}
+                >
+                {/* <div className={`${styles.controlFrameA} ${styles.controlFrameAVisible}`}> */}
+
+                <Button>
+
+                <div className={`${styles.scrollProgressIndicator}`} >
                     <div className={`${styles.scrollProgressContainer}`}>
 
                     {/* Set css variable and do transform in module */}
                     <div className={`${styles.scrollProgressBar}`} style={progressBarStyles}></div>
                     </div>
                 </div>
+                </Button>
+
+
             </div>
 
 

@@ -1,5 +1,5 @@
 @use '@/styles/abstracts/' as *;
-
+@use '@/styles/base/' as *;  // for animation
 
 
 
@@ -67,24 +67,77 @@
     }
 
 
+    .controlFrameAThreshold.controlFrameAVisible {
 
+        opacity: 1;
+        transition: opacity .5s;
+    }
+
+    .controlFrameAThreshold.controlFrameA:hover {
+        
+        opacity: 1;
+        transition: opacity .5s;
+    }
 
     .controlFrameA {
         pointer-events: all;
         opacity: 0;
-        transition: opacity 1.5s;
+        transition: opacity 1.0s;
 
 
-        &Visible {
+        .controlFrameAVisible {
             opacity: 1;
             transition: opacity .5s;
         }
 
         &:hover {
-            opacity: 1;
-            transition: opacity .5s;
+
+            .scrollProgressBar {
+
+                // transform: translateY(-32px);
+
+                @keyframes moveProgressBarUp {
+                    from {
+                        transform: translateY(calc(var(--scrollProgress) / 100 * 32 - 32px));
+                        opacity: 1;
+                    }
+                    33% {
+                        transform: translateY(-32px);
+            
+                    }
+                    70% {
+                        transform: translateY(-32px);
+                        // opacity: .5;
+                    }
+                    71% {
+                        transform: translateY(calc(var(--scrollProgress) / 100 * 32 - 32px));
+                        // opacity: .5;
+                    }
+                    to {
+                        transform: translateY(calc(var(--scrollProgress) / 100 * 32 - 32px));
+                        opacity: 1;
+                    }
+                }
+
+                animation: moveProgressBarUp 2s $easeOutQuart;
+                animation-iteration-count: infinite;
+    
+            }
+
+
         }
+
+
+
+
+
+
+
     }
+
+
+
+
 
 }
 
@@ -94,7 +147,7 @@
 .scrollProgressIndicator {
     // background-color: red;
     padding: rem(20);
-    border-radius: $radius-lg;
+    // border-radius: $radius-lg;
 
 
     .scrollProgressContainer {
