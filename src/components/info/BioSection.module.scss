@@ -16,7 +16,9 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: rem(16);
-
+    .sectionTitle {
+        grid-column: 1 / 7;
+    }
     .bioFrame {
         grid-column: 7 / 13;
         & p:not(:first-child) {
@@ -38,7 +40,9 @@
 
     @media (max-width: $screen-xl) {
 
-
+        .sectionTitle {
+            grid-column: 1 / 5;
+        }
         .bioFrame {
             grid-column: 5 / 13;
         }
@@ -48,9 +52,11 @@
         }
 
     @media (max-width: $screen-lg) {
-
+        .sectionTitle {
+            grid-column: span 12;
+        }
         .bioFrame {
-            grid-column: 1 / 13;
+            grid-column: span 12;
         }
 
 

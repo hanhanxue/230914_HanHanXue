@@ -17,10 +17,25 @@
 }
 
 
+.sectionGrid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: rem(16);
+
+    .sectionTitle {
+        grid-column: span 12;
+    }
+
+    .list {
+        grid-column: span 12;
+    }
+}
+
+
 .rowFrame {
     margin-top: -2px;
-    border-top: solid 2px transparent;
-    border-bottom: solid 2px transparent;
+    border-top: solid 2px ;
+    border-bottom: solid 2px ;
 
     
     &:hover {
@@ -35,9 +50,9 @@
     grid-template-columns: repeat(12, 1fr);
     column-gap: rem(16);
     
-    align-items: center;
+    // align-items: center;
 
-    padding: rem(8) 0;
+    padding: rem(16) 0;
 
 
     // 
