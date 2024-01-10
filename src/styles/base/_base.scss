@@ -6,6 +6,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+html {
+    // font-size: 16px;
+    -webkit-text-size-adjust: none;
 }
 
 a {
@@ -20,6 +26,7 @@ body {
     // cursor:
     // url('/assets/pointer1.svg') 10 10,
     // pointer
+
 }
 
 button, input[type="submit"], input[type="reset"] {

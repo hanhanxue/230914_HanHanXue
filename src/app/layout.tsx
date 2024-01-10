@@ -8,14 +8,14 @@ import Footer from '@/components/global/Footer'
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
-  title: 'Han Han Xue • Product Designer',
-  description: 'Product Designer',
+  title: 'Han Han Xue — Product Designer',
+  description: 'Han Han Xue Product Designer',
   creator: 'Han Han Xue',
 
 
   openGraph: {
-    title: 'Han Han Xue',
-    description: 'Product Designer',
+    title: 'Han Han Xue — Product Designer',
+    description: 'Han Han Xue Product Designer',
     url: 'https://www.hanhanxue.com/',
     siteName: 'Han Han Xue',
     images: [
