@@ -27,14 +27,23 @@
 }
 
 
+// @font-face {
+//   font-family: 'BergenMono';
+//   src: url('/assets/fonts/BergenMono/BergenMono-Regular.woff2') format('woff2'),
+//       url('/assets/fonts/BergenMono/BergenMono-Regular.woff') format('woff');
+//   font-weight: 400;
+//   font-style: normal;
+//   // font-display: swap;
+// }
 @font-face {
-  font-family: 'BergenMono';
-  src: url('/assets/fonts/BergenMono/BergenMono-Regular.woff2') format('woff2'),
-      url('/assets/fonts/BergenMono/BergenMono-Regular.woff') format('woff');
-  font-weight: 400;
+  font-family: 'Inconsolata';
+  src: url('/assets/fonts/Inconsolata/Inconsolata-Regular.woff2') format('woff2'),
+      url('/assets/fonts/Inconsolata/Inconsolata-Regular.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
-  // font-display: swap;
+  font-display: swap;
 }
+
 
 
 
@@ -73,8 +82,8 @@
 
 
 .body-xl-mono {
-  font-family: 'SuperManifoldPro';
-  font-size: rem(20);
+  font-family: 'Inconsolata';
+  font-size: rem(16);
   line-height: 1.4;
 
 }

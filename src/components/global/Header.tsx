@@ -24,8 +24,8 @@ import styles from './Header.module.scss'
 
 
 interface BottomFragmentProps {
-    isMenuOpen: boolean;
-    delayDuration: number;
+    isMenuOpen: boolean
+    delayDuration: number
   }
 
 export const BottomFragment: React.FC<BottomFragmentProps> = ({isMenuOpen, delayDuration}) => {
