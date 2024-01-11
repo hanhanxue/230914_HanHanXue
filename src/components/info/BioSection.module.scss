@@ -55,18 +55,22 @@
         }
 
         li {
+            // list-style-position:outside;
             counter-increment: item;
+            margin-left: 24px;
+            // text-indent: -24px;
         }
 
         li::before {
             content: counter(item) ".";
-            margin-right: rem(8);
+            // margin-right: rem(8);
             // background: lightblue;
             // border-radius: 100%;
             // color: white;
-            width: .6em;
+            // width: .6em;
             // text-align: center;
             display: inline-block;
+            text-indent: -24px;
         }
 
     }
