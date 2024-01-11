@@ -22,9 +22,14 @@
     .bioFrame {
         grid-column: 7 / 13;
         & p:not(:first-child) {
-            margin-top: rem(16);
+            margin-top: rem(32);
         }
 
+    }
+
+    sup {
+        vertical-align: super;
+        margin-left: rem(2);
     }
 
     .sub {

@@ -6,9 +6,9 @@
     // @include YFrame_M;
     margin-top: $mt-160;
 
-    @media (max-width: $screen-lg) {
-        margin-top: $mt-80;
-        }
+    // @media (max-width: $screen-lg) {
+    //     margin-top: $mt-80;
+    //     }
 }
 
 
@@ -34,12 +34,14 @@
 
 .rowFrame {
 
-    border-top: solid 1px;
+    // border-top: solid 8px transparent;
     border-bottom: solid 1px;
-
+    // margin-top: -1px;
+    
+    // border-top: solid 1px;
     & + li:not(:first-child) {
         margin-top: -1px;
-        border-top: solid 1px transparent;
+        // border-top: solid 1px transparent;
     }
 
     cursor: pointer;
