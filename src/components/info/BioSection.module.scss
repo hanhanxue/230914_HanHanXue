@@ -43,6 +43,36 @@
 
     }
 
+    .footnote {
+        border-top: 1px solid $color-gray-600;
+        padding-top: rem(24);
+
+        color: $color-gray-600;
+        margin-top: rem(48);
+
+        & li:not(:first-child) {
+            margin-top: rem(8);
+        }
+
+        li {
+            counter-increment: item;
+        }
+
+        li::before {
+            content: counter(item) ".";
+            margin-right: rem(8);
+            // background: lightblue;
+            // border-radius: 100%;
+            // color: white;
+            width: .6em;
+            // text-align: center;
+            display: inline-block;
+        }
+
+    }
+
+    
+
     @media (max-width: $screen-xl) {
 
         .sectionTitle {
