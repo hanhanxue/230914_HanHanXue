@@ -1,11 +1,12 @@
 @use '@/styles/base/sizing' as *;
+@use '@/styles/base/colors' as *;
 
 .section {
-    // background-color: red;
-    height: min(100vh, 80vw);
+    background-color: $surface-00;
+    height: min(50vh, 80vw);
 
     @media (max-width: $screen-md) {
-        height: 100vh;
+        height: 50vh;
     }
 
     .container {

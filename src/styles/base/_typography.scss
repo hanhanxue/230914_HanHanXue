@@ -33,11 +33,10 @@
 }
 
 
-.body-strong {
+.title3 {
   font-family: 'Sans';
   font-size: rem(21);
   line-height: rem(32);
-  font-weight: 500;
 
   @media (max-width: $screen-md) {
     font-size: rem(16);
@@ -45,15 +44,17 @@
   }
 }
 
+.body-strong {
+  font-family: 'Sans';
+  font-size: rem(14);
+  line-height: rem(20);
+  font-weight: 500;
+}
+
 .body {
   font-family: 'Sans';
-  font-size: rem(21);
-  line-height: rem(32);
-
-  @media (max-width: $screen-md) {
-    font-size: rem(16);
-    line-height: rem(24);
-  }
+  font-size: rem(14);
+  line-height: rem(20);
 }
 
 

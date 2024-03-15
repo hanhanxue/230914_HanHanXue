@@ -17,7 +17,7 @@ const CoverSection = () => {
 
                 </div>
                 <div className={`${styles.FlexItem}`}>
-                   <h1 className={`body`}  >
+                   <h1 className={`title3`}  >
        <span>Principal Product Designer at&nbsp;</span>
 
        <Link className={`  `} href={`https://www.physicsx.ai/`} rel="noopener noreferrer" target="_blank">
