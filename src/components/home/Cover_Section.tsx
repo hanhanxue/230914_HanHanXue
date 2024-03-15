@@ -25,6 +25,8 @@ const CoverSection = () => {
        </Link>
 
        <span>in London, UK</span>
+
+
        </h1> 
                 </div>
                 <div className={`${styles.FlexItem}`}>
