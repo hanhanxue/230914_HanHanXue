@@ -1,7 +1,7 @@
 // @use '@/styles/abstracts' as *;
 // @import '../abstracts/functions';
 @use '@/styles/abstracts/functions' as *;
-
+@use '@/styles/base/sizing' as *;
 
 // 100 Thin (Hairline)
 // 200 Extra Light (Ultra Light)
@@ -38,12 +38,22 @@
   font-size: rem(21);
   line-height: rem(32);
   font-weight: 500;
+
+  @media (max-width: $screen-md) {
+    font-size: rem(16);
+    line-height: rem(24);
+  }
 }
 
 .body {
   font-family: 'Sans';
   font-size: rem(21);
   line-height: rem(32);
+
+  @media (max-width: $screen-md) {
+    font-size: rem(16);
+    line-height: rem(24);
+  }
 }
 
 
