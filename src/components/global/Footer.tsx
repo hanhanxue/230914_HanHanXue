@@ -13,7 +13,9 @@ const Footer = () => {
     useEffect(() => {
 
         const updateCurrentTime = () => {
-            const currentTime = new Date().toLocaleTimeString("en-US", { timeZone: "America/New_York" }) // Set time zone to EST
+            // const currentTime = new Date().toLocaleTimeString("en-US", { timeZone: "America/New_York" }) // Set time zone to EST
+            const currentTime = new Date().toLocaleTimeString("en-US") // Set time zone to EST
+
             if(currentTimeRef.current) {
                 currentTimeRef.current.textContent = currentTime;
             }
