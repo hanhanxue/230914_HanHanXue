@@ -1,7 +1,49 @@
-@use '@/styles/abstracts/' as *;
+@use '@/styles/base/sizing' as *;
+@use '@/styles/base/colors' as *;
 
-.footer {
-    // background-color: red;
-    margin-top: $mt-160;
+.section {
+    background-color: $surface-00;
+    // background-color: $surface-debug;
+        // position: sticky;
+    // position: fixed;
+    width: 100%;
+
+    .container {
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: $spacing-3;
+
+        padding: $spacing-3 0;
+
+
+
+        .gridItem {
+
+            &:nth-child(1) {
+                grid-row: 1;
+                grid-column: 1 / 4;
+            }
+
+            &:nth-child(2) {
+                grid-row: 1;
+                grid-column: 4 / 13;
+
+                    display: flex;
+                    justify-content: space-between;
+
+                .flex {
+                    display: flex;
+                    gap: $spacing-4;
+                }
+            }
+
+
+        } 
+    }
+
+
 
 }
+
+

@@ -14,10 +14,10 @@ const Header = () => {
             <div className={`${styles.container} framex body`}>
 
                 <div className={`${styles.gridItem}`}>
-                <Link className={`  `} href={`/`} rel="noopener noreferrer" target="_blank">
+                <Link className={`  `} href={`/`} >
                 <SuperManifoldLogo />
                 </Link>
-                <Link className={`  `} href={`/`} rel="noopener noreferrer" target="_blank">
+                <Link className={`  `} href={`/`} >
                     <span>Han Han Xue — Product Designer</span>
                 </Link>
 
@@ -25,16 +25,16 @@ const Header = () => {
 
                 <nav className={`${styles.gridItem}`}>
                     <div className={`${styles.flex}`}>
-                        <Link className={`  `} href={`/`} rel="noopener noreferrer" target="_blank">
+                        <Link className={`  `} href={`/`} >
                         <span>WIP</span>
                         </Link>
-                        <Link className={`  `} href={`/`} rel="noopener noreferrer" target="_blank">
+                        <Link className={`  `} href={`/`} >
                             <span>Projects</span>
                         </Link>
                     </div>
 
 
-                <Link className={`  `} href={`/`} rel="noopener noreferrer" target="_blank">
+                <Link className={`  `} href={`/`} >
                     <span>Information</span>
                 </Link>
                 </nav>
