@@ -8,14 +8,15 @@ import Footer from '@/components/global/Footer'
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
+
   title: 'Han Han Xue — Product Designer',
-  description: 'Han Han Xue — Product Designer',
+  description: 'The website and design portfolio of Han Han Xue.',
   creator: 'Han Han Xue',
 
 
   openGraph: {
     title: 'Han Han Xue — Product Designer',
-    description: 'Han Han Xue — Product Designer',
+    description: 'The website and design portfolio of Han Han Xue.',
     url: 'https://www.hanhanxue.com/',
     siteName: 'Han Han Xue — Product Designer',
     images: [
@@ -30,6 +31,8 @@ export const metadata: Metadata = {
   },
 }
 
+
+
 export default function RootLayout({
   children,
 }: {
@@ -38,11 +41,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
+        {/* <Header /> */}
 
         {children}
 
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   )

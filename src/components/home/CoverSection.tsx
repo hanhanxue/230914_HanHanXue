@@ -24,7 +24,7 @@ const CoverSection = () => {
 
             <div  className={`${styles.thirds}`}>
                 <div  className={`${styles.titleFrame}`}>
-                    <h1 className={`  body-xl  ${styles.title} `}  >
+                    <h1 className={`  body  ${styles.title} `}  >
                         <span>Principal Product Designer at&nbsp;</span>
 
                         <Link className={`  `} href={`https://www.physicsx.ai/`} rel="noopener noreferrer" target="_blank">

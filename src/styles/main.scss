@@ -1,10 +1,9 @@
 
 
 
-@use 'vendors/reset';
+@use '@/styles/vendors/reset';
 
 
-@use "base/base";
-
-
-@use 'base/typography';
+@use "@/styles/base/base";
+@use '@/styles/base/typography';
+@use '@/styles/base/utilities';

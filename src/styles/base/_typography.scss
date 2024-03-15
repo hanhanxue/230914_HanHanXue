@@ -1,5 +1,6 @@
-@use '@/styles/abstracts' as *;
-
+// @use '@/styles/abstracts' as *;
+// @import '../abstracts/functions';
+@use '@/styles/abstracts/functions' as *;
 
 
 // 100 Thin (Hairline)
@@ -18,73 +19,50 @@
 
 
 @font-face {
-  font-family: 'SuperManifoldPro';
-  src: url('/assets/fonts/SuperManifoldPro/SuperManifoldPro-Regular.woff2') format('woff2'),
-      url('/assets/fonts/SuperManifoldPro/SuperManifoldPro-Regular.woff') format('woff');
+  font-family: 'Sans';
+  src: url('/assets/fonts/Geist/Geist/Geist-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
-
 @font-face {
-  font-family: 'Inconsolata';
-  src: url('/assets/fonts/Inconsolata/Inconsolata-Regular.woff2') format('woff2'),
-      url('/assets/fonts/Inconsolata/Inconsolata-Regular.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Sans';
+  src: url('/assets/fonts/Geist/Geist/Geist-Medium.woff2') format('woff2');
+  font-weight: 500;
   font-style: normal;
 }
 
 
-
-.body-xs {
-  font-family: 'SuperManifoldPro';
-  font-size: rem(12.8);
-  line-height: 1.4;
-
+.body-strong {
+  font-family: 'Sans';
+  font-size: rem(21);
+  line-height: rem(32);
+  font-weight: 500;
 }
 
-
-
-.body-xl {
-  font-family: 'SuperManifoldPro';
-  font-size: rem(20);
-  line-height: 1.4;
-
-}
-
-
-
-.body-2xl {
-  font-family: 'SuperManifoldPro';
-  font-size: rem(32);
-  line-height: 1.4;
-
-  @media (max-width: $screen-sm) {
-    font-size: rem(28);
-  }
-}
-
-
-
-.body-3xl {
-  font-family: 'SuperManifoldPro';
-  font-size: rem(48);
-  line-height: 1.4;
-
-  @media (max-width: $screen-sm) {
-    font-size: rem(32);
-  }
+.body {
+  font-family: 'Sans';
+  font-size: rem(21);
+  line-height: rem(32);
 }
 
 
 
 
-.body-xl-mono {
-  font-family: 'Inconsolata';
-  font-size: rem(16);
-  line-height: 1.4;
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -93,8 +71,73 @@
 
 
 // @font-face {
-//   font-family: 'SuperManifoldPro';
-//   src: url('/assets/fonts/SuperManifoldPro-Regular.otf') format('opentype');
+//   font-family: 'Inconsolata';
+//   src: url('/assets/fonts/Inconsolata/Inconsolata-Regular.woff2') format('woff2'),
+//       url('/assets/fonts/Inconsolata/Inconsolata-Regular.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+
+// .body-xs {
+//   font-family: 'Sans';
+//   font-size: rem(12.8);
+//   line-height: 1.4;
+
+// }
+
+
+
+// .body-xl {
+//   font-family: 'Sans';
+//   font-size: rem(20);
+//   line-height: 1.4;
+
+// }
+
+
+
+// .body-2xl {
+//   font-family: 'Sans';
+//   font-size: rem(32);
+//   line-height: 1.4;
+
+//   @media (max-width: $screen-sm) {
+//     font-size: rem(28);
+//   }
+// }
+
+
+
+// .body-3xl {
+//   font-family: 'Sans';
+//   font-size: rem(48);
+//   line-height: 1.4;
+
+//   @media (max-width: $screen-sm) {
+//     font-size: rem(32);
+//   }
+// }
+
+
+
+
+// .body-xl-mono {
+//   font-family: 'Inconsolata';
+//   font-size: rem(16);
+//   line-height: 1.4;
+
+// }
+
+
+
+
+
+
+
+// @font-face {
+//   font-family: 'Sans';
+//   src: url('/assets/fonts/Sans-Regular.otf') format('opentype');
 //   font-weight: 400;
 //   font-style: normal;
 //   // font-display: swap;
@@ -104,7 +147,7 @@
 
 
 // .body-2xl {
-//   font-family: 'SuperManifoldPro';
+//   font-family: 'Sans';
 //   font-size: rem(32);
 //   line-height: 1.5;
 
@@ -131,8 +174,8 @@
 
 
 // @font-face {
-// font-family: SuperManifoldPro;
-// src: url('/assets/fonts/SuperManifoldPro/BBSuperManifoldProPro-Regular.otf') format('opentype');
+// font-family: Sans;
+// src: url('/assets/fonts/Sans/BBSansPro-Regular.otf') format('opentype');
 // font-weight: 400;
 // font-style: normal;
 // }

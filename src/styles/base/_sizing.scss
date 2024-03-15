@@ -1,0 +1,22 @@
+@use '@/styles/abstracts/functions' as *;
+
+$screen-sm: rem(640);
+// => @media (min-width: 640px) { ... }
+
+$screen-md: rem(768);
+// => @media (min-width: 768px) { ... }
+
+$screen-lg: rem(1024); // Base
+// => @media (min-width: 1024px) { ... }
+
+$screen-xl: rem(1280);
+// => @media (min-width: 1280px) { ... }
+
+$screen-2xl: rem(1536);
+// => @media (min-width: 1536px) { ... }
+
+
+
+
+$spacing-3: rem(16);
+$spacing-4: rem(24);

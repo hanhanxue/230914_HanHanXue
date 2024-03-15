@@ -1,0 +1,113 @@
+@use '@/styles/base/sizing' as *;
+
+.section {
+    // background-color: red;
+    height: min(100vh, 80vw);
+
+    @media (max-width: $screen-md) {
+        height: 100vh;
+    }
+
+    .container {
+        // background-color: green;
+
+        height: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: $spacing-3;
+    }
+
+    .FlexContainer {
+        // background-color: blue;
+
+        grid-column: 1 / 13;
+
+        display: flex;
+        flex-direction: column;
+
+
+        .FlexItem {
+            // flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+            flex: 1;
+
+
+            &:nth-child(2) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            
+        }
+    }
+
+}
+
+
+
+
+
+
+
+// Locomotive cover
+// --home-hero-height: calc(min(var(--vh, 1vh) * 100, 80vw))
+// height: var(--home-hero-height)
+
+
+    
+    // .thirds {
+    //     flex: 1 1 33.33%;
+
+    //     padding-top: rem(48);
+    //     padding-bottom: rem(48);
+
+    //     @include XFrame;
+
+
+    //     .buttonFrame {
+    //         display: flex;
+    //         height: 100%;
+    //         justify-content: flex-end;
+    //         align-items: center;
+
+    //         // background-color: red;
+  
+    //     }
+
+    //     .titleFrame {
+    //         display: flex;
+    //         height: 100%;
+    //         justify-content: center;
+    //         align-items: center;
+
+    //         text-align: center;
+
+    //         span {
+    //             // white-space: nowrap;
+    //             display: inline-block;
+    //         }
+
+
+    //     }
+        
+    //     .scrollArrowFrame {
+    //         display: flex;
+    //         height: 100%;
+
+    //         justify-content: center;
+    //         // align-items: flex-end;
+    //         align-items: center;
+
+    //         animation-name: scrollArrowAnim;
+    //         animation-duration: 3s;
+    //         animation-iteration-count: infinite;
+    //         animation-direction:normal;
+    //         animation-timing-function: $easeOutQuart;
+    //         .scrollArrowIcon {
+
+    //         }
+    //     }
+    // }
+

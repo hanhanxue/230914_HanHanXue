@@ -1,4 +1,5 @@
-@use '@/styles/abstracts/' as *;
+@use '@/styles/base/colors' as *;
+
 
 *,
 *::before,
@@ -6,28 +7,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-html {
-    // font-size: 16px;
-    -webkit-text-size-adjust: none;
+
+body {
+    background-color: $surface-00;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 a {
     color: inherit;
     text-decoration: none; /* no underline */
 }
 
-body {
-    background-color: $color-gray-100;
-    // background-color: red;
 
-    // cursor:
-    // url('/assets/pointer1.svg') 10 10,
-    // pointer
-
-}
 
 button, input[type="submit"], input[type="reset"] {
 	background: none;
@@ -46,12 +54,9 @@ img, video {
 }
 
 
-// sup {
-//     -webkit-touch-callout: none; /* iOS Safari */
-//       -webkit-user-select: none; /* Safari */
-//        -khtml-user-select: none; /* Konqueror HTML */
-//          -moz-user-select: none; /* Old versions of Firefox */
-//           -ms-user-select: none; /* Internet Explorer/Edge */
-//               user-select: none; /* Non-prefixed version, currently
-//                                     supported by Chrome, Edge, Opera and Firefox */
-//   }
+
+
+html {
+    // font-size: 16px;
+    -webkit-text-size-adjust: none;
+}

@@ -2,19 +2,27 @@
 @use './functions' as *;
 
 
-// $screen-sm: rem(640); // From Tailwind
-$screen-sm: rem(660); // From Tailwind  // Changing to Mobile
-$screen-md: rem(768); // From Tailwind
+
+$screen-sm: rem(640);
+// => @media (min-width: 640px) { ... }
+
+$screen-md: rem(768);
+// => @media (min-width: 768px) { ... }
+
+$screen-lg: rem(1024); // Base
+// => @media (min-width: 1024px) { ... }
+
+$screen-xl: rem(1280);
+// => @media (min-width: 1280px) { ... }
+
+$screen-2xl: rem(1536);
+// => @media (min-width: 1536px) { ... }
 
 
 
-$screen-lg: rem(1024); // From Tailwind // Base
 
 
 
-$screen-xl: rem(1280); // From Tailwind
-$screen-2xl: rem(1536); // From Tailwind
-$screen-4xl: rem(2560);
 
 
 
