@@ -3,10 +3,10 @@
 
 .section {
     background-color: $surface-00;
-    height: min(50vh, 80vw);
+    height: min(100vh, 80vw);
 
     @media (max-width: $screen-md) {
-        height: 50vh;
+        height: 100vh;
     }
 
     .container {
@@ -19,7 +19,7 @@
         gap: $spacing-3;
     }
 
-    .FlexContainer {
+    .flex {
         // background-color: blue;
 
         grid-column: 1 / 13;
@@ -28,7 +28,7 @@
         flex-direction: column;
 
 
-        .FlexItem {
+        .flexItem {
             // flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
             flex: 1;
 

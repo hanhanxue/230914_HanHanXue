@@ -15,25 +15,25 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 a {
     color: inherit;
     text-decoration: none; /* no underline */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -47,7 +47,7 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 
-img, video {
+img, svg, video {
     max-width: 100%;
     height: 100%;
     display: block;

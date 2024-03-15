@@ -2,8 +2,6 @@
 import styles from './Cover_Section.module.scss'
 
 import Link from 'next/link'
-import ContactButton from '@/components/home/ContactButton'
-
 
 
 const CoverSection = () => {
@@ -12,11 +10,11 @@ const CoverSection = () => {
             <section  className={`${styles.section}`}>
     
             <div className={`${styles.container} framex`}>
-            <div className={`${styles.FlexContainer}`}>
-                <div className={`${styles.FlexItem}`}>
+            <div className={`${styles.flex}`}>
+                <div className={`${styles.flexItem}`}>
 
                 </div>
-                <div className={`${styles.FlexItem}`}>
+                <div className={`${styles.flexItem}`}>
                    <h1 className={`title3`}  >
        <span>Principal Product Designer at&nbsp;</span>
 
@@ -29,7 +27,7 @@ const CoverSection = () => {
 
        </h1> 
                 </div>
-                <div className={`${styles.FlexItem}`}>
+                <div className={`${styles.flexItem}`}>
 
                 </div>
             </div>

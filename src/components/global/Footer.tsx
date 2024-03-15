@@ -1,6 +1,6 @@
 
 
-import { BottomFragment } from '@/components/global/Header'
+import { BottomFragment } from '@/components/global/Header_Z'
 import styles from './Footer.module.scss'
 
 const Footer = () => {

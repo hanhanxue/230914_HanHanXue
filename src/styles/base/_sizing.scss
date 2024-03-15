@@ -1,5 +1,8 @@
 @use '@/styles/abstracts/functions' as *;
 
+
+
+
 $screen-sm: rem(640);
 // => @media (min-width: 640px) { ... }
 
@@ -17,6 +20,9 @@ $screen-2xl: rem(1536);
 
 
 
+
+$spacing-1: rem(8);
+$spacing-2: rem(12);
 
 $spacing-3: rem(16);
 $spacing-4: rem(24);
