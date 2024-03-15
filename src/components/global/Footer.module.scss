@@ -31,8 +31,13 @@
 
                     display: flex;
                     justify-content: space-between;
+                
+                .time {
+                    display: flex;
+                    gap: $spacing-2;
+                }
 
-                .flex {
+                .social {
                     display: flex;
                     gap: $spacing-4;
                 }

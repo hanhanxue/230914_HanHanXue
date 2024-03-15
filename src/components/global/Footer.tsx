@@ -13,8 +13,8 @@ const Footer = () => {
     useEffect(() => {
 
         const updateCurrentTime = () => {
-            // const currentTime = new Date().toLocaleTimeString("en-US", { timeZone: "America/New_York" }) // Set time zone to EST
-            const currentTime = new Date().toLocaleTimeString("en-US") // Set time zone to EST
+            const currentTime = new Date().toLocaleTimeString("en-US", { timeZone: "America/New_York" }) // Set time zone to EST
+            // const currentTime = new Date().toLocaleTimeString("en-US") // Set time zone to EST
 
             if(currentTimeRef.current) {
                 currentTimeRef.current.textContent = currentTime;
@@ -41,10 +41,14 @@ const Footer = () => {
 
             <div className={`${styles.gridItem}`}>
         
-                <span>{`モントリオール EST `}<span ref={currentTimeRef} /></span>
- 
+                {/* <span className={`body`} >{`Montréal モントリオール `}<span ref={currentTimeRef} /></span> */}
+                <div className={styles.time} >
+                <span >{`Montréal EST`}</span>
+                <span ref={currentTimeRef} />
+                </div>
 
-                <div className={`${styles.flex}`}>
+
+                <div className={`${styles.social}`}>
                     <Link className={`  `} href={`/`} >
                     <span>Github</span>
                     </Link>

@@ -32,6 +32,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Mono';
+  src: url('/assets/fonts/Geist.Mono/Geist.Mono/GeistMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
 
 .title3 {
   font-family: 'Sans';
@@ -58,7 +64,11 @@
 }
 
 
-
+.code {
+  font-family: 'Mono';
+  font-size: rem(14);
+  line-height: rem(20);
+}
 
 
 
