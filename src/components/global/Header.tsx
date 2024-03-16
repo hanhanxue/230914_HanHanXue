@@ -14,29 +14,19 @@ const Header = () => {
             <div className={`${styles.container} framex body`}>
 
                 <div className={`${styles.gridItem}`}>
-                <Link className={`  `} href={`/`} >
-                <SuperManifoldLogo />
-                </Link>
-                <Link className={`  `} href={`/`} >
-                    <span>Han Han Xue — Product Designer</span>
-                </Link>
+                <Link className={`  `} href={`/`} ><SuperManifoldLogo /></Link>
+                <Link className={`  `} href={`/`} ><span>Han Han Xue — Product Designer</span></Link>
 
                 </div>
 
                 <nav className={`${styles.gridItem}`}>
-                    <div className={`${styles.flex}`}>
-                        <Link className={`  `} href={`/`} >
-                        <span>WIP</span>
-                        </Link>
-                        <Link className={`  `} href={`/`} >
-                            <span>Projects</span>
-                        </Link>
-                    </div>
+                    <ul className={`${styles.flex}`}>
+                        <li><Link className={`  `} href={`/`} ><span>WIP</span></Link></li>
+                        <li><Link className={`  `} href={`/`} ><span>Projects</span></Link></li>
+                    </ul>
 
 
-                <Link className={`  `} href={`/`} >
-                    <span>Information</span>
-                </Link>
+                <Link className={`  `} href={`/`} ><span>Information</span></Link>
                 </nav>
 
             </div>
