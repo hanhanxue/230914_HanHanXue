@@ -1,0 +1,19 @@
+@use '@/styles/base/sizing' as *;
+@use '@/styles/base/colors' as *;
+
+
+
+
+
+.container {
+    // flex: 0 0 auto;
+
+    // width: 250px;
+    // height: 250px;
+    background-color: $surface-debug;
+
+    border-radius: $rounded-lg;
+    overflow: hidden;
+
+    position: relative;
+}

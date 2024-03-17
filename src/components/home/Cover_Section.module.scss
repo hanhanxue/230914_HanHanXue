@@ -3,6 +3,7 @@
 
 .section {
     background-color: $surface-00;
+    // background-color: green;
     height: min(100vh, 80vw);
 
     @media (max-width: $screen-md) {
@@ -30,7 +31,6 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-
 
     }
 

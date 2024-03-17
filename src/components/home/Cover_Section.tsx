@@ -20,11 +20,6 @@ const CoverSection = () => {
 
             </div>
 
-
-
-
-
-
             </section>
     )
 }

@@ -1,0 +1,22 @@
+@use '@/styles/base/sizing' as *;
+@use '@/styles/base/colors' as *;
+
+.section {
+
+    background-color: $surface-00;
+
+
+    .container {
+        display: flex;
+        gap: $spacing-1;
+        
+        flex-wrap: wrap;
+
+    }
+
+
+}
+
+
+
+

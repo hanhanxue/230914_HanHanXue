@@ -8,12 +8,9 @@ import FooterClock from './FooterClock'
 
 const Footer = () => {
 
-    
-
-
 
     return (
-        <footer  className={`${styles.section}`}>
+        <footer  className={`${styles.section} framey`}>
     
         <div className={`${styles.container} framex body`}>
 

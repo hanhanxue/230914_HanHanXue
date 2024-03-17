@@ -4,9 +4,14 @@ import styles from './Header.module.scss'
 import Link from 'next/link'
 
 import SuperManifoldLogo from './SuperManifoldLogo'
+import ScrollToElement from '../home/ScrollToElement'
+
 
 
 const Header = () => {
+
+
+    
     return (
         
             <header  className={`${styles.section}`}>
@@ -21,7 +26,9 @@ const Header = () => {
 
                 <nav className={`${styles.gridItem}`}>
                     <ul className={`${styles.flex}`}>
-                        <li><Link className={`  `} href={`/`} ><span>WIP</span></Link></li>
+                        {/* <li><Link className={`  `} href={`#wip`} ><span>WIP</span></Link></li> */}
+                        {/* <li><span onClick={() => {scrollToId('wip')}}>WIP</span></li> */}
+                        <li><ScrollToElement elementId='wip'><span>WIP</span></ScrollToElement></li>
                         <li><Link className={`  `} href={`/`} ><span>Projects</span></Link></li>
                     </ul>
 
