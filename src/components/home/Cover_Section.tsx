@@ -10,27 +10,13 @@ const CoverSection = () => {
             <section  className={`${styles.section}`}>
     
             <div className={`${styles.container} framex`}>
-            <div className={`${styles.flex}`}>
-                <div className={`${styles.flexItem}`}>
-
-                </div>
-                <div className={`${styles.flexItem}`}>
-                   <h1 className={`title3`}  >
-       <span>Principal Product Designer at&nbsp;</span>
-
-       <Link className={`  `} href={`https://www.physicsx.ai/`} rel="noopener noreferrer" target="_blank">
-           <span><u>PhysicsX</u>®&nbsp;</span>
-       </Link>
-
-       <span>in London, UK</span>
-
-
-       </h1> 
-                </div>
-                <div className={`${styles.flexItem}`}>
-
-                </div>
-            </div>
+                    <div className={`${styles.flex}`}>
+                        <h1 className={`title3`}  >
+                            <span>Principal Product Designer&nbsp;</span>
+                            <span>at <Link className={`  `} href={`https://www.physicsx.ai/`} rel="noopener noreferrer" target="_blank"><u>PhysicsX</u>®</Link>&nbsp;</span>
+                            <span>in London, UK</span>
+                        </h1> 
+                    </div>
 
             </div>
 
