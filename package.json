@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "ts-node ./src/scripts/indexImages.ts",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -23,6 +24,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "ts-node": "^10.9.2",
     "tsx": "^3.12.10"
   }
 }
