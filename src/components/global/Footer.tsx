@@ -22,8 +22,8 @@ const Footer = () => {
         
                 {/* <span className={`body`} >{`Montréal モントリオール `}<span ref={currentTimeRef} /></span> */}
                 <div className={styles.time} >
-                <span >{`Montréal`}</span>
-                <FooterClock />
+                    <span >{`Montréal`}</span>
+                    <FooterClock />
                 </div>
 
 

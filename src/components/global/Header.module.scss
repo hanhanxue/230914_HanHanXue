@@ -18,7 +18,24 @@
 
         padding: $spacing-3 0;
 
+        @media (max-width: $screen-md) {
 
+            display: flex;
+            justify-content: space-between;
+          }
+
+        .menuIcon {
+            display: none;
+            @media (max-width: $screen-md) {
+                // grid-row: 1;
+                // grid-column: 1 / 13;
+                // display: flex;
+                // justify-content: end;
+                // // background-color: red;
+                display: block;
+
+              }
+        }
 
         .gridItem {
 
@@ -28,6 +45,12 @@
 
                 display: flex;
                 gap: $spacing-2;
+
+                .mark {
+                    @media (max-width: $screen-sm) {
+                        display: none;
+                      }
+                }
             }
 
             &:nth-child(2) {
@@ -41,6 +64,10 @@
                     display: flex;
                     gap: $spacing-4;
                 }
+
+                @media (max-width: $screen-md) {
+                    display: none;
+                  }
             }
 
         } 

@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 import SuperManifoldLogo from './SuperManifoldLogo'
 import ScrollToElement from '../home/ScrollToElement'
+import MenuIcon from './MenuIcon'
 
 
 
@@ -18,10 +19,14 @@ const Header = () => {
     
             <div className={`${styles.container} framex body`}>
 
-                <div className={`${styles.gridItem}`}>
-                <Link className={`  `} href={`/`} ><SuperManifoldLogo /></Link>
-                <Link className={`  `} href={`/`} ><span>Han Han Xue — Product Designer</span></Link>
-
+                <div className={`${styles.gridItem} ${styles.identity}`}>
+                    <Link className={`${styles.logo}`} href={`/`} ><SuperManifoldLogo /></Link>
+                    <Link className={`${styles.mark}`} href={`/`} >
+             
+                        <span className={`${styles.name}`}>Han Han Xue</span>
+                        <span className={`${styles.tagline}`}> — Product Designer</span>
+        
+                    </Link>
                 </div>
 
                 <nav className={`${styles.gridItem}`}>
@@ -34,6 +39,11 @@ const Header = () => {
 
 
                 <Link className={`  `} href={`/`} ><span>Information</span></Link>
+                </nav>
+
+                <nav className={`${styles.menuIcon}`} >
+
+                <MenuIcon />
                 </nav>
 
             </div>
