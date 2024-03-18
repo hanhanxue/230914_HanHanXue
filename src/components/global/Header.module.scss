@@ -14,9 +14,9 @@
 
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        gap: $spacing-3;
+        gap: $spacing-4;
 
-        padding: $spacing-3 0;
+        padding: $spacing-4 0;
 
         @media (max-width: $screen-md) {
 
