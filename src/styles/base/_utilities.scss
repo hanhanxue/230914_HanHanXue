@@ -6,6 +6,10 @@
 
 .framex {
     margin: 0 $spacing-6;
+
+    @media (max-width: $screen-sm) {
+        margin: 0 $spacing-4;
+      }
 }
 
 .framey {
