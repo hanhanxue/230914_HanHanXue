@@ -10,7 +10,7 @@ const home = ({  }) => {
     return (
 
         <main>
-            {/* <Cover_Section /> */}
+            <Cover_Section />
             <Gallery_Section />
         </main>
 

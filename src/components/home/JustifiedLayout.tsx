@@ -5,10 +5,22 @@ import ImageContainer from './ImageContainer'
 
 const layout = require('justified-layout')
 
+interface Props {
+    images: IImage[]
+    aspectRatios: number[]
+}
 
-export default function JustifiedLayout({images, aspectRatios} ) {
+interface IBox {
+    aspectRatio: number,
+    top: number,
+    width: number,
+    height: number,
+    left: number
+}
 
-    const containerRef = useRef(null)
+export default function JustifiedLayout({images, aspectRatios} : Props) {
+
+    const containerRef = useRef<HTMLDivElement>(null)
     const [containerWidth, setContainerWidth] = useState(0)
 
 
@@ -54,7 +66,7 @@ export default function JustifiedLayout({images, aspectRatios} ) {
     height: layoutGeometry.containerHeight
     }}>
  
-        {layoutGeometry.boxes.map((box, index) => {
+        {layoutGeometry.boxes.map((box : IBox, index : number) => {
             // console.log(images[index])
             return (
                 <div

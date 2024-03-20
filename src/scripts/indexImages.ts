@@ -76,7 +76,6 @@ const indexImages = (inputPath: string) => {
     })
 
 
-    console.log(images)
     fs.writeFileSync(indexPath, JSON.stringify(images.reverse(), null, 2))
 }
 
