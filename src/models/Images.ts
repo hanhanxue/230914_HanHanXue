@@ -14,6 +14,7 @@ export interface IImage {
     maxWidth: number
     maxHeight: number
     filename: string
+    unoptimized: boolean
     title?: string
     dateCreated?: string
     blurredDataUrl?: string

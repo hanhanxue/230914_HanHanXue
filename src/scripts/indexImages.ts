@@ -49,12 +49,17 @@ const indexImages = (inputPath: string) => {
     })
     .map((dirent : Dirent) => {
         const filename = dirent.name
+        const fileExtension = path.extname(filename)
         const src = path.join(inputPath, filename).replace(/\\/g, '/')
 
         const {width, height} = sizeOf(path.join(dirent.path, filename))
         const {maxWidth, maxHeight, aspectRatio} = calcDimensions(width, height, 960, 720)
 
         const alt = 'product designer han han xue'
+
+        const unoptimized = fileExtension === '.gif' ? true : false 
+
+        // console.log(filename, fileExtension)
 
         return {
             src,
@@ -66,11 +71,12 @@ const indexImages = (inputPath: string) => {
             maxWidth,
             maxHeight,
             filename,
+            unoptimized,
         }
     })
 
 
-    // console.log(images)
+    console.log(images)
     fs.writeFileSync(indexPath, JSON.stringify(images.reverse(), null, 2))
 }
 

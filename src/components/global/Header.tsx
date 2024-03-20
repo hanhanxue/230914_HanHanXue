@@ -33,12 +33,13 @@ const Header = () => {
                     <ul className={`${styles.flex}`}>
                         {/* <li><Link className={`  `} href={`#wip`} ><span>WIP</span></Link></li> */}
                         {/* <li><span onClick={() => {scrollToId('wip')}}>WIP</span></li> */}
-                        <li><ScrollToElement elementId='wip'><span>WIP</span></ScrollToElement></li>
-                        <li><Link className={`  `} href={`/`} ><span>Projects</span></Link></li>
+                        {/* <li><ScrollToElement elementId='wip'><span>WIP</span></ScrollToElement></li> */}
+                        <li><Link className={`  `} href={`/#wip`} ><span>WIP</span></Link></li>
+                        <li><Link className={`  `} href={`/projects`} ><span>Projects</span></Link></li>
                     </ul>
 
 
-                <Link className={`  `} href={`/`} ><span>Information</span></Link>
+                <Link className={`  `} href={`/information`} ><span>Information</span></Link>
                 </nav>
 
                 <nav className={`${styles.menuIcon}`} >

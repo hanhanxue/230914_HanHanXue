@@ -7,7 +7,8 @@
     "aspectRatio": 1.7751479289940828,
     "maxWidth": 600,
     "maxHeight": 338,
-    "filename": "230921_raisingGrainsFlip2.gif"
+    "filename": "230921_raisingGrainsFlip2.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/230918_grainsRenderLighter.gif",
@@ -17,7 +18,8 @@
     "aspectRatio": 1.7751479289940828,
     "maxWidth": 600,
     "maxHeight": 338,
-    "filename": "230918_grainsRenderLighter.gif"
+    "filename": "230918_grainsRenderLighter.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/221122_mat_B.gif",
@@ -27,7 +29,8 @@
     "aspectRatio": 1.7777777777777777,
     "maxWidth": 480,
     "maxHeight": 270,
-    "filename": "221122_mat_B.gif"
+    "filename": "221122_mat_B.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/221030_1_ps.jpg",
@@ -37,7 +40,8 @@
     "aspectRatio": 1,
     "maxWidth": 720,
     "maxHeight": 720,
-    "filename": "221030_1_ps.jpg"
+    "filename": "221030_1_ps.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/221023_B ps.jpg",
@@ -47,7 +51,8 @@
     "aspectRatio": 1,
     "maxWidth": 720,
     "maxHeight": 720,
-    "filename": "221023_B ps.jpg"
+    "filename": "221023_B ps.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/210917C.jpg",
@@ -57,7 +62,8 @@
     "aspectRatio": 1.7777777777777777,
     "maxWidth": 960,
     "maxHeight": 540,
-    "filename": "210917C.jpg"
+    "filename": "210917C.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/210705A_ps_small.jpg",
@@ -67,7 +73,8 @@
     "aspectRatio": 1,
     "maxWidth": 512,
     "maxHeight": 512,
-    "filename": "210705A_ps_small.jpg"
+    "filename": "210705A_ps_small.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/210516.gif",
@@ -77,7 +84,8 @@
     "aspectRatio": 1,
     "maxWidth": 600,
     "maxHeight": 600,
-    "filename": "210516.gif"
+    "filename": "210516.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/201018_ballFix.gif",
@@ -87,7 +95,8 @@
     "aspectRatio": 0.6468305304010349,
     "maxWidth": 466,
     "maxHeight": 720,
-    "filename": "201018_ballFix.gif"
+    "filename": "201018_ballFix.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/201016a_falling_resized.gif",
@@ -97,7 +106,8 @@
     "aspectRatio": 0.5625,
     "maxWidth": 405,
     "maxHeight": 720,
-    "filename": "201016a_falling_resized.gif"
+    "filename": "201016a_falling_resized.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/191231_beam_low.jpg",
@@ -107,7 +117,8 @@
     "aspectRatio": 0.7494145199063232,
     "maxWidth": 540,
     "maxHeight": 720,
-    "filename": "191231_beam_low.jpg"
+    "filename": "191231_beam_low.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/191224_sophia.jpg",
@@ -117,7 +128,8 @@
     "aspectRatio": 2.3616236162361623,
     "maxWidth": 960,
     "maxHeight": 407,
-    "filename": "191224_sophia.jpg"
+    "filename": "191224_sophia.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/191130_007_cam.gif",
@@ -127,7 +139,8 @@
     "aspectRatio": 1.85,
     "maxWidth": 960,
     "maxHeight": 519,
-    "filename": "191130_007_cam.gif"
+    "filename": "191130_007_cam.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/191122.jpg",
@@ -137,7 +150,8 @@
     "aspectRatio": 1.8497109826589595,
     "maxWidth": 960,
     "maxHeight": 519,
-    "filename": "191122.jpg"
+    "filename": "191122.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1902.gif",
@@ -147,7 +161,8 @@
     "aspectRatio": 2.388059701492537,
     "maxWidth": 800,
     "maxHeight": 335,
-    "filename": "1902.gif"
+    "filename": "1902.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1901.png",
@@ -157,7 +172,8 @@
     "aspectRatio": 1,
     "maxWidth": 720,
     "maxHeight": 720,
-    "filename": "1901.png"
+    "filename": "1901.png",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1829.gif",
@@ -167,7 +183,8 @@
     "aspectRatio": 1,
     "maxWidth": 540,
     "maxHeight": 540,
-    "filename": "1829.gif"
+    "filename": "1829.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1828.png",
@@ -177,7 +194,8 @@
     "aspectRatio": 2.388059701492537,
     "maxWidth": 960,
     "maxHeight": 403,
-    "filename": "1828.png"
+    "filename": "1828.png",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1827.jpg",
@@ -187,7 +205,8 @@
     "aspectRatio": 1.875,
     "maxWidth": 600,
     "maxHeight": 320,
-    "filename": "1827.jpg"
+    "filename": "1827.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1826.jpg",
@@ -197,7 +216,8 @@
     "aspectRatio": 1.7777777777777777,
     "maxWidth": 960,
     "maxHeight": 540,
-    "filename": "1826.jpg"
+    "filename": "1826.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1825.gif",
@@ -207,7 +227,8 @@
     "aspectRatio": 1.7763157894736843,
     "maxWidth": 540,
     "maxHeight": 304,
-    "filename": "1825.gif"
+    "filename": "1825.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1824.gif",
@@ -217,7 +238,8 @@
     "aspectRatio": 1.7763157894736843,
     "maxWidth": 540,
     "maxHeight": 304,
-    "filename": "1824.gif"
+    "filename": "1824.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1823.gif",
@@ -227,7 +249,8 @@
     "aspectRatio": 1.7763157894736843,
     "maxWidth": 540,
     "maxHeight": 304,
-    "filename": "1823.gif"
+    "filename": "1823.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1822.gif",
@@ -237,7 +260,8 @@
     "aspectRatio": 1.7763157894736843,
     "maxWidth": 540,
     "maxHeight": 304,
-    "filename": "1822.gif"
+    "filename": "1822.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1821.gif",
@@ -247,7 +271,8 @@
     "aspectRatio": 1.7763157894736843,
     "maxWidth": 540,
     "maxHeight": 304,
-    "filename": "1821.gif"
+    "filename": "1821.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1820.jpg",
@@ -257,7 +282,8 @@
     "aspectRatio": 1.7777777777777777,
     "maxWidth": 960,
     "maxHeight": 540,
-    "filename": "1820.jpg"
+    "filename": "1820.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1819.gif",
@@ -267,7 +293,8 @@
     "aspectRatio": 1,
     "maxWidth": 540,
     "maxHeight": 540,
-    "filename": "1819.gif"
+    "filename": "1819.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1818.jpg",
@@ -277,7 +304,8 @@
     "aspectRatio": 1.7777777777777777,
     "maxWidth": 960,
     "maxHeight": 540,
-    "filename": "1818.jpg"
+    "filename": "1818.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1817.jpg",
@@ -287,7 +315,8 @@
     "aspectRatio": 1.7777777777777777,
     "maxWidth": 960,
     "maxHeight": 540,
-    "filename": "1817.jpg"
+    "filename": "1817.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1816.gif",
@@ -297,7 +326,8 @@
     "aspectRatio": 1.7763157894736843,
     "maxWidth": 540,
     "maxHeight": 304,
-    "filename": "1816.gif"
+    "filename": "1816.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1815.gif",
@@ -307,7 +337,8 @@
     "aspectRatio": 1.7763157894736843,
     "maxWidth": 540,
     "maxHeight": 304,
-    "filename": "1815.gif"
+    "filename": "1815.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1814.png",
@@ -317,7 +348,8 @@
     "aspectRatio": 1.7777777777777777,
     "maxWidth": 960,
     "maxHeight": 540,
-    "filename": "1814.png"
+    "filename": "1814.png",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1813.png",
@@ -327,7 +359,8 @@
     "aspectRatio": 1.7777777777777777,
     "maxWidth": 960,
     "maxHeight": 540,
-    "filename": "1813.png"
+    "filename": "1813.png",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1812.gif",
@@ -337,7 +370,8 @@
     "aspectRatio": 1,
     "maxWidth": 540,
     "maxHeight": 540,
-    "filename": "1812.gif"
+    "filename": "1812.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1811.jpg",
@@ -347,7 +381,8 @@
     "aspectRatio": 1.7777777777777777,
     "maxWidth": 960,
     "maxHeight": 540,
-    "filename": "1811.jpg"
+    "filename": "1811.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1810.gif",
@@ -357,7 +392,8 @@
     "aspectRatio": 1,
     "maxWidth": 540,
     "maxHeight": 540,
-    "filename": "1810.gif"
+    "filename": "1810.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1808.gif",
@@ -367,7 +403,8 @@
     "aspectRatio": 2.3856858846918487,
     "maxWidth": 960,
     "maxHeight": 403,
-    "filename": "1808.gif"
+    "filename": "1808.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1806.gif",
@@ -377,7 +414,8 @@
     "aspectRatio": 1.1688311688311688,
     "maxWidth": 540,
     "maxHeight": 462,
-    "filename": "1806.gif"
+    "filename": "1806.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1805.jpg",
@@ -387,7 +425,8 @@
     "aspectRatio": 1.7777777777777777,
     "maxWidth": 960,
     "maxHeight": 540,
-    "filename": "1805.jpg"
+    "filename": "1805.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1804.gif",
@@ -397,7 +436,8 @@
     "aspectRatio": 1,
     "maxWidth": 540,
     "maxHeight": 540,
-    "filename": "1804.gif"
+    "filename": "1804.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1803.gif",
@@ -407,7 +447,8 @@
     "aspectRatio": 1.7763157894736843,
     "maxWidth": 540,
     "maxHeight": 304,
-    "filename": "1803.gif"
+    "filename": "1803.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1802.gif",
@@ -417,7 +458,8 @@
     "aspectRatio": 1.7763157894736843,
     "maxWidth": 540,
     "maxHeight": 304,
-    "filename": "1802.gif"
+    "filename": "1802.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1801.gif",
@@ -427,7 +469,8 @@
     "aspectRatio": 1.7763157894736843,
     "maxWidth": 540,
     "maxHeight": 304,
-    "filename": "1801.gif"
+    "filename": "1801.gif",
+    "unoptimized": true
   },
   {
     "src": "/content/wip/1701.jpg",
@@ -437,7 +480,8 @@
     "aspectRatio": 1.7777777777777777,
     "maxWidth": 960,
     "maxHeight": 540,
-    "filename": "1701.jpg"
+    "filename": "1701.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1610_10001_float4-ident_hanhanxue.jpg",
@@ -447,7 +491,8 @@
     "aspectRatio": 2.3703703703703702,
     "maxWidth": 960,
     "maxHeight": 405,
-    "filename": "1610_10001_float4-ident_hanhanxue.jpg"
+    "filename": "1610_10001_float4-ident_hanhanxue.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1610_09005_float4-ident_hanhanxue.jpg",
@@ -457,7 +502,8 @@
     "aspectRatio": 2.3703703703703702,
     "maxWidth": 960,
     "maxHeight": 405,
-    "filename": "1610_09005_float4-ident_hanhanxue.jpg"
+    "filename": "1610_09005_float4-ident_hanhanxue.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1609.jpg",
@@ -467,7 +513,8 @@
     "aspectRatio": 1,
     "maxWidth": 720,
     "maxHeight": 720,
-    "filename": "1609.jpg"
+    "filename": "1609.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1608.jpg",
@@ -477,7 +524,8 @@
     "aspectRatio": 1,
     "maxWidth": 720,
     "maxHeight": 720,
-    "filename": "1608.jpg"
+    "filename": "1608.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1606F.jpg",
@@ -487,7 +535,8 @@
     "aspectRatio": 1,
     "maxWidth": 720,
     "maxHeight": 720,
-    "filename": "1606F.jpg"
+    "filename": "1606F.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1606.jpg",
@@ -497,7 +546,8 @@
     "aspectRatio": 1.7777777777777777,
     "maxWidth": 960,
     "maxHeight": 540,
-    "filename": "1606.jpg"
+    "filename": "1606.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1605F.jpg",
@@ -507,7 +557,8 @@
     "aspectRatio": 1.9452887537993921,
     "maxWidth": 960,
     "maxHeight": 494,
-    "filename": "1605F.jpg"
+    "filename": "1605F.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1605.jpg",
@@ -517,7 +568,8 @@
     "aspectRatio": 1.7777777777777777,
     "maxWidth": 960,
     "maxHeight": 540,
-    "filename": "1605.jpg"
+    "filename": "1605.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1602.jpg",
@@ -527,7 +579,8 @@
     "aspectRatio": 1.7777777777777777,
     "maxWidth": 960,
     "maxHeight": 540,
-    "filename": "1602.jpg"
+    "filename": "1602.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1601.jpg",
@@ -537,7 +590,8 @@
     "aspectRatio": 1.7777777777777777,
     "maxWidth": 960,
     "maxHeight": 540,
-    "filename": "1601.jpg"
+    "filename": "1601.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1508_007_bombardier_hanhanxue.jpg",
@@ -547,7 +601,8 @@
     "aspectRatio": 2.397003745318352,
     "maxWidth": 960,
     "maxHeight": 401,
-    "filename": "1508_007_bombardier_hanhanxue.jpg"
+    "filename": "1508_007_bombardier_hanhanxue.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1504.jpg",
@@ -557,7 +612,8 @@
     "aspectRatio": 1.7777777777777777,
     "maxWidth": 960,
     "maxHeight": 540,
-    "filename": "1504.jpg"
+    "filename": "1504.jpg",
+    "unoptimized": false
   },
   {
     "src": "/content/wip/1502.jpg",
@@ -567,6 +623,7 @@
     "aspectRatio": 1.7777777777777777,
     "maxWidth": 960,
     "maxHeight": 540,
-    "filename": "1502.jpg"
+    "filename": "1502.jpg",
+    "unoptimized": false
   }
 ]

@@ -12,20 +12,15 @@ export default function ImageContainer({image} : Props) {
 
   return (
 
-    <div className={`${styles.container}`}
-    // style={{width: image.maxWidth, height: image.maxHeight}}
-    style={{width: image.maxWidth, height: image.maxHeight}}
-    >
-        
-      <Image
-      src={image.src}
-      // width={image.maxWidth}
-      // height={image.maxHeight}
+    <Image
+    src={image.src}
+    // width={image.maxWidth}
+    // height={image.maxHeight}
 
     fill={true}
-      alt={image.alt}
-       />
-    </div>
+    alt={image.alt}
+    unoptimized={image.unoptimized}
+    />
   )
 }
 
