@@ -1,3 +1,4 @@
+import ProjectsIndex_Section from "@/components/projects/ProjectsIndex_Section"
 
 
 
@@ -9,14 +10,7 @@ const projects = ({  }) => {
     return (
 
         <main>
-                        projects page<br />
-            projects page<br />
-            projects page<br />
-            projects page<br />
-            projects page<br />
-            projects page<br />
-            projects page<br />
-            projects page<br />
+<ProjectsIndex_Section />
         </main>
 
     )

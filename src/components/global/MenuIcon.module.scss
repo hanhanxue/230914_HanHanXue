@@ -36,13 +36,14 @@
         transition-timing-function: ease-out;
 
         &:nth-child(1) {
-            transform: translateX(10px)  translateY(5px);
+            transform: translateX(10px)  translateY(6px);
         }
         &:nth-child(2) {
+            opacity: 0;
             transform: translateX(10px) translateY(10px);
         }
         &:nth-child(3) {
-            transform: translateX(10px)  translateY(15px);
+            transform: translateX(10px)  translateY(14px);
         }
     
 

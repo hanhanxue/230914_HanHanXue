@@ -4,7 +4,7 @@ import styles from './Cover_Section.module.scss'
 import Link from 'next/link'
 
 
-const CoverSection = () => {
+const Cover_Section = () => {
     return (
         
             <section  className={`${styles.section}`}>
@@ -25,7 +25,7 @@ const CoverSection = () => {
 }
 
 
-export default CoverSection
+export default Cover_Section
 
 
 

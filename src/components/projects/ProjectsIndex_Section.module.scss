@@ -1,0 +1,31 @@
+@use '@/styles/base/sizing' as *;
+@use '@/styles/base/colors' as *;
+
+.section {
+ 
+    background-color: $surface-00;
+    .container {
+
+        background-color: 'blue';
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        gap: $spacing-4;
+
+        .gridItem_1_2 {
+            grid-row: span 4;
+            grid-column: span 2;
+            background-color: $surface-debug;
+
+    
+        }
+
+
+    }
+
+
+
+}
+
+
