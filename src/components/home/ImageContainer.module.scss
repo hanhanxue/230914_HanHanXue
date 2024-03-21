@@ -6,14 +6,19 @@
 
 
 .container {
+    background-color: $surface-debug;
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+
     // flex: 0 0 auto;
 
     // width: 250px;
     // height: 250px;
-    background-color: $surface-debug;
 
-    border-radius: $rounded-lg;
-    overflow: hidden;
+    // border-radius: $rounded-lg;
+    // overflow: hidden;
 
-    position: relative;
 }

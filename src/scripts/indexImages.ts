@@ -80,6 +80,7 @@ const indexImages = (inputPath: string) => {
 }
 
 indexImages('/content/wip')
+indexImages('/content/test')
 
 
 

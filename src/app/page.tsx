@@ -10,8 +10,8 @@ const home = ({  }) => {
     return (
 
         <main>
-            <Cover_Section />
-            <Gallery_Section />
+            {/* <Cover_Section /> */}
+            <Gallery_Section indexPath = 'content/wip' />
         </main>
 
     )

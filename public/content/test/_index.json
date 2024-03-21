@@ -1,0 +1,57 @@
+[
+  {
+    "src": "/content/test/201016a_falling_resized.gif",
+    "width": 405,
+    "height": 720,
+    "alt": "product designer han han xue",
+    "aspectRatio": 0.5625,
+    "maxWidth": 405,
+    "maxHeight": 720,
+    "filename": "201016a_falling_resized.gif",
+    "unoptimized": true
+  },
+  {
+    "src": "/content/test/191224_sophia.jpg",
+    "width": 1280,
+    "height": 542,
+    "alt": "product designer han han xue",
+    "aspectRatio": 2.3616236162361623,
+    "maxWidth": 960,
+    "maxHeight": 407,
+    "filename": "191224_sophia.jpg",
+    "unoptimized": false
+  },
+  {
+    "src": "/content/test/191130_007_cam.gif",
+    "width": 1480,
+    "height": 800,
+    "alt": "product designer han han xue",
+    "aspectRatio": 1.85,
+    "maxWidth": 960,
+    "maxHeight": 519,
+    "filename": "191130_007_cam.gif",
+    "unoptimized": true
+  },
+  {
+    "src": "/content/test/1828.png",
+    "width": 1280,
+    "height": 536,
+    "alt": "product designer han han xue",
+    "aspectRatio": 2.388059701492537,
+    "maxWidth": 960,
+    "maxHeight": 403,
+    "filename": "1828.png",
+    "unoptimized": false
+  },
+  {
+    "src": "/content/test/1821.gif",
+    "width": 540,
+    "height": 304,
+    "alt": "product designer han han xue",
+    "aspectRatio": 1.7763157894736843,
+    "maxWidth": 540,
+    "maxHeight": 304,
+    "filename": "1821.gif",
+    "unoptimized": true
+  }
+]

@@ -3,6 +3,7 @@ import type {IImage} from '@/models/Images'
 import {useRef, useEffect, useState, useLayoutEffect} from 'react'
 import ImageContainer from './ImageContainer'
 
+
 const layout = require('justified-layout')
 
 interface Props {
@@ -10,7 +11,7 @@ interface Props {
     aspectRatios: number[]
 }
 
-interface IBox {
+interface ILayoutBox {
     aspectRatio: number,
     top: number,
     width: number,
@@ -21,7 +22,7 @@ interface IBox {
 export default function JustifiedLayout({images, aspectRatios} : Props) {
 
     const containerRef = useRef<HTMLDivElement>(null)
-    const [containerWidth, setContainerWidth] = useState(0)
+    const [containerWidth, setContainerWidth] = useState(100)
 
 
     const layoutGeometry = layout(aspectRatios, {
@@ -29,10 +30,8 @@ export default function JustifiedLayout({images, aspectRatios} : Props) {
         containerWidth: containerWidth,
         boxSpacing: 12,
     })
-    useLayoutEffect(() => {
-    })
 
-
+    
     useEffect(() => {
         const updateContainerWidth = () => {
             if (containerRef.current) {
@@ -52,34 +51,32 @@ export default function JustifiedLayout({images, aspectRatios} : Props) {
     }, [])
 
 
-    // console.log(images)
-    // console.log(layoutGeometry)
-
-
   return (
+
     <div 
     ref={containerRef} // Assign the ref to the container div
-
     style={{
+        // background: 'blue',
     position: 'relative',
-    // background: 'red',
     height: layoutGeometry.containerHeight
     }}>
  
-        {layoutGeometry.boxes.map((box : IBox, index : number) => {
+
+
+        {layoutGeometry.boxes.map((layoutBox : ILayoutBox, index : number) => {
             // console.log(images[index])
             return (
                 <div
                 key={index}
                 style={{
+                    // background: 'aqua',
                     position: 'absolute',
-                    background: 'blue',
-                    height: box.height,
-                    width: box.width,
-                    top: box.top,
-                    left: box.left,
+                    height: layoutBox.height,
+                    width: layoutBox.width,
+                    top: layoutBox.top,
+                    left: layoutBox.left,
                     // borderRadius: '8px',
-                    overflow: 'hidden',
+                    // overflow: 'hidden',
                 }}>
                     <ImageContainer image={images[index]} />
                 </div>
