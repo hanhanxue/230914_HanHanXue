@@ -28,7 +28,10 @@ export default function JustifiedLayout({images, aspectRatios} : Props) {
     const layoutGeometry = layout(aspectRatios, {
         containerPadding: 0,
         containerWidth: containerWidth,
-        boxSpacing: 12,
+        boxSpacing: 16,
+        targetRowHeight: 320,
+        targetRowHeightTolerance: .25,
+        // boxSpacing: 16,
     })
 
     

@@ -41,6 +41,22 @@
 
 
 
+
+.display {
+  font-family: 'Sans';
+  font-size: rem(64);
+  line-height: rem(68);
+  letter-spacing: -.1rem;
+
+  @media (max-width: $screen-md) {
+    font-size: rem(26);
+    line-height: rem(32);
+    letter-spacing:  -.02rem;
+    // font-weight: 500;
+  }
+}
+
+
 .title3 {
   font-family: 'Sans';
   font-size: rem(21);
@@ -54,12 +70,12 @@
 
 
 
-.body-strong {
-  font-family: 'Sans';
-  font-size: rem(14);
-  line-height: rem(20);
-  font-weight: 500;
-}
+// .body-strong {
+//   font-family: 'Sans';
+//   font-size: rem(14);
+//   line-height: rem(20);
+//   font-weight: 500;
+// }
 
 .body {
   font-family: 'Sans';

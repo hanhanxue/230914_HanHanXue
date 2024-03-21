@@ -13,6 +13,20 @@ const ProjectsIndex_Section = () => {
 
   
                 <div className={`${styles.gridItem_1_2}`}></div>
+                <div className={`${styles.gridItem_1_1}`}></div>
+                <div className={`${styles.gridItem_1_1}`}></div>
+
+                <div className={`${styles.gridItem_2_1}`}></div>
+
+                <div className={`${styles.gridItem_1_2}`}></div>
+                <div className={`${styles.gridItem_1_1}`}></div>
+                <div className={`${styles.gridItem_1_1}`}></div>
+
+                
+
+                <div className={`${styles.gridItem_1_2}`}></div>
+                <div className={`${styles.gridItem_1_1}`}></div>
+
 
             </div>
 

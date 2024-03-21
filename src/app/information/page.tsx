@@ -1,3 +1,4 @@
+import About_Section from "@/components/information/Bio_Section"
 
 
 
@@ -11,15 +12,8 @@ const information = ({  }) => {
     return (
 
         <main>
-            information page<br />
-            information page<br />
-            information page<br />
-            information page<br />
-            information page<br />
-            information page<br />
-            information page<br />
-            information page<br />
-            
+
+            <About_Section />
 
         </main>
 

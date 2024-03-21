@@ -15,3 +15,10 @@
 .framey {
     padding-top: $spacing-24;
 }
+
+.framey-xl {
+    padding-top: $spacing-48;
+    @media (max-width: $screen-md) {
+        padding-top: $spacing-32;
+      }
+}

@@ -6,6 +6,7 @@
     height: 20px;
     width: 20px;
     cursor: pointer;
+    user-select: none;
 
     &.isOpen {
         .iconStroke {
@@ -50,17 +51,5 @@
 
     }
 
-    // .iconStroke:nth-child(1) {
-    //     // transform: translateX(5px);
-    //     transform: translateX(3px) rotate(45deg);
-    // }
-    // .iconStroke:nth-child(2) {
-    //     width: 0;
-    //     opacity: 0;
-    // }
-    // .iconStroke:nth-child(3) {
-    //     // transform: translateX(5px);
-    //     transform: translateX(3px) rotate(-45deg);
-    // }
 
 }

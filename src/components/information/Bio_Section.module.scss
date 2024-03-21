@@ -1,0 +1,31 @@
+
+
+@use '@/styles/base/sizing' as *;
+@use '@/styles/base/colors' as *;
+
+.section {
+ 
+    background-color: $surface-00;
+    // background-color: $surface-debug;
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        // gap: $spacing-4;
+        column-gap: $spacing-4;
+
+        .sectionTitle {
+            grid-column: 4 / 13;
+        }
+        .sectionCopy {
+            grid-column: 1 / 13;
+            p {
+                text-indent: calc((  (100% - (16px * 11)) / 12 + 16px) * 3  );
+            }
+        }
+    
+        }
+
+
+    }
+
+
