@@ -77,10 +77,12 @@
 //   font-weight: 500;
 // }
 
+
+
 .body {
-  font-family: 'Sans';
-  font-size: rem(14);
-  line-height: rem(20);
+  font-family: 'Sans' !important;
+  font-size: rem(14) !important;
+  line-height: rem(20) !important;
 }
 
 
