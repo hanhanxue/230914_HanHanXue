@@ -19,7 +19,7 @@ export default function About_Section() {
 
             Formal design training from architecture school with extensive work experience spanning entertainment, architecture, and technology.
 
-            I am driven by curiosity and a relentless pursuit of excellence and craftsmanship. 
+            Driven by curiosity and a relentless pursuit of excellence and craftsmanship. 
 
             Previously building engineering tooling for autonomous systems research at Lyft and Toyota,
 

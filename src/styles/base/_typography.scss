@@ -86,10 +86,14 @@
 
 .code {
   font-family: 'Mono';
-  font-size: rem(14);
-  line-height: rem(20);
+  font-size: rem(12);
+  line-height: rem(18);
 }
-
+@mixin code {
+  font-family: 'Mono';
+  font-size: rem(12);
+  line-height: rem(18);
+} 
 
 
 

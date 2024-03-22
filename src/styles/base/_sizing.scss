@@ -1,13 +1,15 @@
 @use '@/styles/abstracts/functions' as *;
 
 
-
+$screen-xsm: rem(496);
 
 $screen-sm: rem(640);
 // => @media (min-width: 640px) { ... }
 
 $screen-md: rem(768);
 // => @media (min-width: 768px) { ... }
+
+$screen-md2: rem(896);
 
 $screen-lg: rem(1024);
 // => @media (min-width: 1024px) { ... }
@@ -20,7 +22,7 @@ $screen-2xl: rem(1536);
 
 
 
-
+$spacing-1: rem(4);
 
 $spacing-2: rem(8);
 $spacing-3: rem(12);
