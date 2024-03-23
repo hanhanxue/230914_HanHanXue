@@ -3,7 +3,7 @@ const sizeOf = require('image-size')
 const fs = require('fs');
 const path = require('path');
 
-interface Dirent {
+interface IDirent {
     name: string;
     path: string;
 }
@@ -41,13 +41,13 @@ const indexImages = (inputPath: string) => {
     const dirents = fs.readdirSync(dirPath, {withFileTypes: true})
 
     const images = dirents
-    .filter((dirent : Dirent) => {
+    .filter((dirent : IDirent) => {
     // skip dirent with name that starts with _
       const reg_exp = /^_/gm
       if(reg_exp.test(dirent.name)) return false
       return true
     })
-    .map((dirent : Dirent) => {
+    .map((dirent : IDirent) => {
         const filename = dirent.name
         const fileExtension = path.extname(filename)
         const src = path.join(inputPath, filename).replace(/\\/g, '/')

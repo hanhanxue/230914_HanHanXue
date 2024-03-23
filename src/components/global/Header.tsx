@@ -1,25 +1,50 @@
+'use client'
 
 import styles from './Header.module.scss'
 
 import Link from 'next/link'
 
 import SuperManifoldLogo from './SuperManifoldLogo'
-import ScrollToElement from '../home/ScrollToElement'
-import MenuIcon from './MenuIcon'
+import MenuIcon from './MenuButton'
+import { useEffect, useLayoutEffect, useState } from 'react'
+
 
 
 
 const Header = () => {
 
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
 
+    const handleMenuOpen = () => {
+        setIsMenuOpen((current) => !current)
+    }
     
+    useEffect(() => {
+        if(isMenuOpen) {
+            document.body.classList.add("isMenuOpen")
+        } else {
+            document.body.classList.remove("isMenuOpen")
+        }
+    }, [isMenuOpen])
+
     return (
         
-            <header  className={`${styles.section}`}>
+            <header  className={`
+            ${styles.section}
+            ${isMenuOpen ? styles.isMenuOpen : ''}
+            `}>
     
-            <div className={`${styles.container} framex body`}>
+            <div className={`
+            ${styles.container} 
 
-                <div className={`${styles.gridItem} ${styles.identity}`}>
+            framex body`}>
+
+
+                {/* Logo lockup */}
+                <div className={`
+                ${styles.gridItem} 
+                ${styles.identity}
+                `}>
                     <Link className={`${styles.logo}`} href={`/`} ><SuperManifoldLogo /></Link>
                     <Link className={`${styles.mark}`} href={`/`} >
              
@@ -29,23 +54,33 @@ const Header = () => {
                     </Link>
                 </div>
 
-                <nav className={`${styles.gridItem}`}>
-                    <ul className={`${styles.flex}`}>
+
+                {/* Menu icon */}
+                <div className={`${styles.menuIcon}`} >
+                <MenuIcon isOpen={isMenuOpen} onClick={handleMenuOpen}/>
+                </div>
+
+
+
+                {/* Navigation */}
+                <nav className={`
+                ${styles.gridItem} 
+                ${styles.nav}
+                `}>
+                    <ul className={`${styles.mainLinks}`}>
                         {/* <li><Link className={`  `} href={`#wip`} ><span>WIP</span></Link></li> */}
                         {/* <li><span onClick={() => {scrollToId('wip')}}>WIP</span></li> */}
                         {/* <li><ScrollToElement elementId='wip'><span>WIP</span></ScrollToElement></li> */}
-                        <li><Link className={`  `} href={`/#wip`} ><span>WIP</span></Link></li>
-                        <li><Link className={`  `} href={`/projects`} ><span>Projects</span></Link></li>
+                        <li><Link className={`  `} href={`/#wip`} onClick={handleMenuOpen}><span>WIP</span></Link></li>
+                        <li><Link className={`  `} href={`/projects`} onClick={handleMenuOpen} ><span>Projects</span></Link></li>
                     </ul>
 
+                    <Link className={`  `} href={`/information`} onClick={handleMenuOpen} ><span>Information</span></Link>
+                    </nav>
 
-                <Link className={`  `} href={`/information`} ><span>Information</span></Link>
-                </nav>
 
-                <nav className={`${styles.menuIcon}`} >
 
-                <MenuIcon />
-                </nav>
+
 
             </div>
 

@@ -11,8 +11,8 @@
     .container {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        // gap: $spacing-4;
-        column-gap: $spacing-4;
+        gap: $spacing-4;
+        // column-gap: $spacing-4;
 
         .sectionHeader {
             grid-column: 4 / 13;
@@ -37,7 +37,14 @@
                 }
                 ul {
                     margin-top: $spacing-2;
+
+                    li:not(:first-child) {
+                        // background-color: red;
+                        margin-top: $spacing-1;
+                    }
                 }
+
+
             }
 
 

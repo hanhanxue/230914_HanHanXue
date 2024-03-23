@@ -7,12 +7,12 @@ import path from 'path'
 import JustifiedLayout from './JustifiedLayout'
 import type {IImage} from '@/models/Images'
 
-interface Props {
+interface IProp {
   indexPath: string,
 }
 
 
-export default async function Gallery_Section({indexPath} : Props) {
+export default async function Gallery_Section({indexPath} : IProp) {
 
 
 const images = await parseImagesIndex(path.join(process.cwd(), 'public', indexPath, '_index.json'))

@@ -6,7 +6,7 @@ import ImageContainer from './ImageContainer'
 
 const layout = require('justified-layout')
 
-interface Props {
+interface IProp {
     images: IImage[]
     aspectRatios: number[]
 }
@@ -19,7 +19,7 @@ interface ILayoutBox {
     left: number
 }
 
-export default function JustifiedLayout({images, aspectRatios} : Props) {
+export default function JustifiedLayout({images, aspectRatios} : IProp) {
 
     const containerRef = useRef<HTMLDivElement>(null)
     const [containerWidth, setContainerWidth] = useState(100)

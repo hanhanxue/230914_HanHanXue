@@ -12,6 +12,10 @@
       }
 }
 
+.framey-sm {
+    padding-top: $spacing-8;
+}
+
 .framey {
     padding-top: $spacing-24;
 }
@@ -21,4 +25,12 @@
     @media (max-width: $screen-md) {
         padding-top: $spacing-32;
       }
+}
+
+
+.isMenuOpen {
+    @media (max-width: $screen-md) {
+
+        overflow-y: hidden;
+    }
 }

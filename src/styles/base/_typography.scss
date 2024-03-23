@@ -42,22 +42,36 @@
 
 
 
-.display {
+@mixin display {
   font-family: 'Sans';
   font-size: rem(64);
   line-height: rem(68);
   letter-spacing: -.1rem;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: $screen-xl) {
+    font-size: rem(44);
+    line-height: rem(48);
+    letter-spacing:  -.05rem;
+    // font-weight: 500;
+  }
+
+  @media (max-width: $screen-md2) {
     font-size: rem(26);
     line-height: rem(32);
     letter-spacing:  -.02rem;
     // font-weight: 500;
   }
 }
+.display {
+  @include display;
+}
 
 
-.title3 {
+
+
+
+
+@mixin title3 {
   font-family: 'Sans';
   font-size: rem(21);
   line-height: rem(32);
@@ -66,40 +80,36 @@
     font-size: rem(18);
     line-height: rem(24);
   }
+} 
+.title3 {
+  @include title3
 }
 
 
 
-// .body-strong {
-//   font-family: 'Sans';
-//   font-size: rem(14);
-//   line-height: rem(20);
-//   font-weight: 500;
-// }
 
 
-
-.body {
-  font-family: 'Sans';
-  font-size: rem(14);
-  line-height: rem(20);
-}
 @mixin body {
   font-family: 'Sans';
   font-size: rem(14);
   line-height: rem(20);
 } 
-
-.caption {
-  font-family: 'Sans';
-  font-size: rem(12);
-  line-height: rem(18);
+.body {
+  @include body;
 }
+
+
+
+
 @mixin caption {
   font-family: 'Sans';
   font-size: rem(12);
   line-height: rem(18);
 } 
+.caption {
+  @include caption;
+}
+
 
 
 

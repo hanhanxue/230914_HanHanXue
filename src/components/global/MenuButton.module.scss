@@ -1,0 +1,68 @@
+@use '@/styles/base/sizing' as *;
+@use '@/styles/base/colors' as *;
+
+.iconContainer {
+    // background-color: $surface-debug;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    user-select: none;
+
+    &.isOpen {
+        .iconStroke {
+            &:nth-child(1) {
+                transform: translateX(10px)  translateY(10px) rotate(45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: translateX(10px)  translateY(10px) rotate(-45deg);
+            }
+        }
+    }
+
+    .iconStroke {
+        background-color: black;
+
+        display: block;
+        position: absolute;
+        width: 14px;
+        height: 2px;
+        
+        translate: -50% -50%;
+
+        transition-property: transform;
+        transition-duration: .05s;
+        transition-timing-function: ease-out;
+
+        &:nth-child(1) {
+            transform: translateX(10px)  translateY(6px);
+        }
+        &:nth-child(2) {
+            opacity: 0;
+            transform: translateX(10px) translateY(10px);
+        }
+        &:nth-child(3) {
+            transform: translateX(10px)  translateY(14px);
+        }
+    
+
+
+    }
+
+
+}
+
+
+
+// .mobileMenu {
+//     position: fixed;
+// top: 50px;
+// left: 0;
+// right: 0;
+// bottom: 0;
+// // inset: 0;
+//     background-color: red;
+//     z-index: 999;
+// }

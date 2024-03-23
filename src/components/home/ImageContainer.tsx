@@ -4,11 +4,11 @@ import styles from './ImageContainer.module.scss'
 import Image from 'next/image'
 
 
-interface Props {
+interface IProp {
   image: IImage
 }
 
-export default function ImageContainer({image} : Props) {
+export default function ImageContainer({image} : IProp) {
 
   return (
     <div className={`${styles.container}`}>

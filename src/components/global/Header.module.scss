@@ -1,5 +1,6 @@
 @use '@/styles/base/sizing' as *;
 @use '@/styles/base/colors' as *;
+@use '@/styles/base/typography' as *;
 
 .section {
     background-color: $surface-00;
@@ -8,7 +9,11 @@
     position: fixed;
     width: 100%;
 
+
     z-index: 9999;
+
+
+
 
     .container {
 
@@ -18,61 +23,90 @@
 
         padding: $spacing-4 0;
 
-        @media (max-width: $screen-md) {
+
+        // background-color: blue;
+        // @media (max-width: $screen-md) {
+        //     display: flex;
+        // }
+
+
+        .identity {
+            grid-row: 1;
+            grid-column: 1 / 9;
 
             display: flex;
-            justify-content: space-between;
-          }
+            gap: $spacing-2;
+
+            .mark {
+                @media (max-width: $screen-sm) {
+                    display: none;
+                }
+            }
+        }
 
         .menuIcon {
             display: none;
             @media (max-width: $screen-md) {
-                // grid-row: 1;
-                // grid-column: 1 / 13;
-                // display: flex;
-                // justify-content: end;
-                // // background-color: red;
                 display: block;
-
-              }
+                justify-self: end;
+                grid-row: 1;
+                grid-column: 1 / 13;
+                }
         }
 
-        .gridItem {
 
-            &:nth-child(1) {
-                grid-row: 1;
-                grid-column: 1 / 9;
+        .nav {
 
+            grid-row: 1;
+            grid-column: 9 / 13;
+
+            display: flex;
+            justify-content: space-between;
+
+            .mainLinks {
                 display: flex;
-                gap: $spacing-2;
-
-                .mark {
-                    @media (max-width: $screen-sm) {
-                        display: none;
-                      }
-                }
+                gap: $spacing-4;
             }
 
-            &:nth-child(2) {
-                grid-row: 1;
-                grid-column: 9 / 13;
-
-                    display: flex;
-                    justify-content: space-between;
-
-                .flex {
-                    display: flex;
-                    gap: $spacing-4;
-                }
-
-                @media (max-width: $screen-md) {
-                    display: none;
-                  }
+            @media (max-width: $screen-md) {
+                display: none;
+                grid-row: 2;
+                grid-column: 1/ 13;
+                // background-color: red;
             }
 
-        } 
+        }
+
+
+
+        
     }
 
+
+
+    @media (max-width: $screen-md) {
+        &.isMenuOpen {
+            inset: 0;
+
+            .container{
+
+
+               .nav {
+                margin-top: $spacing-8;
+                @include display;
+    
+                display: flex;
+                flex-direction: column;
+                gap: $spacing-4;
+    
+                .mainLinks {
+                    flex-direction: column;
+                    // gap: 0px;
+                }
+               }
+            }
+        }
+    }
 
 
 }

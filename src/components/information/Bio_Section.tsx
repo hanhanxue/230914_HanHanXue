@@ -4,7 +4,7 @@ import styles from './Bio_Section.module.scss'
 
 
 
-export default function About_Section() {
+export default function Bio_Section() {
   return (
     <section  className={`${styles.section} framey-xl`}>
     
