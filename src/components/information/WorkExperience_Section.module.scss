@@ -18,6 +18,9 @@
 
         .sectionTitle {
             grid-column: 4 / 13;
+            @media (max-width: $screen-xl) {
+                grid-column: 1 / 13;
+              }
         }
 
         .table {
