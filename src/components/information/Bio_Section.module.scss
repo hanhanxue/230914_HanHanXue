@@ -2,6 +2,7 @@
 
 @use '@/styles/base/sizing' as *;
 @use '@/styles/base/colors' as *;
+@use '@/styles/base/typography' as *;
 
 .section {
  
@@ -12,7 +13,9 @@
         grid-template-columns: repeat(12, 1fr);
         // gap: $spacing-4;
         column-gap: $spacing-4;
-
+        h2 {
+            @include body;
+        }
         .sectionTitle {
             grid-column: 4 / 13;
         }

@@ -9,6 +9,7 @@ import Footer from '@/components/global/Footer'
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
 
+  
   title: 'Han Han Xue — Product Designer',
   description: 'The website and design portfolio of Han Han Xue.',
   creator: 'Han Han Xue',

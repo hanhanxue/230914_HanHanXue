@@ -5,7 +5,7 @@ export default function WorkExperience_Section() {
     <section  className={`${styles.section} framey`}>
     
     <div className={`${styles.container} framex `}>
-      <h2 className={`${styles.sectionTitle} body`}>
+      <h2 className={`${styles.sectionTitle}`}>
         Work Experience
       </h2>
 

@@ -84,7 +84,11 @@
   font-size: rem(14);
   line-height: rem(20);
 }
-
+@mixin body {
+  font-family: 'Sans';
+  font-size: rem(14);
+  line-height: rem(20);
+} 
 
 .code {
   font-family: 'Mono';
