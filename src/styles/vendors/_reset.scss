@@ -46,27 +46,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-h1, h2, h3, h4, h5, h6 {
-    /* Resetting margin and padding */
-    margin: 0;
-    padding: 0;
-    
-    /* Resetting font properties */
-    font-size: inherit;
-    font-weight: inherit;
-    font-style: inherit;
-    font-family: inherit;
-    line-height: inherit;
-
-    /* Resetting text properties */
-    color: inherit;
-    text-align: inherit;
-    
-    /* Resetting other properties */
-    /* Add more reset properties as needed */
-
-	/* Resetting other properties with vendor prefixes */
-	-webkit-font-size: inherit;
-	/* Add more vendor-prefixed properties as needed */
-}
