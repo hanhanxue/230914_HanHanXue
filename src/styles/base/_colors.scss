@@ -1,14 +1,18 @@
 @use '@/styles/abstracts/primitives' as *;
 
 
-$surface-debug: #F04518;
+// $surface-debug: #F04518;
+$surface-debug: rgb(255, 44, 0);
 $surface-00: $color-gray-100;
 
 
 $icon-primary: #000;
 
 $text-primary: #000;
-$text-secondary: #6a6a6a;
+$text-secondary: #8f8f8f;
 
 
 $border-00-subtle: #6a6a6a;
+
+
+$text-inverse: white;

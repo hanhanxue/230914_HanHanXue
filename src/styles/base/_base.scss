@@ -11,7 +11,8 @@
 
 html {
     font-size: 16px;
-    -webkit-text-size-adjust: 100%;
+
+    -webkit-text-size-adjust: 100%;     // this fixes font size change when iOS switch from portrait to landscape
 }
 
 body {

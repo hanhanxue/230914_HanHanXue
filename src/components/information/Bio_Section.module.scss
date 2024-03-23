@@ -8,13 +8,15 @@
  
     background-color: $surface-00;
     // background-color: $surface-debug;
+    // color: $text-inverse;
+
     .container {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         // gap: $spacing-4;
         column-gap: $spacing-4;
 
-        .sectionTitle {
+        .sectionHeader {
             grid-column: 4 / 13;
         }
         .sectionCopy {

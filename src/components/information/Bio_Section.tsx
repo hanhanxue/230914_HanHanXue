@@ -9,15 +9,18 @@ export default function About_Section() {
     <section  className={`${styles.section} framey-xl`}>
     
     <div className={`${styles.container} framex `}>
-      <h2 className={`${styles.sectionTitle} body`}>
+      <h2 className={`${styles.sectionHeader} body`}>
         Biography
       </h2>
+
+
+
 
         <div className={`${styles.sectionCopy} display`}>
         <p>
             Interdisciplinary product designer. 
 
-            Formal design training from architecture school with extensive work experience spanning entertainment, architecture, and technology.
+            Formal design training from architecture school with extensive work experience spanning architecture, entertainment, and technology.
 
             Driven by curiosity and a relentless pursuit of excellence and craftsmanship. 
 

@@ -1,11 +1,14 @@
 import styles from './WorkExperience_Section.module.scss'
 
+
+import Link from 'next/link'
+
 export default function WorkExperience_Section() {
   return (
     <section  className={`${styles.section} framey`}>
     
     <div className={`${styles.container} framex `}>
-      <h2 className={`${styles.sectionTitle} body`}>
+      <h2 className={`${styles.sectionHeader} body`}>
         Work Experience
       </h2>
 
@@ -78,14 +81,23 @@ interface IExperience {
 
 const ExperienceRow = ({title, company, location, dates}: IExperience) => {
 
-  return (
-    <li className={`${styles.tableRow} title3`}>
+  return (     
+    <Link href={'/'}>
+    <li className={`${styles.tableRowContainer} `} >
+     <div className={`${styles.tableRow} title3`} >
+
     <span className={`${styles.dates} code `}>{dates}</span>
     <span className={`${styles.title} `}>{title}</span>
     <span className={`${styles.company} `}>{company}</span>
     <span className={`${styles.location} `}>{location}</span>
+    </div>
+
 </li>
 
+    </Link>
+
+
+   
   )
 
   

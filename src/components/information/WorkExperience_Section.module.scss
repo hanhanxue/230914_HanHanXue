@@ -16,7 +16,7 @@
 
 
 
-        .sectionTitle {
+        .sectionHeader {
             grid-column: 4 / 13;
             @media (max-width: $screen-xl) {
                 grid-column: 1 / 13;
@@ -26,134 +26,165 @@
         .table {
             grid-column: 1 / 13;
 
-            .tableRow {
-                display: grid;
-                grid-template-columns: repeat(12, 1fr);
-                // align-self: ;
-    
-                // gap: $spacing-4;
-                column-gap: $spacing-4;
 
-                padding: $spacing-1 0;
 
+
+
+
+
+            .tableRowContainer {
+                // background-color: red;
+                padding: $spacing-2 0;
                 
-                align-items: start;
+                $border: 1px;  
+                border-top: $border solid transparent;
+                border-bottom: $border solid;
 
-                $border: 2px;
-                border-top: $border  solid transparent;
-                margin-top: -$border;
-                border-bottom: $border  solid transparent;
+                &:not(:first-child) {
+                    margin-top: -$border;
+                }
+
 
                 &:hover {
-                    border-bottom: $border  solid ;
-                }
-
-                &:first-child {
-                    margin-top: 0;
-                }
-
-                .dates {
-                    color: $text-secondary;
-                    align-self: center;
-                }
-                .location {
-                    // text-align: right;
-                    justify-self: end;
-                }
-
-                span:nth-child(1) {
                     // background-color: red;
-                    grid-column: 1 / 4;
-                }
-                span:nth-child(2) {
-                    // background-color: red;
-                    grid-column: 4 / 8;
+                    .tableRow {
 
-                }
-                span:nth-child(3) {
-                    // background-color: red;
-                    grid-column: 8 / 11;
-  
-                }
-                span:nth-child(4) {
-                    // background-color: red;
-                    grid-column: 11 / 13;
-                }
-                @media (max-width: $screen-xl) {
-                    span:nth-child(1) {
-                        grid-row: 2;
-                        grid-column: 1 / 6;
+                        .dates {
+                            color: $text-primary;
+                        }
+                        .location {
+                            color: $text-primary;
+                        }
+                        .company {
+                            // color: $text-primary;
+                            transition: transform .1s ease-out;
+                            &::before {
+                                content: '→ ';
+                            }
+                                // transform: translateX(8px);
+                        }
                     }
-                    span:nth-child(2) {
-                        grid-row: 1;
-                        grid-column: 1 / 6;
+                }
+
+                .tableRow {
+                    display: grid;
+                    grid-template-columns: repeat(12, 1fr);
+                    // align-self: ;
+        
+                    // gap: $spacing-4;
+                    column-gap: $spacing-4;
     
-                    }
-                    span:nth-child(3) {
-                        grid-row: 1;
-                        grid-column: 6 / 10;
-                    }
-                    span:nth-child(4) {
-                        grid-row: 1;
-                        grid-column: 10 / 13;
-                    }
-                  }
+                    // align-items: start;
 
-                  @media (max-width: $screen-md2) {
-                    span:nth-child(1) {
-                        grid-row: 2;
-                        grid-column: 1 / 7;
-                    }
-                    span:nth-child(2) {
-                        grid-row: 1;
-                        grid-column: 1 / 7;
     
-                    }
-                    span:nth-child(3) {
-                        grid-row: 1;
-                        grid-column: 7 / 13;
-                        // text-align: right;
-                        justify-self: end;
-
-                        
-      
-                    }
-                    span:nth-child(4) {
-                        grid-row: 2;
-                        grid-column: 7 / 13;
-
+                    .dates {
                         color: $text-secondary;
-                        @include code;
+                        align-self: center;
                     }
-                  }
 
-                  @media (max-width: $screen-xsm) {
+                    .location {
+                        
+                        justify-self: end;
+                    }
+    
                     span:nth-child(1) {
-                        grid-row: 1;
-                        grid-column: 1 / 13;
+                        // background-color: red;
+                        grid-column: 1 / 4;
                     }
                     span:nth-child(2) {
-                        grid-row: 2;
-                        grid-column: 1 / 13;
+                        // background-color: red;
+                        grid-column: 4 / 8;
     
                     }
                     span:nth-child(3) {
-                        grid-row: 3;
-                        grid-column: 1 / 13;
-                        // text-align: right;
-                        justify-self: start;
-
-                        
+                        // background-color: red;
+                        grid-column: 8 / 11;
       
                     }
                     span:nth-child(4) {
-                        grid-row: 4;
-                        grid-column: 1 / 13;
-                        justify-self: start;
-
+                        // background-color: red;
+                        grid-column: 11 / 13;
                     }
-                  }
+    
+    
+                    @media (max-width: $screen-xl) {
+                        span:nth-child(1) {
+                            @include caption;
+                            grid-row: 2;
+                            grid-column: 1 / 6;
+                        }
+                        span:nth-child(2) {
+                            grid-row: 1;
+                            grid-column: 1 / 6;
+        
+                        }
+                        span:nth-child(3) {
+                            grid-row: 1;
+                            grid-column: 6 / 10;
+                        }
+                        span:nth-child(4) {
+                            grid-row: 1;
+                            grid-column: 10 / 13;
+                        }
+                      }
+    
+                      @media (max-width: $screen-md2) {
+                        span:nth-child(1) {
+                            grid-row: 2;
+                            grid-column: 1 / 7;
+                        }
+                        span:nth-child(2) {
+                            grid-row: 1;
+                            grid-column: 1 / 7;
+        
+                        }
+                        span:nth-child(3) {
+                            grid-row: 1;
+                            grid-column: 7 / 13;
+                            
+                            justify-self: end;
+    
+                            
+          
+                        }
+                        span:nth-child(4) {
+                            grid-row: 2;
+                            grid-column: 7 / 13;
+    
+                            color: $text-secondary;
+                            @include caption;
+                        }
+                      }
+    
+                      @media (max-width: $screen-xsm) {
+                        span:nth-child(1) {
+                            grid-row: 1;
+                            grid-column: 1 / 13;
+                        }
+                        span:nth-child(2) {
+                            grid-row: 2;
+                            grid-column: 1 / 13;
+        
+                        }
+                        span:nth-child(3) {
+                            grid-row: 3;
+                            grid-column: 1 / 13;
+                            
+                            justify-self: start;
+    
+                            
+          
+                        }
+                        span:nth-child(4) {
+                            grid-row: 4;
+                            grid-column: 1 / 13;
+                            justify-self: start;
+    
+                        }
+                      }
+                }
             }
+
 
         }
 

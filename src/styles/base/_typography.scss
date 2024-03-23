@@ -90,13 +90,13 @@
   line-height: rem(20);
 } 
 
-.code {
-  font-family: 'Mono';
+.caption {
+  font-family: 'Sans';
   font-size: rem(12);
   line-height: rem(18);
 }
-@mixin code {
-  font-family: 'Mono';
+@mixin caption {
+  font-family: 'Sans';
   font-size: rem(12);
   line-height: rem(18);
 } 
