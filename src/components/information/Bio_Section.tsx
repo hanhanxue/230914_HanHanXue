@@ -9,9 +9,9 @@ export default function About_Section() {
     <section  className={`${styles.section} framey-xl`}>
     
     <div className={`${styles.container} framex `}>
-      <h2 className={`${styles.sectionTitle} `}>
+      <span className={`${styles.sectionTitle} body`}>
         Biography
-      </h2>
+      </span>
 
         <div className={`${styles.sectionCopy} display`}>
         <p>

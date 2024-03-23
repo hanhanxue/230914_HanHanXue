@@ -14,9 +14,7 @@
         // gap: $spacing-4;
         column-gap: $spacing-4;
 
-        h2 {
-            @include body;
-        }
+
 
         .sectionTitle {
             grid-column: 4 / 13;

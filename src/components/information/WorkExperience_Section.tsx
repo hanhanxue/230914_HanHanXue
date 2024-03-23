@@ -5,9 +5,9 @@ export default function WorkExperience_Section() {
     <section  className={`${styles.section} framey`}>
     
     <div className={`${styles.container} framex `}>
-      <h2 className={`${styles.sectionTitle}`}>
+      <span className={`${styles.sectionTitle} body`}>
         Work Experience
-      </h2>
+      </span>
 
       <ul className={`${styles.table}`}>
         <ExperienceRow 
