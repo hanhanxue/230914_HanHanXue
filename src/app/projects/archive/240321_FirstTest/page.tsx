@@ -4,12 +4,15 @@ import { type Sketch } from "@p5-wrapper/react"
 import { NextReactP5Wrapper } from "@p5-wrapper/next"
 import { useEffect, useState, useRef } from "react"
 
+interface IProps {
+  containerWidth: number
+}
 const sketch: Sketch = (p5) => {
   let containerWidth = 0
 
   p5.setup = () => p5.createCanvas(600, 400, p5.WEBGL)
 
-  p5.updateWithProps = (props) => {
+  p5.updateWithProps = (props: IProps) => {
     if (props.containerWidth) {
       containerWidth = props.containerWidth
     }
