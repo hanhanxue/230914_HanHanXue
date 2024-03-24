@@ -5,7 +5,7 @@ import ImageContainer from "./ImageContainer"
 
 const layout = require("justified-layout")
 
-interface IProp {
+interface IProps {
   images: IImage[]
   aspectRatios: number[]
 }
@@ -18,7 +18,7 @@ interface ILayoutBox {
   left: number
 }
 
-export default function JustifiedLayout({ images, aspectRatios }: IProp) {
+export default function JustifiedLayout({ images, aspectRatios }: IProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const [containerWidth, setContainerWidth] = useState(100)
 
@@ -28,7 +28,6 @@ export default function JustifiedLayout({ images, aspectRatios }: IProp) {
     boxSpacing: 16,
     targetRowHeight: 320,
     targetRowHeightTolerance: 0.25,
-    // boxSpacing: 16,
   })
 
   useEffect(() => {
