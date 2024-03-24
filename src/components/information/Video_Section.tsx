@@ -6,7 +6,7 @@ import styles from './Video_Section.module.scss'
 
 export default function Video_Section() {
   return (
-    <section  className={`${styles.section} framey-sm`}>
+    <section  className={`${styles.section} framey`}>
     
     <div className={`${styles.container} framex `}>
     <video autoPlay muted loop className={`${styles.video}  `}>         

@@ -11,8 +11,10 @@ const ProjectsIndex_Section = () => {
     
             <div className={`${styles.container} framex`}>
 
-  
-                <div className={`${styles.gridItem_1_2}`}></div>
+                <Link className={`${styles.gridItem_2_1}`} href={'projects/archive'}>
+                <div className={`${styles.gridItem_2_1}`}></div>
+                </Link>
+
                 <div className={`${styles.gridItem_1_1}`}></div>
                 <div className={`${styles.gridItem_1_1}`}></div>
 
