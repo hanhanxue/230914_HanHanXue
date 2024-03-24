@@ -1,56 +1,39 @@
-@use '@/styles/base/sizing' as *;
-@use '@/styles/base/colors' as *;
+@use "@/styles/base/sizing" as *;
+@use "@/styles/base/colors" as *;
 
 .section {
- 
-    background-color: $surface-00;
-    .container {
+  background-color: $surface-00;
+  .container {
+    background-color: "blue";
 
-        background-color: 'blue';
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    aspect-ratio: 1 / 1;
+    gap: $spacing-4;
 
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-        aspect-ratio: 1 / 1;
-        gap: $spacing-4;
+    .gridItem_1_2 {
+      grid-row: span 6;
+      grid-column: span 3;
+      background-color: white;
 
-
-        
-        .gridItem_1_2 {
-            grid-row: span 6;
-            grid-column: span 3;
-            background-color: white;
-
-            // border-radius: 36px;
-
-    
-        }
-
-        .gridItem_1_1 {
-            grid-row: span 3;
-            grid-column: span 3;
-            background-color: white;
-
-            // border-radius: 36px;
-
-    
-        }
-
-        .gridItem_2_1 {
-            grid-row: span 3;
-            grid-column: span 6;
-            background-color: white;
-
-            // border-radius: 36px;
-
-    
-        }
-
-
+      // border-radius: 36px;
     }
 
+    .gridItem_1_1 {
+      grid-row: span 3;
+      grid-column: span 3;
+      background-color: white;
 
+      // border-radius: 36px;
+    }
 
+    .gridItem_2_1 {
+      grid-row: span 3;
+      grid-column: span 6;
+      background-color: white;
+
+      // border-radius: 36px;
+    }
+  }
 }
-
-
