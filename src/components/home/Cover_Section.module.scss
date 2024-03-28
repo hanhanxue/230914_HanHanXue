@@ -1,104 +1,92 @@
-@use '@/styles/base/sizing' as *;
-@use '@/styles/base/colors' as *;
+@use "@/styles/abstracts/screens" as *;
 
 .section {
-    background-color: $surface-00;
+  background-color: var(--c-section-bg);
+  color: var(--c-text-primary);
+
+  height: min(100vh, 80vw);
+
+  // FIXXXXEEEEDDDDD (max-width: var(--screens-md)) {
+  @include screens(md) {
+    height: 100vh;
+  }
+
+  .container {
     // background-color: green;
-    height: min(100vh, 80vw);
 
-    @media (max-width: $screen-md) {
-        height: 100vh;
-    }
+    height: 100%;
 
-    .container {
-        // background-color: green;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var--(spacing-3);
+  }
 
-        height: 100%;
+  .flex {
+    // background-color: blue;
 
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: $spacing-3;
-    }
+    grid-column: 1 / 13;
 
-    .flex {
-        // background-color: blue;
+    display: flex;
+    flex-direction: column;
 
-        grid-column: 1 / 13;
-
-        display: flex;
-        flex-direction: column;
-
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-    }
-
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
-
-
-
-
-
-
 
 // Locomotive cover
 // --home-hero-height: calc(min(var(--vh, 1vh) * 100, 80vw))
 // height: var(--home-hero-height)
 
+// .thirds {
+//     flex: 1 1 33.33%;
 
-    
-    // .thirds {
-    //     flex: 1 1 33.33%;
+//     padding-top: rem(48);
+//     padding-bottom: rem(48);
 
-    //     padding-top: rem(48);
-    //     padding-bottom: rem(48);
+//     @include XFrame;
 
-    //     @include XFrame;
+//     .buttonFrame {
+//         display: flex;
+//         height: 100%;
+//         justify-content: flex-end;
+//         align-items: center;
 
+//         // background-color: red;
 
-    //     .buttonFrame {
-    //         display: flex;
-    //         height: 100%;
-    //         justify-content: flex-end;
-    //         align-items: center;
+//     }
 
-    //         // background-color: red;
-  
-    //     }
+//     .titleFrame {
+//         display: flex;
+//         height: 100%;
+//         justify-content: center;
+//         align-items: center;
 
-    //     .titleFrame {
-    //         display: flex;
-    //         height: 100%;
-    //         justify-content: center;
-    //         align-items: center;
+//         text-align: center;
 
-    //         text-align: center;
+//         span {
+//             // white-space: nowrap;
+//             display: inline-block;
+//         }
 
-    //         span {
-    //             // white-space: nowrap;
-    //             display: inline-block;
-    //         }
+//     }
 
+//     .scrollArrowFrame {
+//         display: flex;
+//         height: 100%;
 
-    //     }
-        
-    //     .scrollArrowFrame {
-    //         display: flex;
-    //         height: 100%;
+//         justify-content: center;
+//         // align-items: flex-end;
+//         align-items: center;
 
-    //         justify-content: center;
-    //         // align-items: flex-end;
-    //         align-items: center;
+//         animation-name: scrollArrowAnim;
+//         animation-duration: 3s;
+//         animation-iteration-count: infinite;
+//         animation-direction:normal;
+//         animation-timing-function: $easeOutQuart;
+//         .scrollArrowIcon {
 
-    //         animation-name: scrollArrowAnim;
-    //         animation-duration: 3s;
-    //         animation-iteration-count: infinite;
-    //         animation-direction:normal;
-    //         animation-timing-function: $easeOutQuart;
-    //         .scrollArrowIcon {
-
-    //         }
-    //     }
-    // }
-
+//         }
+//     }
+// }

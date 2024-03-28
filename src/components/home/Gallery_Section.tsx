@@ -22,7 +22,7 @@ const aspectRatios = images.map((image : IImage) => image.aspectRatio)
 
 
   return (
-    <section  className={`${styles.section} framey`} id="wip">
+    <section  className={`${styles.section} framey`} id="wip" >
 
       <div className={`${styles.container} framex`} >
 

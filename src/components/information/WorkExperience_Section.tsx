@@ -12,7 +12,7 @@ export default function WorkExperience_Section() {
         Work Experience
       </h2>
 
-      <ul className={`${styles.table}`}>
+      <ul className={`${styles.table}`}  >
         <ExperienceRow 
         title = 'Principal Product Designer' 
         company = 'PhysicsX' 
@@ -82,19 +82,17 @@ interface IExperience {
 const ExperienceRow = ({title, company, location, dates}: IExperience) => {
 
   return (     
-    <Link href={'/'}>
+ 
     <li className={`${styles.tableRowContainer} `} >
      <div className={`${styles.tableRow} title3`} >
 
-    <span className={`${styles.dates} code `}>{dates}</span>
-    <span className={`${styles.title} `}>{title}</span>
-    <span className={`${styles.company} `}>{company}</span>
-    <span className={`${styles.location} `}>{location}</span>
+    <span className={`${styles.rowItem} ${styles.dates} code `}>{dates}</span>
+    <span className={`${styles.rowItem} ${styles.title} `}>{title}</span>
+    <span className={`${styles.rowItem} `}><Link href="/"><span className={`${styles.company} `}>{company}</span></Link></span>
+    <span className={`${styles.rowItem} ${styles.location} `}>{location}</span>
     </div>
 
 </li>
-
-    </Link>
 
 
    

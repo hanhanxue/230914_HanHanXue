@@ -1,18 +1,80 @@
-@use '@/styles/abstracts/primitives' as *;
 
 
-// $surface-debug: #F04518;
-$surface-debug: rgb(255, 44, 0);
-$surface-00: rgb(242, 242, 237);
+:root {
+    // --c-section-bg: white;
+    // --c-text-primary: black;
+    // // --c-icon-primary: black;
+    // --c-icon-primary: red;
+
+    
+    --c-section-bg: hsl(60, 16.1%, 93.9%);
+
+    --c-text-primary: black;
+    --c-text-secondary: rgba(16, 16, 16, .4);
+
+    --c-text-selected: white;
+    --c-text-selected-bg: black;
+
+    --c-icon-primary: black;
+    // --c-icon-primary: red;
 
 
-$icon-primary: #000;
+}
 
-$text-primary: #000;
-$text-secondary: #8f8f8f;
+[data-theme="light"] {
+    --c-section-bg: hsl(60, 16.1%, 93.9%);
+    --c-text-primary: white;
+    --c-icon-primary: white;
+}
 
 
-$border-00-subtle: #6a6a6a;
+
+[data-theme="dark"] {
+    --c-section-bg: hsl(0, 0%, 7%);
+}
 
 
-$text-inverse: white;
+
+[data-theme="primary"] {
+    --c-section-bg: #e1472c;
+    --c-text-primary: black;
+    --c-icon-primary: black;
+}
+
+[data-theme="secondary"] {
+
+}
+
+[data-theme="debug"] {
+    --c-section-bg: #c2260b;
+    --c-text-primary: rgb(23, 227, 20);
+    --c-icon-primary: rgb(33, 12, 224);
+}
+
+
+// F6f6f6  246 246 246   0 0% 96.5%
+
+
+// [data-theme="light"] {
+//     --c-section-bg: #f6f6f6;
+//     --c-text-primary: #a42020;
+// }
+
+// [data-dark-theme] {
+//     --c-section-bg: #272727;
+//     --c-text-primary: #fff;
+// }
+
+
+
+
+// [data-theme="bob"] {
+//     --c-section-bg: #d80f0f;
+//     --c-text-primary: #1c9722;
+//     --c-icon-primary: #1c9722;
+// }
+
+
+
+
+

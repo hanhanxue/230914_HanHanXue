@@ -1,50 +1,31 @@
-@use '@/styles/abstracts/functions' as *;
+// @use "@/styles/abstracts/functions" as *;
 
+// Spacing
+:root {
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
 
-$screen-xsm: rem(496);
+  --spacing-5: 20px;
+  --spacing-6: 24px;
 
-$screen-sm: rem(640);
-// => @media (min-width: 640px) { ... }
+  --spacing-8: 32px;
 
-$screen-md: rem(768);
-// => @media (min-width: 768px) { ... }
+  --spacing-12: 48px;
 
-$screen-md2: rem(896);
+  --spacing-24: 96px;
 
-$screen-lg: rem(1024);
-// => @media (min-width: 1024px) { ... }
+  --spacing-32: 128px;
 
-$screen-xl: rem(1280);
-// => @media (min-width: 1280px) { ... }
+  --spacing-48: 192px;
+}
 
-$screen-2xl: rem(1536);
-// => @media (min-width: 1536px) { ... }
+// Border Radius
+:root {
+  --rounded: 4px;
 
+  --rounded-lg: 8px;
 
-
-$spacing-1: rem(4);
-
-$spacing-2: rem(8);
-$spacing-3: rem(12);
-$spacing-4: rem(16);
-
-$spacing-5: rem(20);
-$spacing-6: rem(24);
-
-$spacing-8: rem(32);
-
-$spacing-12: rem(48);
-
-
-$spacing-24: rem(96);
-
-$spacing-32: rem(128);
-
-$spacing-48: rem(192);
-
-
-
-$rounded: rem(4);
-$rounded-lg: rem(8);
-
-$rounded-2xl: rem(16);
+  --rounded-2xl: 16px;
+}

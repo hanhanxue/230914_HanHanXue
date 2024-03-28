@@ -88,17 +88,6 @@
     "unoptimized": true
   },
   {
-    "src": "/content/wip/210101.jpg",
-    "width": 2560,
-    "height": 1440,
-    "alt": "product designer han han xue",
-    "aspectRatio": 1.7777777777777777,
-    "maxWidth": 960,
-    "maxHeight": 540,
-    "filename": "210101.jpg",
-    "unoptimized": false
-  },
-  {
     "src": "/content/wip/201111.gif",
     "width": 600,
     "height": 338,
@@ -603,17 +592,6 @@
     "maxHeight": 540,
     "filename": "1602.jpg",
     "unoptimized": false
-  },
-  {
-    "src": "/content/wip/1601_01008_giff.gif",
-    "width": 1200,
-    "height": 501,
-    "alt": "product designer han han xue",
-    "aspectRatio": 2.395209580838323,
-    "maxWidth": 960,
-    "maxHeight": 401,
-    "filename": "1601_01008_giff.gif",
-    "unoptimized": true
   },
   {
     "src": "/content/wip/1601.jpg",

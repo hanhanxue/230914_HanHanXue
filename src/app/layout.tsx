@@ -4,6 +4,25 @@ import type { Metadata } from "next"
 
 import Header from "@/components/global/Header"
 import Footer from "@/components/global/Footer"
+import WindowProvider from "@/providers/WindowProvider"
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body>
+        <WindowProvider>
+          <Header />
+          {children}
+          <Footer />
+        </WindowProvider>
+      </body>
+    </html>
+  )
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL("http://localhost:3000"),
@@ -27,22 +46,4 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-}
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
-      <body>
-        <Header />
-
-        {children}
-
-        <Footer />
-      </body>
-    </html>
-  )
 }

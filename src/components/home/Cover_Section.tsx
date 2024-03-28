@@ -1,3 +1,6 @@
+// 'use client'
+// import { useContext } from 'react'
+// import { WindowContext } from '@/providers/WindowProvider'
 
 import styles from './Cover_Section.module.scss'
 
@@ -5,6 +8,14 @@ import Link from 'next/link'
 
 
 const Cover_Section = () => {
+
+    // console.log("test")
+    // const {clientHeight, clientWidth} = useContext(WindowContext)
+    // const {clientHeight, clientWidth}= useContext(WindowContext)
+    // console.log(`${clientWidth} ${clientHeight}`)
+
+
+
     return (
         
             <section  className={`${styles.section}`}>

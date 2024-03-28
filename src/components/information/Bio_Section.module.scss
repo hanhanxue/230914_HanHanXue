@@ -1,20 +1,16 @@
 
 
-@use '@/styles/base/sizing' as *;
-@use '@/styles/base/colors' as *;
-@use '@/styles/base/typography' as *;
-
 .section {
  
-    background-color: $surface-00;
+    background-color: var(--c-section-bg);
     // background-color: $surface-debug;
-    // color: $text-inverse;
+    color: var(--c-text-primary);
 
     .container {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        gap: $spacing-4;
-        // column-gap: $spacing-4;
+        gap: var(--spacing-4);
+        // column-gap: var(--spacing-4);
 
         .sectionHeader {
             grid-column: 4 / 13;

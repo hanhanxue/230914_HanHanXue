@@ -1,7 +1,7 @@
-// @use '@/styles/abstracts' as *;
-// @import '../abstracts/functions';
-@use '@/styles/abstracts/functions' as *;
-@use '@/styles/base/sizing' as *;
+
+@use "@/styles/abstracts/functions" as *;
+
+@use "@/styles/abstracts/screens" as *;
 
 // 100 Thin (Hairline)
 // 200 Extra Light (Ultra Light)
@@ -15,50 +15,47 @@
 
 // 800 Extra Bold (Ultra Bold)
 // 900 Black (Heavy)
-// 950 Extra Black (Ultra Black) 
-
+// 950 Extra Black (Ultra Black)
 
 @font-face {
-  font-family: 'Sans';
-  src: url('/assets/fonts/Geist/Geist-Regular.woff2') format('woff2');
+  font-family: "Sans";
+  src: url("/assets/fonts/Geist/Geist-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Sans';
-  src: url('/assets/fonts/Geist/Geist-Medium.woff2') format('woff2');
+  font-family: "Sans";
+  src: url("/assets/fonts/Geist/Geist-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Mono';
-  src: url('/assets/fonts/Geist.Mono/GeistMono-Regular.woff2') format('woff2');
+  font-family: "Mono";
+  src: url("/assets/fonts/Geist.Mono/GeistMono-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
-
-
-
+// display // display // display // display // display
 @mixin display {
-  font-family: 'Sans';
+  font-family: "Sans";
   font-size: rem(64);
   line-height: rem(68);
-  letter-spacing: -.1rem;
+  letter-spacing: -0.1rem;
 
-  @media (max-width: $screen-xl) {
+  @include screens(2xl) {
     font-size: rem(44);
     line-height: rem(48);
-    letter-spacing:  -.05rem;
+    letter-spacing: -0.05rem;
     // font-weight: 500;
   }
 
-  @media (max-width: $screen-md2) {
+  @include screens(md) {
     font-size: rem(26);
     line-height: rem(32);
-    letter-spacing:  -.02rem;
+    letter-spacing: -0.02rem;
     // font-weight: 500;
   }
 }
@@ -66,56 +63,37 @@
   @include display;
 }
 
-
-
-
-
-
+// title3 // title3 // title3 // title3 // title3
 @mixin title3 {
-  font-family: 'Sans';
+  font-family: "Sans";
   font-size: rem(21);
   line-height: rem(32);
 
-  @media (max-width: $screen-md) {
+  @include screens(md) {
     font-size: rem(18);
     line-height: rem(24);
   }
-} 
+}
 .title3 {
-  @include title3
+  @include title3;
 }
 
-
-
-
-
+// body // body // body // body // body
 @mixin body {
-  font-family: 'Sans';
+  font-family: "Sans";
   font-size: rem(14);
   line-height: rem(20);
-} 
+}
 .body {
   @include body;
 }
 
-
-
-
+// caption // caption // caption // caption // caption
 @mixin caption {
-  font-family: 'Sans';
+  font-family: "Sans";
   font-size: rem(12);
   line-height: rem(18);
-} 
+}
 .caption {
   @include caption;
 }
-
-
-
-
-
-
-
-
-
-

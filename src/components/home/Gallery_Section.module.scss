@@ -1,20 +1,9 @@
-@use '@/styles/base/sizing' as *;
-@use '@/styles/base/colors' as *;
+
 
 .section {
 
-    background-color: $surface-00;
-
-
-    // .container {
-    //     // display: flex;
-    //     // gap: $spacing-3;
-        
-    //     // flex-wrap: wrap;
-    //     // position: relative;
-    //     // background-color: aqua;
-
-    // }
+    background-color: var(--c-section-bg);
+    color: var(--c-text-primary)
 
 
 }

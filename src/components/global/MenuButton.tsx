@@ -8,18 +8,18 @@ import styles from './MenuButton.module.scss'
 
 interface IProp {
   isOpen: boolean
-  onClick: React.MouseEventHandler<HTMLDivElement>
+  onClick: React.MouseEventHandler<HTMLButtonElement>
   
 }
 
-const MenuIcon = ({isOpen, onClick}: IProp) => {
+const MenuButton = ({isOpen, onClick}: IProp) => {
 //  const  [isOpen, setIsOpen] = useState(false)
 
 
 
 return (
   <>
-    <div className={`
+    <button className={`
     ${styles.menuButton} 
   `}
   onClick={onClick}
@@ -35,11 +35,11 @@ return (
     </div>
 
     
-  </div>
+  </button>
 
-  <div className={`${styles.mobileMenu} `}>
+  {/* <div className={`${styles.mobileMenu} `}>
 
-  </div>
+  </div> */}
   </>
 
 
@@ -49,7 +49,7 @@ return (
 }
 
 
-export default MenuIcon
+export default MenuButton
 
 
   //   <svg

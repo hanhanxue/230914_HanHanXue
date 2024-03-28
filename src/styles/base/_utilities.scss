@@ -1,35 +1,32 @@
-@use '@/styles/base/sizing' as *;
-
-
 
 
 
 .framex {
-    margin: 0 $spacing-6;
+    margin: 0 var(--spacing-4);
 
-    @media (max-width: $screen-sm) {
-        margin: 0 $spacing-4;
-      }
+    // @media (max-width: var(--screens-sm)) {
+    //     margin: 0 var(--spacing-4);
+    //   }
 }
 
 .framey-sm {
-    padding-top: $spacing-8;
+    padding-top: var(--spacing-8);
+
 }
 
 .framey {
-    padding-top: $spacing-24;
+    padding-top: var(--spacing-24);
 }
 
 .framey-xl {
-    padding-top: $spacing-48;
-    @media (max-width: $screen-md) {
-        padding-top: $spacing-32;
-      }
+    padding-top: var(--spacing-48);
+    
+    // @media (max-width: var(--screens-md)) {
+    //     padding-top: var(--spacing-32);
+    //   }
 }
 
 
-.isMenuOpen {
-    @media (max-width: $screen-md) {
-        overflow-y: hidden;
-    }
+.overflow-y-hidden {
+    overflow-y: hidden;
 }

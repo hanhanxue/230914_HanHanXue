@@ -1,74 +1,78 @@
-@use '@/styles/base/sizing' as *;
-@use '@/styles/base/colors' as *;
+@use "@/styles/abstracts/screens" as *;
+
 
 .section {
-    background-color: $surface-00;
-    // background-color: $surface-debug;
-        // position: sticky;
-    // position: fixed;
+    background-color: var(--c-section-bg);
+    color: var(--c-text-primary);
+
+
     width: 100%;
-
-    .container {
-
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: $spacing-4;
-
-        padding: $spacing-4 0;
-
-        @media (max-width: $screen-sm) {
-            display: flex;
-            flex-direction: column-reverse;
-            gap: $spacing-4;
-            align-items: center;
-            padding-bottom: $spacing-12;
-        }
-
-        .gridItem {
-
-            &:nth-child(1) {
-                grid-row: 1;
-                grid-column: 1 / 4;
-            }
-
-
-            &:nth-child(2) {
-                grid-row: 1;
-                grid-column: 4 / 13;
-
-                display: flex;
-                justify-content: space-between;
-
-                @media (max-width: $screen-md) {
-                    justify-content: flex-end;
-                  }
-                
-                .time {
-                    display: flex;
-                    gap: $spacing-2;
-
-                    @media (max-width: $screen-md) {
-                        display: none;
-                      }
-                }
-
-                .social {
-                    display: flex;
-                    gap: $spacing-4;
-
-                    @media (max-width: $screen-sm) {
-                        flex-direction: column;
-                        align-items: center;
-                    }
-                }
-            }
-
-
-        } 
-    }
-
-
 
 }
 
 
+.footerInnerContainer {
+
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--spacing-4);
+
+    padding: var(--spacing-4) 0;
+
+    // FIIIIXEEDDD (max-width: var(--screens-sm)) {
+        @include screens(sm) {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: var(--spacing-4);
+        align-items: center;
+        padding-bottom: var(--spacing-12);
+    }
+
+    .gridItem {
+
+        &:nth-child(1) {
+            grid-row: 1;
+            grid-column: 1 / 4;
+        }
+
+
+        &:nth-child(2) {
+            grid-row: 1;
+            grid-column: 4 / 13;
+
+            display: flex;
+            justify-content: space-between;
+
+            // FIIIIXEEDDD (max-width: var(--screens-md)) {
+                @include screens(md) {
+                justify-content: flex-end;
+              }
+            
+            .time {
+                display: flex;
+                gap: var(--spacing-2);
+
+                // FIIIIXEEDDD (max-width: var(--screens-md)) {
+                    @include screens(md) {
+                    display: none;
+                  }
+            }
+
+            .social {
+                display: flex;
+                gap: var(--spacing-4);
+
+                // FIIIIXEEDDD (max-width: var(--screens-sm)) {
+                    @include screens(sm) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+
+
+    } 
+
+
+}

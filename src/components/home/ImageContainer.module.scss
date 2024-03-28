@@ -1,12 +1,11 @@
-@use '@/styles/base/sizing' as *;
-@use '@/styles/base/colors' as *;
 
 
 
 
 
 .container {
-    background-color: $surface-debug;
+    background-color: var(--c-section-bg);
+    
 
     width: 100%;
     height: 100%;

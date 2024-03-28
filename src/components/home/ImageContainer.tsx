@@ -21,6 +21,7 @@ export default function ImageContainer({image} : IProp) {
       fill={true}
       alt={image.alt}
       unoptimized={image.unoptimized}
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
       
     </div>
